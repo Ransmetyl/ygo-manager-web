@@ -22,6 +22,12 @@ function sortByName(cards){
     });
 }
 
+function sortByLinkRating(cards){
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => b.linkval - a.linkval));
+    });
+}
+
 
 async function defaulSort(snapshot){
 
@@ -31,21 +37,36 @@ async function defaulSort(snapshot){
     let traps = [];
     let extra = [];
 
+    let links = [];
+
+
     await Promise.all(cards.map(async (card) => {
         if (card.type.toLowerCase().includes("normal") || 
             card.type.toLowerCase().includes("effect") || 
             card.type.toLowerCase().includes("ritual") ||
-            card.type.toLowerCase().includes("pendulum")) {
+            card.type.toLowerCase().includes("pendulum")){
+            if (card.type.toLowerCase().includes("pendulum")){
+                if(
+                    card.type.toLowerCase().includes("fusion") || 
+                    card.type.toLowerCase().includes("synchro") || 
+                    card.type.toLowerCase().includes("xyz")){
+                    extra.push(card);
+                    return;
+                }
+            }
             monsters.push(card);
+
+
         } else if (card.type.toLowerCase().includes("spell")) {
             spells.push(card);
         } else if (card.type.toLowerCase().includes("trap")) {
             traps.push(card);
         } else if (card.type.toLowerCase().includes("fusion") || 
             card.type.toLowerCase().includes("synchro") || 
-            card.type.toLowerCase().includes("xyz") || 
-            card.type.toLowerCase().includes("link")) {
+            card.type.toLowerCase().includes("xyz")){
             extra.push(card);
+        }else if(card.type.toLowerCase().includes("link")){
+            links.push(card);
         }
     }));
 
@@ -62,8 +83,11 @@ async function defaulSort(snapshot){
     extra = await sortByName(extra);
     extra = await sortByLevel(extra);
     extra = await sortByFrameType(extra);
+    
+    links = await sortByName(links);
+    links = await sortByLinkRating(links);
 
-    const sorted = [monsters, spells, traps, extra]
+    const sorted = [monsters, spells, traps, extra, links]
 
     return sorted;
 }

@@ -1,4 +1,4 @@
-import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards} from './firebase.js';
+import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards, countOwnedCards, getOwnedCards} from './firebase.js';
 import {getColorFromPercentage, getSeriesChars} from './utils.js';
 
 
@@ -17,14 +17,14 @@ if(window.location.href.split('?view=').length > 2){
 disposeNav();
 controller();
 
-function basicNav(title){
+function basicNav(title, cardsCount){
     return `<h1 class="text-sm md:text-2xl flex-1 mx-5 ms-10 mb-1" id="title">${title}</h1>
     <div class="flex items center">
         <button id="add" type="button" class="mx-3 inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 sm:ml-3 sm:w-auto">Add</button>
         <button id="remove" type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:mt-0 sm:w-auto">Remove</button>
     </div>
     <input type="text" class="w-1/5 p-1.5 mx-3 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-gray-400" placeholder="Search" id="searchbar">
-    <div class="relative inline-block text-left me-5">
+    <div class="relative inline-block text-left me-1">
         <div>
             <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
                 <span class="hidden md:inline">Order:</span>
@@ -34,6 +34,9 @@ function basicNav(title){
                 </svg>
             </button>
         </div>
+    </div>
+    <div class="flex items-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 mx-2 p-1.5">
+        <p id="totalCards" class="text-gray-900 font-bold px-1">${cardsCount}</p>
     </div>
     `
 }
@@ -148,7 +151,11 @@ function controller(){
             nav.innerHTML = basicNav('All Deck Cards');
             break;
         case 'collection':
-            nav.innerHTML = basicNav('Collection');
+            countOwnedCards().then(count => {
+                nav.innerHTML = basicNav('Collection', count);
+                showCollection();
+            });
+
             break;
         case 'archetypes':
             nav.innerHTML = basicNav('Archetypes');
@@ -284,28 +291,24 @@ async function loadChars(series){
 function prepareForCards(){
 
     content.classList.remove('grid','h-1/5','place-items-center')
-    // content.innerHTML = `
-    // <div class="w-screen md:w-3/4 h-screen overflow-auto pr-3 pb-24 mt-1 ms-2">
-    //     <div class="grid grid-cols-10 gap-1 h-auto" id="card-container"></div>
-    // </div>`;
-
     content.classList.add('h-screen','w-full', 'flex')
     content.innerHTML = `
         <div class="w-3/4 h-screen overflow-auto pr-3 pb-24 mt-1 ms-2">
             <div class="grid grid-cols-10 gap-1 h-auto" id="card-container"></div>
         </div>
         <div class="w-1/4 h-screen ms-2" id="card-highlight">
-            <img class="w-auto h-auto object-cover p-2" id="card_image" src="../card_back.jpg" alt="highlight_card_image">
+            <img class="w-3/4 h-auto object-cover p-2 mx-auto " id="card_image" src="../card_back.jpg" alt="highlight_card_image">
             <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md" id="card_name">card_name</p>
-            <p class="h-1/4 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto" id="card_desc">card_desc</p>
+            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto" id="card_desc">card_desc</p>
         </div>
     
     `;
 
 }
 
-
 function createCardElement(card_id, deck_quantity, owned_quantity, card_name, card_desc, isDeckCard = true) {
+    preloadImages([`https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`]);
+    
     const cardContainer = document.getElementById('card-container');
     const card = document.createElement('a');
     card.classList.add('cursor-pointer', 'hover:scale-110', 'relative', 'z-50');
@@ -359,6 +362,18 @@ async function showDeck(duelist) {
         const owned_quantity = await getOwnedQuantity(card.id);
         console.log(card.name);
         createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc);
+    });
+    showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
+}
+
+async function showCollection(){
+    prepareForCards();
+    const deck = await getOwnedCards();
+    const cards = deck.flat();
+    cards.forEach(async card => {
+        const owned_quantity = await getOwnedQuantity(card.id);
+        console.log(card.name);
+        createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, false);
     });
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
 }

@@ -137,6 +137,16 @@ async function getOwnedQuantity(card_id){
 }
 
 
-export {getCard, getOwnedCards, getDeckCards, getCompletionPercentage,countDeckCards, getOwnedQuantity};
+async function countOwnedCards(){
+    const owned_assoc = await getOwnedIds();
+    const ids = Object.keys(owned_assoc);
+    let count = 0;
+    ids.forEach(id => {
+        count += owned_assoc[id];
+    });
+    return count;
+}
+
+export {getCard, getOwnedCards, getDeckCards, getCompletionPercentage,countDeckCards, getOwnedQuantity,countOwnedCards};
 
 
