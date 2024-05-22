@@ -1,4 +1,74 @@
-function setSeriesChars(series){
+function sortByFrameType(cards){
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => a.frameType.localeCompare(b.frameType)));
+    });
+}
+
+function sortByRace(cards){
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => a.race.localeCompare(b.race)));
+    });
+}
+
+function sortByLevel(cards){
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => b.level - a.level));
+    });
+}
+
+function sortByName(cards){
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => a.name.localeCompare(b.name)));
+    });
+}
+
+
+async function defaulSort(snapshot){
+
+    const cards = Object.values(snapshot);
+    let monsters = [];
+    let spells = [];
+    let traps = [];
+    let extra = [];
+
+    await Promise.all(cards.map(async (card) => {
+        if (card.type.toLowerCase().includes("normal") || 
+            card.type.toLowerCase().includes("effect") || 
+            card.type.toLowerCase().includes("ritual") ||
+            card.type.toLowerCase().includes("pendulum")) {
+            monsters.push(card);
+        } else if (card.type.toLowerCase().includes("spell")) {
+            spells.push(card);
+        } else if (card.type.toLowerCase().includes("trap")) {
+            traps.push(card);
+        } else if (card.type.toLowerCase().includes("fusion") || 
+            card.type.toLowerCase().includes("synchro") || 
+            card.type.toLowerCase().includes("xyz") || 
+            card.type.toLowerCase().includes("link")) {
+            extra.push(card);
+        }
+    }));
+
+    monsters = await sortByName(monsters);
+    monsters = await sortByLevel(monsters);
+    monsters = await sortByFrameType(monsters);
+    
+    spells = await sortByName(spells);
+    spells = await sortByRace(spells);
+
+    traps = await sortByName(traps);
+    traps = await sortByRace(traps);
+
+    extra = await sortByName(extra);
+    extra = await sortByLevel(extra);
+    extra = await sortByFrameType(extra);
+
+    const sorted = [monsters, spells, traps, extra]
+
+    return sorted;
+}
+
+function getSeriesChars(series){
     let names = [];
 
     switch(series){
@@ -179,4 +249,18 @@ function setSeriesChars(series){
     return names;
 }
 
-export {setSeriesChars}
+function getColorFromPercentage(percentage) {
+    if (percentage < 25) {
+        return "#ff6347"; // Rosso
+    } else if (percentage < 50) {
+        return "#ffa500"; // Arancione
+    } else if (percentage < 75) {
+        return "#ffd700"; // Giallo
+    } else {
+        return "#32cd32"; // Verde
+    }
+}
+
+
+
+export {defaulSort, sortByFrameType, sortByRace, sortByLevel, getSeriesChars, getColorFromPercentage};

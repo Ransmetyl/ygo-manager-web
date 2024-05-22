@@ -1,3 +1,7 @@
+import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards} from './firebase.js';
+import {getColorFromPercentage, getSeriesChars} from './utils.js';
+
+
 const animeDecks = document.getElementById('anime-decks');
 const allDeckCards = document.getElementById('all-deck-cards');
 const collection = document.getElementById('collection');
@@ -50,10 +54,11 @@ function animeDecksNav(title){
     `
 }
 
-function readOnlyNav(title){
-    return `<h1 class="text-sm md:text-2xl flex-1 mx-5 ms-10 mb-1" id="title">${title}</h1>
+function deckViewNav(title, percentage, cardsCount) {
+
+    const html = `<h1 class="text-sm md:text-2xl flex-1 mx-5 ms-10 mb-1" id="title">${title}</h1>
     <input type="text" class="w-1/5 p-1.5 mx-3 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-gray-400" placeholder="Search" id="searchbar">
-    <div class="relative inline-block text-left me-5">
+    <div class="relative inline-block text-left me-1">
         <div>
             <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
                 <span class="hidden md:inline">Order:</span>
@@ -64,8 +69,32 @@ function readOnlyNav(title){
             </button>
         </div>
     </div>
+    <div class="flex items-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 mx-2 p-1.5">
+        <p id="totalCards" class="text-gray-900 font-bold px-1">${cardsCount}</p>
+    </div>
+    <div class="flex items-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 mx-1 p-1.5" id="percentage-container">
+        <p id="completion-percentage" class="text-gray-900 font-bold px-1">${percentage}%</p>
+    </div>
     `
+    
+    //html.getElementById('percentage-container').style.background = "linear-gradient(to right, " + getColorFromPercentage(percentage) + " " + percentage + "%, #ffffff " + percentage + "%)";
+
+    return html;
+
 }
+
+
+function deckNavColors(){
+    const percentage = document.getElementById('completion-percentage').textContent.split('%')[0];
+    console.log(percentage);
+    const percentageContainer = document.getElementById('percentage-container');
+    const color = getColorFromPercentage(percentage);
+
+    percentageContainer.style.background = "linear-gradient(to right, " + color + " " + percentage + "%, #ffffff " + percentage + "%)";
+    
+    console.log(color);
+}
+
 
 function disposeNav(){
     nav.innerHTML = '';
@@ -108,10 +137,11 @@ archetypes.addEventListener('click', () => {
 
 
 function controller(){
-    switch(location()){
+    const view = location().split('&')[0];
+    switch(view){
         case 'animeDecks':
             nav.innerHTML = animeDecksNav('Anime Decks');
-            loadChars('duelists');
+            loadChars('duel-monsters');
 
             break;
         case 'allDeckCards':
@@ -122,6 +152,21 @@ function controller(){
             break;
         case 'archetypes':
             nav.innerHTML = basicNav('Archetypes');
+            break;
+
+        case 'deck':
+            let duelist = new URLSearchParams(window.location.search).get('duelist') || 'Yami Yugi';
+            Promise.all([
+                getCompletionPercentage(duelist),
+                countDeckCards(duelist)
+            ]).then(([percentage, cardsCount]) => {
+                nav.innerHTML = deckViewNav(duelist, percentage, cardsCount);
+                deckNavColors();
+
+                showDeck(duelist);
+
+            });
+
             break;
         default:
             console.log('default');
@@ -151,57 +196,141 @@ function resetContent(){
 function prepareForDuelists(){
     content.classList.remove('grid','h-1/5','place-items-center')
     content.classList.add('h-screen','overflow-auto')
-    content.innerHTML = `<div class="char-container flex flex-wrap justify-center overflow-y-auto" id="duelists"></div>`
+    content.innerHTML = `<div class="char-container flex flex-wrap justify-center overflow-y-auto mb-32" id="duelists"></div>`
 }
 
-
 function createCharacterCard(name, percentage) {
+
+    const color = getColorFromPercentage(percentage);
     let card = document.createElement('a');
-    card.classList.add(
-        'transition',
-        'ease-in',
-        'duration-100',
-        'delay-0',
-        'w-1/4',
-        'rounded',
-        'overflow-hidden',
-        'shadow-lg',
-        'mb-4',
-        'mr-4',
-        'rounded-xl',
-        'cursor-pointer',
-        'bg-white'
-    );
+    name = name.replace(/[^\w\s]/gi, '');
+
+    card.classList.add('transition', 'ease-in', 'duration-100', 'delay-0', 'max-w-md', 'rounded', 'overflow-hidden', 'shadow-lg', 'mb-4', 'mr-4', 'rounded-xl', 'cursor-pointer','bg-white');
     card.id = name;
     card.href = "javascript:void(0)";
 
-    let html = `
-        <div class="flex">
-            <div class="w-1/3 border-r border-gray-300 rounded-l-lg overflow-hidden bg-white py-0 pr-2 opacity-50">
-                <img class="scale-150 mt-10 px-2 w-full h-auto object-cover object-center rounded-l-lg" 
-                
-                    src="https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/char%2F${name.replace(
-                    ' ','%20'
-                )}.png?alt=media&token=e50852da-0be5-434c-b3b3-fd3803fe13c7" alt="${name}_Image" loading="lazy">
-            </div>
-            <div class="flex-1 px-6 py-4">
-                <div class="font-bold text-md lg:text-2xl mb-2">${name}</div>
-                <p class="text-gray-700 text-md completionPercentage">${percentage}%</p>
-            </div>
-        </div>
-    `;
+    let flex = document.createElement('div');
+    flex.classList.add('flex');
 
-    card.innerHTML = html;
+    let imgContainer = document.createElement('div');
+    imgContainer.classList.add('w-1/3', 'border-r', 'border-gray-300', 'rounded-l-lg', 'overflow-hidden', 'bg-white','py-0');
+
+    let img = document.createElement('img');
+    img.classList.add('scale-150', 'mt-10', 'px-2', 'w-full', 'h-auto', 'object-cover', 'object-center', 'rounded-l-lg');
+    img.src = "https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/char%2F" + name.replace(' ', '%20') + ".png?alt=media&token=e50852da-0be5-434c-b3b3-fd3803fe13c7";
+    img.alt = name + "_Image";
+    img.loading = "lazy";
+
+    imgContainer.classList.add('pr-2','opacity-50')
+    imgContainer.appendChild(img);
+
+    let textContainer = document.createElement('div');
+    textContainer.classList.add('flex-1', 'px-6', 'py-4');
+
+    let nameDiv = document.createElement('div');
+    nameDiv.classList.add('font-bold', 'text-2xl', 'mb-2');
+    
+    let nameText = document.createTextNode(name);
+    nameDiv.appendChild(nameText);
+
+    let completionDiv = document.createElement('p');
+    completionDiv.classList.add('text-gray-700', 'text-md', 'completionPercentage');
+
+    if (isNaN(percentage)) {
+        percentage = "No Deck Found.";
+        let completionText = document.createTextNode(percentage);
+        completionDiv.appendChild(completionText);
+    }else{
+        let completionText = document.createTextNode(percentage + "%");
+        completionDiv.classList.add('border');
+        completionDiv.style.background = "linear-gradient(to right, " + color + " " + percentage + "%, #ffffff " + percentage + "%)";
+        completionDiv.appendChild(completionText);
+        imgContainer.classList.remove('opacity-50')
+        card.href = "deck_view.html?duelist=" + name;
+        card.classList.add('hover:scale-110');
+    }
+
+    textContainer.appendChild(nameDiv);
+    textContainer.appendChild(completionDiv);
+
+    flex.appendChild(imgContainer);
+    flex.appendChild(textContainer);
+
+    card.appendChild(flex);
+    //href is the very same page with view=deck&duelist=name
+    //current url is taken from the window.location.href
+
+    card.href = window.location.href.split('?')[0] + "?view=deck&duelist=" + name;
+
     return card;
 }
 
-function loadChars(series){
+async function loadChars(series){
     prepareForDuelists();
-    const names = ['Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki',]    //to retrievie via get of a series
+    //const names = ['Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki',]    //to retrievie via get of a series
 
-    names.forEach(name => {
-        let card = createCharacterCard(name, 100);
-        document.getElementById('duelists').appendChild(card);
-    });
+    const names = getSeriesChars(series);
+
+    async function processNames() {
+        for (const name of names) {
+            const percentage = await getCompletionPercentage(name);
+            let card = createCharacterCard(name, percentage);
+            document.getElementById('duelists').appendChild(card);
+        }
+    }
+
+    await processNames();
 }
 
+function prepareForCards(){
+
+    content.classList.remove('grid','h-1/5','place-items-center')
+    content.innerHTML = `
+    <div class="w-screen md:w-3/4 h-screen overflow-auto pr-3 pb-40 mt-1 ms-2">
+        <div class="grid grid-cols-10 gap-1 h-screen place-items-center" id="card-container"></div>
+    </div>`;
+
+}
+
+
+function createCardElement(card_id, deck_quantity, owned_quantity, isDeckCard = true){
+
+    const cardContainer = document.getElementById('card-container');
+    const card = document.createElement('a');
+    card.classList.add('cursor-pointer', 'hover:scale-110', 'relative', 'z-50');
+    //if card is expanded and would go out of the element, make it go on top of the others
+    card.href = "card_view.html?card=" + card_id;
+
+    const img = document.createElement('img');
+    img.src = "https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F" + card_id + ".jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556";
+    img.alt = card_id + "_id";
+    img.classList.add('card', 'static');
+
+    const owned = document.createElement('div');
+    owned.classList.add('owned-label', 'absolute', 'bottom-0', 'right-0', 'bg-gray-900', 'text-white', 'px-1', 'py-0.5', 'rounded-tl-md', 'text-sm');
+    owned.textContent = isDeckCard ? owned_quantity + "/" + deck_quantity : owned_quantity;
+
+    if(owned_quantity < deck_quantity){
+        img.classList.add('filter', 'grayscale');
+    }
+
+    card.appendChild(img);
+    card.appendChild(owned);
+    cardContainer.appendChild(card);
+
+    return card;
+
+}
+
+
+async function showDeck(duelist){
+
+    prepareForCards();
+    getDeckCards(duelist).then(async (deck) => {
+        const cards = deck.flat();
+        cards.forEach(async card => {
+            const owned_quantity = await getOwnedQuantity(card.id);
+            createCardElement(card.id, card.quantity, owned_quantity);
+        });
+    });
+}
