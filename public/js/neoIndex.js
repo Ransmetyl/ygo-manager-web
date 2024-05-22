@@ -3,6 +3,7 @@ const allDeckCards = document.getElementById('all-deck-cards');
 const collection = document.getElementById('collection');
 const nav = document.getElementById('nav-content')
 const content = document.getElementById('content')
+const archetypes = document.getElementById('archetypes');
 
 //if location contains more than 1 ?view=, redirect to the page without parameters
 if(window.location.href.split('?view=').length > 2){
@@ -101,21 +102,26 @@ collection.addEventListener('click', () => {
     redirect('collection');
 });
 
+archetypes.addEventListener('click', () => {
+    redirect('archetypes');
+});
+
+
 function controller(){
     switch(location()){
         case 'animeDecks':
-            disposeNav();
             nav.innerHTML = animeDecksNav('Anime Decks');
             loadChars('duelists');
 
             break;
         case 'allDeckCards':
-            disposeNav();
             nav.innerHTML = basicNav('All Deck Cards');
             break;
         case 'collection':
-            disposeNav();
             nav.innerHTML = basicNav('Collection');
+            break;
+        case 'archetypes':
+            nav.innerHTML = basicNav('Archetypes');
             break;
         default:
             console.log('default');
@@ -137,8 +143,15 @@ function loader(){
     </div>`
 }
 
+function resetContent(){
+    content.classList.add('grid','h-1/5','place-items-center')
+    content.classList.remove('h-screen','overflow-auto')
+}
+
 function prepareForDuelists(){
-    content.innerHTML = `<div class="char-container flex flex-wrap justify-center" id="duelists"></div>`
+    content.classList.remove('grid','h-1/5','place-items-center')
+    content.classList.add('h-screen','overflow-auto')
+    content.innerHTML = `<div class="char-container flex flex-wrap justify-center overflow-y-auto" id="duelists"></div>`
 }
 
 
@@ -149,7 +162,7 @@ function createCharacterCard(name, percentage) {
         'ease-in',
         'duration-100',
         'delay-0',
-        'w-1/3',
+        'w-1/4',
         'rounded',
         'overflow-hidden',
         'shadow-lg',
@@ -172,7 +185,7 @@ function createCharacterCard(name, percentage) {
                 )}.png?alt=media&token=e50852da-0be5-434c-b3b3-fd3803fe13c7" alt="${name}_Image" loading="lazy">
             </div>
             <div class="flex-1 px-6 py-4">
-                <div class="font-bold text-2xl mb-2">${name}</div>
+                <div class="font-bold text-md lg:text-2xl mb-2">${name}</div>
                 <p class="text-gray-700 text-md completionPercentage">${percentage}%</p>
             </div>
         </div>
@@ -184,10 +197,11 @@ function createCharacterCard(name, percentage) {
 
 function loadChars(series){
     prepareForDuelists();
-    const names = ['Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki',]    //to retrievie via get of a series
+    const names = ['Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki','Yugi Muto', 'Seto Kaiba', 'Anzu Mazaki',]    //to retrievie via get of a series
 
     names.forEach(name => {
         let card = createCharacterCard(name, 100);
         document.getElementById('duelists').appendChild(card);
     });
 }
+
