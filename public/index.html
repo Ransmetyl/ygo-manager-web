@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Anime Deck Manager</title>
+</head>
+<!--Hide overflow-x-->
+<body class="overflow-x-hidden">
+    <!--Add a navbar-->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl">Yu-Gi-Oh! Duelist Select</a>
+            <div class="flex">
+                <!--Dropdown-->
+                <div class="relative inline-block text-left mx-4">
+                    <div>
+                        <button type="button" class="inline-flex justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            <span class="text-white text-sm md:text-base" id="seriesText">Duel Monsters</span>
+                            <svg class="-mr-1 h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <a href="index.html?series=duel-monsters" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Duel Monsters</a>
+                            <a href="index.html?series=gx" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">GX</a>
+                            <a href="index.html?series=5ds" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">5Ds</a>
+                            <a href="index.html?series=zexal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Zexal</a>
+                            <a href="index.html?series=arc-v" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Arc-V</a>
+                            <a href="index.html?series=vrains" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Vrains</a>
+                        </div>
+                    </div>
+                </div>  
+
+
+                <a href="collection.html" class="bg-blue-500 hover:bg-blue-700 text-white text-sm md:text-base font-bold py-2 px-4 rounded inline-block" id="collectionBtn">
+                    Carte Possedute
+                </a>  
+                <a href="deck_view.html?all=true" class="bg-blue-500 hover:bg-blue-700 text-white text-sm md:text-base font-bold py-2 px-4 mx-4 rounded inline-block" id="allCardsBtn">
+                    Carte dei Deck
+                </a>               
+            </div>  
+        </div>
+    </nav>
+
+
+    <div class="char-container flex flex-wrap justify-center" id="duel-monsters">
+        <!-- Duel Monsters chars are here-->
+    </div>
+    <div class="char-container flex fle</svg>x-wrap justify-center" id="gx">
+        <!-- GX chars are here-->
+    </div>
+    <div class="char-container flex flex-wrap justify-center" id="5ds">
+        <!-- 5DS chars are here-->
+    </div>
+    <div class="char-container flex flex-wrap justify-center" id="zexal">
+        <!-- Zexal chars are here-->
+    </div>
+    <div class="char-container flex flex-wrap justify-center" id="arc-v">
+        <!-- Arc-V chars are here-->
+    </div>
+    <div class="char-container flex flex-wrap justify-center" id="vrains">
+        <!-- Vrains chars are here-->
+    </div>
+
+
+    <script type="module" src="./js/select.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
