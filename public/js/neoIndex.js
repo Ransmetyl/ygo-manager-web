@@ -137,7 +137,7 @@ archetypes.addEventListener('click', () => {
 
 
 function controller(){
-    const view = location().split('&')[0];
+    const view = location()?.split('&')[0] || 'animeDecks';
     switch(view){
         case 'animeDecks':
             nav.innerHTML = animeDecksNav('Anime Decks');
@@ -162,7 +162,6 @@ function controller(){
             ]).then(([percentage, cardsCount]) => {
                 nav.innerHTML = deckViewNav(duelist, percentage, cardsCount);
                 deckNavColors();
-
                 showDeck(duelist);
 
             });
@@ -285,52 +284,81 @@ async function loadChars(series){
 function prepareForCards(){
 
     content.classList.remove('grid','h-1/5','place-items-center')
+    // content.innerHTML = `
+    // <div class="w-screen md:w-3/4 h-screen overflow-auto pr-3 pb-24 mt-1 ms-2">
+    //     <div class="grid grid-cols-10 gap-1 h-auto" id="card-container"></div>
+    // </div>`;
+
+    content.classList.add('h-screen','w-full', 'flex')
     content.innerHTML = `
-    <div class="w-screen md:w-3/4 h-screen overflow-auto pr-3 pb-40 mt-1 ms-2">
-        <div class="grid grid-cols-10 gap-1 h-screen place-items-center" id="card-container"></div>
-    </div>`;
+        <div class="w-3/4 h-screen overflow-auto pr-3 pb-24 mt-1 ms-2">
+            <div class="grid grid-cols-10 gap-1 h-auto" id="card-container"></div>
+        </div>
+        <div class="w-1/4 h-screen ms-2" id="card-highlight">
+            <img class="w-auto h-auto object-cover p-2" id="card_image" src="../card_back.jpg" alt="highlight_card_image">
+            <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md" id="card_name">card_name</p>
+            <p class="h-1/4 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto" id="card_desc">card_desc</p>
+        </div>
+    
+    `;
 
 }
 
 
-function createCardElement(card_id, deck_quantity, owned_quantity, isDeckCard = true){
-
+function createCardElement(card_id, deck_quantity, owned_quantity, card_name, card_desc, isDeckCard = true) {
     const cardContainer = document.getElementById('card-container');
     const card = document.createElement('a');
     card.classList.add('cursor-pointer', 'hover:scale-110', 'relative', 'z-50');
-    //if card is expanded and would go out of the element, make it go on top of the others
-    card.href = "card_view.html?card=" + card_id;
+    card.href = `card_view.html?card=${card_id}`;
 
     const img = document.createElement('img');
-    img.src = "https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F" + card_id + ".jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556";
-    img.alt = card_id + "_id";
+    img.src = `https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`;
+    img.alt = `${card_id}_id`;
     img.classList.add('card', 'static');
 
     const owned = document.createElement('div');
     owned.classList.add('owned-label', 'absolute', 'bottom-0', 'right-0', 'bg-gray-900', 'text-white', 'px-1', 'py-0.5', 'rounded-tl-md', 'text-sm');
-    owned.textContent = isDeckCard ? owned_quantity + "/" + deck_quantity : owned_quantity;
+    owned.textContent = isDeckCard ? `${owned_quantity}/${deck_quantity}` : owned_quantity;
 
-    if(owned_quantity < deck_quantity){
+    if (owned_quantity < deck_quantity) {
         img.classList.add('filter', 'grayscale');
     }
+
+    card.addEventListener('mouseover', () => {
+        showHighlightCard(card_id, card_name, card_desc);
+    });
 
     card.appendChild(img);
     card.appendChild(owned);
     cardContainer.appendChild(card);
-
     return card;
-
 }
 
-
-async function showDeck(duelist){
-
-    prepareForCards();
-    getDeckCards(duelist).then(async (deck) => {
-        const cards = deck.flat();
-        cards.forEach(async card => {
-            const owned_quantity = await getOwnedQuantity(card.id);
-            createCardElement(card.id, card.quantity, owned_quantity);
-        });
+function preloadImages(urls) {
+    urls.forEach(url => {
+        const img = new Image();
+        img.src = url;
     });
+}
+
+function showHighlightCard(card_id, card_name, card_desc) {
+    const highlightImageUrl = `https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`;
+
+    preloadImages([highlightImageUrl]);
+
+    document.getElementById('card_image').src = highlightImageUrl;
+    document.getElementById('card_name').textContent = card_name;
+    document.getElementById('card_desc').textContent = card_desc;
+}
+
+async function showDeck(duelist) {
+    prepareForCards();
+    const deck = await getDeckCards(duelist);
+    const cards = deck.flat();
+    cards.forEach(async card => {
+        const owned_quantity = await getOwnedQuantity(card.id);
+        console.log(card.name);
+        createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc);
+    });
+    showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
 }
