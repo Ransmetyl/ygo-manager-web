@@ -94,8 +94,8 @@ async function defaulSort(snapshot){
 
 function getSeriesChars(series){
     let names = [];
-
-    switch(series){
+    let serie = series.toLowerCase();
+    switch(serie){
         case 'duel-monsters':
             
         names = [
