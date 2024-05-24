@@ -80,7 +80,7 @@ def upload_decks():
         if file.endswith(".ydk"):
             deck_name = file.split(".")[0]
             load_deck(deck_name)
-            print(f"Deck {deck_name} uploaded to database")
+            print(f"Deck {deck_name} uploaded to database\n")
     
 
 

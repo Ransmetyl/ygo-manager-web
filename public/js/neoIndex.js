@@ -344,8 +344,8 @@ function prepareForCards(){
         </div>
         <div class="w-1/4 h-screen ms-2" id="card-highlight">
             <img class="w-3/4 h-auto object-cover p-2 mx-auto " id="card_image" src="../card_back.jpg" alt="highlight_card_image">
-            <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md" id="card_name">card_name</p>
-            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto" id="card_desc">card_desc</p>
+            <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md font-bold" id="card_name">card_name</p>
+            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto text-sm p-3 text-justify" id="card_desc">card_desc</p>
         </div>
     
     `;
