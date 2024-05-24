@@ -1,5 +1,6 @@
-import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards, countOwnedCards, getOwnedCards} from './firebase.js';
+import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards, countOwnedCards, getOwnedCards, getAllDeckCards} from './firebase.js';
 import {getColorFromPercentage, getSeriesChars} from './utils.js';
+
 
 
 const animeDecks = document.getElementById('anime-decks');
@@ -194,7 +195,9 @@ function controller(){
             loadChars(getSeries());
             break;
         case 'allDeckCards':
-            nav.innerHTML = basicNav('All Deck Cards');
+            nav.innerHTML = basicNav('All Deck Cards', "...");
+            let total = showAllDeckCards();
+            total.then(count => setTotalCards(count));
             break;
         case 'collection':
             countOwnedCards().then(count => {
@@ -257,7 +260,7 @@ function createCharacterCard(name, percentage) {
     let card = document.createElement('a');
     name = name.replace(/[^\w\s]/gi, '');
 
-    card.classList.add('transition', 'ease-in', 'duration-100', 'delay-0', 'max-w-md', 'rounded', 'overflow-hidden', 'shadow-lg', 'mb-4', 'mr-4', 'rounded-xl', 'cursor-pointer','bg-white');
+    card.classList.add('w-1/3','transition', 'ease-in', 'duration-100', 'delay-0', 'max-w-md', 'rounded', 'overflow-hidden', 'shadow-lg', 'mb-4', 'mr-4', 'rounded-xl', 'cursor-pointer','bg-white');
     card.id = name;
     card.href = "javascript:void(0)";
 
@@ -277,11 +280,11 @@ function createCharacterCard(name, percentage) {
     imgContainer.appendChild(img);
 
     let textContainer = document.createElement('div');
-    textContainer.classList.add('flex-1', 'px-6', 'py-4');
+    textContainer.classList.add('flex-1', 'px-6', 'py-4', 'flex', 'flex-col', 'justify-center');
 
     let nameDiv = document.createElement('div');
     nameDiv.classList.add('font-bold', 'text-2xl', 'mb-2');
-    
+
     let nameText = document.createTextNode(name);
     nameDiv.appendChild(nameText);
 
@@ -294,7 +297,7 @@ function createCharacterCard(name, percentage) {
         completionDiv.appendChild(completionText);
     }else{
         let completionText = document.createTextNode(percentage + "%");
-        completionDiv.classList.add('border');
+        completionDiv.classList.add('border', 'rounded-md', 'border-black');
         completionDiv.style.background = "linear-gradient(to right, " + color + " " + percentage + "%, #ffffff " + percentage + "%)";
         completionDiv.appendChild(completionText);
         imgContainer.classList.remove('opacity-50')
@@ -309,9 +312,6 @@ function createCharacterCard(name, percentage) {
     flex.appendChild(textContainer);
 
     card.appendChild(flex);
-    //href is the very same page with view=deck&duelist=name
-    //current url is taken from the window.location.href
-
     card.href = window.location.href.split('?')[0] + "?view=deck&duelist=" + name;
 
     return card;
@@ -344,8 +344,8 @@ function prepareForCards(){
         </div>
         <div class="w-1/4 h-screen ms-2" id="card-highlight">
             <img class="w-3/4 h-auto object-cover p-2 mx-auto " id="card_image" src="../card_back.jpg" alt="highlight_card_image">
-            <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md font-bold" id="card_name">card_name</p>
-            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto text-sm p-3 text-justify" id="card_desc">card_desc</p>
+            <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md font-bold" id="card_name"></p>
+            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto text-sm p-3 text-justify" id="card_desc"></p>
         </div>
     
     `;
@@ -422,4 +422,23 @@ async function showCollection(){
         createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, false);
     });
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
+}
+
+
+function setTotalCards(count){
+    document.getElementById('totalCards').textContent = count;
+}
+
+async function showAllDeckCards() {
+    prepareForCards();
+    let total = 0;
+    const cards = await getAllDeckCards();
+    const promises = cards.flat().map(async card => {
+        const owned_quantity = await getOwnedQuantity(card.id);
+        total += owned_quantity;
+        return createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc);
+    });
+    await Promise.all(promises);
+    showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
+    return total; //returns the total number of cards 
 }

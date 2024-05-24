@@ -1,0 +1,40 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Cyber Petit Angel,2,Fairy/ Effect,0.02
+Monster,1,Cyber Tutu,3,Warrior/ Effect,0.05
+Monster,1,Blade Skater,4,Warrior/ Normal,0.11
+Monster,1,Cyber Gymnast,4,Warrior/ Effect,0.03
+Monster,1,Etoile Cyber,4,Warrior/ Effect,0.10
+Monster,1,Cyber Angel Benten,6,Fairy/ Effect/ Ritual,0.02
+Monster,1,Cyber Angel Idaten,6,Fairy/ Effect/ Ritual,0.02
+Monster,1,Cyber Prima,6,Warrior/ Effect,0.02
+Monster,1,Mind on Air,6,Spellcaster/ Effect,0.20
+Monster,1,White Night Queen,7,Fairy/ Effect,0.02
+Monster,1,Cyber Angel Dakini,8,Fairy/ Effect/ Ritual,0.05
+Monster,1,White Night Dragon,8,Dragon/ Effect,0.20
+Spell,1,De-Fusion,,,0.02
+Spell,1,Fulfillment of the Contract,,,0.02
+Spell,1,Fusion Gate,,,0.05
+Spell,1,Fusion Recovery,,,0.06
+Spell,1,Fusion Weapon,,,0.09
+Spell,3,Machine Angel Ritual,,,0.02
+Spell,1,Mystical Space Typhoon,,,0.02
+Spell,1,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,Raregold Armor,,,0.29
+Spell,1,Ritual Sanctuary,,,0.02
+Spell,1,Ritual Weapon,,,0.04
+Spell,1,Stray Lambs,,,0.02
+Spell,1,The Warrior Returning Alive,,,0.02
+Spell,1,White Veil,,,0.99
+Trap,1,A Rival Appears!,,,0.19
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Destruction Punch,,,0.05
+Trap,1,Doble Passe,,,0.02
+Trap,1,Hallowed Life Barrier,,,0.10
+Trap,1,Meteorain,,,0.50
+Trap,1,Solemn Judgment,,,0.75
+Trap,1,Spell Shield Type-8,,,0.02
+Trap,1,Spirit Barrier,,,1.85
+Trap,1,Synthetic Seraphim,,,0.09
+Extra Deck,2,Cyber Blader,7,Warrior/ Effect/ Fusion,0.14

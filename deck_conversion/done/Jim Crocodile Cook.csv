@@ -1,0 +1,22 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Flint Cragger,3,Rock/ Effect,0.37
+Monster,1,Fossil Dyna Pachycephalo,4,Rock/ Effect,0.38
+Monster,1,Shell Knight,4,Rock/ Effect,0.44
+Monster,1,Weathering Soldier,4,Rock/ Effect,0.06
+Monster,1,Gaia Plate the Earth Giant,8,Rock/ Effect,3.49
+Spell,2,Fossil Fusion,,,0.05
+Spell,1,Miracle Rupture,,,0.12
+Spell,1,Pot of Avarice,,,0.35
+Spell,1,Specimen Inspection,,,0.02
+Spell,2,Time Stream,,,0.06
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Sakuretsu Armor,,,0.10
+Extra Deck,1,Fossil Dragon Skullgar,4,Rock/ Effect/ Fusion,0.06
+Extra Deck,1,Fossil Machine Skull Buggy,4,Rock/ Fusion/ Effect,0.33
+Extra Deck,1,Fossil Warrior Skull Bone,4,Rock/ Effect/ Fusion,0.07
+Extra Deck,1,Fossil Machine Skull Wagon,6,Rock/ Fusion/ Effect,0.40
+Extra Deck,1,Fossil Warrior Skull Knight,6,Rock/ Effect/ Fusion,0.08
+Extra Deck,1,Fossil Dragon Skullgios,8,Rock/ Effect/ Fusion,0.07
+Extra Deck,1,Fossil Machine Skull Convoy,8,Rock/ Fusion/ Effect,0.33
+Extra Deck,1,Fossil Warrior Skull King,8,Rock/ Effect/ Fusion,0.06

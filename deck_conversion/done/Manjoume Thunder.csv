@@ -1,0 +1,73 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Chaos Necromancer,1,Fiend/ Effect,0.02
+Monster,1,Copycat,1,Spellcaster/ Effect,0.04
+Monster,1,Relinquished,1,Spellcaster/ Effect/ Ritual,0.02
+Monster,1,The Unhappy Maiden,1,Spellcaster/ Effect,0.02
+Monster,1,Catnipped Kitty,2,Beast/ Effect,0.10
+Monster,1,Ojama Black,2,Beast/ Normal,0.02
+Monster,1,Ojama Green,2,Beast/ Normal,0.08
+Monster,1,Ojama Yellow,2,Beast/ Normal,0.02
+Monster,3,Armed Dragon LV3,3,Dragon/ Effect,0.02
+Monster,1,Gyaku-Gire Panda,3,Beast/ Effect,2.67
+Monster,1,Masked Dragon,3,Dragon/ Effect,0.05
+Monster,1,Skull Knight #2,3,Fiend/ Effect,0.15
+Monster,1,Spirit of the Breeze,3,Fairy/ Effect,0.25
+Monster,3,Chthonian Soldier,4,Warrior/ Effect,0.08
+Monster,1,Disc Fighter,4,Warrior/ Effect,0.03
+Monster,1,Flying Kamakiri #1,4,Insect/ Effect,0.10
+Monster,1,Gemini Imps,4,Fiend/ Effect,0.50
+Monster,1,Giant Rat,4,Beast/ Effect,0.02
+Monster,1,KA-2 Des Scissors,4,Machine/ Effect,0.25
+Monster,1,Pandemonium Watchbear,4,Beast/ Effect,0.02
+Monster,1,Reborn Zombie,4,Zombie/ Effect,0.02
+Monster,1,Royal Magical Library,4,Spellcaster/ Effect,0.10
+Monster,1,Soul Tiger,4,Beast/ Normal,0.03
+Monster,1,V-Tiger Jet,4,Machine/ Normal,0.04
+Monster,1,W-Wing Catapult,4,Machine/ Effect/Union,0.04
+Monster,1,X-Head Cannon,4,Machine/ Normal,0.02
+Monster,1,Y-Dragon Head,4,Machine/ Effect/Union,0.05
+Monster,1,Z-Metal Tank,4,Machine/ Effect/Union,0.02
+Monster,1,Armed Dragon LV5,5,Dragon/ Effect,0.02
+Monster,1,Helpoemer,5,Fiend/ Effect,0.04
+Monster,1,Mefist the Infernal General,5,Fiend/ Effect,0.04
+Monster,1,Castle Gate,6,Rock/ Effect,0.18
+Monster,1,Infernal Incinerator,6,Fiend/ Effect,0.06
+Monster,1,Armed Dragon LV7,7,Dragon/ Effect,0.05
+Monster,1,Despair from the Dark,8,Zombie/ Effect,0.10
+Spell,1,Armed Changer,,,0.02
+Spell,1,Chaos End,,,0.06
+Spell,1,Chthonian Alliance,,,0.03
+Spell,1,Enchanting Fitting Room,,,0.02
+Spell,1,"Fiend's Sanctuary",,,0.05
+Spell,1,Frontline Base,,,0.02
+Spell,1,Giant Trunade,,,0.02
+Spell,1,Graceful Charity,,,2.46
+Spell,1,Inferno Reckless Summon,,,0.02
+Spell,1,Inferno Tempest,,,0.02
+Spell,1,Level Modulation,,,0.02
+Spell,1,Level Up!,,,0.60
+Spell,1,Limiter Removal,,,0.02
+Spell,1,Magical Mallet,,,0.35
+Spell,1,Ojama Delta Hurricane!!,,,0.02
+Spell,1,Ojamagic,,,0.05
+Spell,1,Ojamuscle,,,0.11
+Spell,1,Painful Choice,,,0.75
+Spell,1,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,Ring of Defense,,,0.08
+Spell,1,The Dark Door,,,0.18
+Spell,1,The Graveyard in the Fourth Dimension,,,0.02
+Spell,1,Thunder Crash,,,0.02
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Chthonian Blast,,,0.02
+Trap,1,Chthonian Polymer,,,0.04
+Trap,1,Ojama Trio,,,0.13
+Trap,1,Return from the Different Dimension,,,0.30
+Trap,1,Ring of Destruction,,,0.38
+Trap,1,The Grave of Enkindling,,,0.04
+Trap,1,Treasure Map,,,0.15
+Extra Deck,1,Ojama King,6,Beast/ Effect/ Fusion,0.47
+Extra Deck,1,VW-Tiger Catapult,6,Machine/ Effect/ Fusion,0.03
+Extra Deck,1,VWXYZ-Dragon Catapult Cannon,8,Machine/ Effect/ Fusion,0.06
+Extra Deck,1,XYZ-Dragon Cannon,8,Machine/ Effect/ Fusion,0.02

@@ -1,0 +1,60 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Cyber Valley,1,Machine/ Effect,0.02
+Monster,1,Cyber Ouroboros,2,Machine/ Effect,0.11
+Monster,1,Cyber Kirin,3,Machine/ Effect,0.05
+Monster,1,Exploder Dragon,3,Dragon/ Effect,0.05
+Monster,2,Heavy Mech Support Platform,3,Machine/ Effect/Union,0.02
+Monster,1,Proto-Cyber Dragon,3,Machine/ Effect,0.02
+Monster,1,Armored Cybern,4,Machine/ Effect/Union,0.02
+Monster,1,Cyber Phoenix,4,Machine/ Effect,0.02
+Monster,1,Cyber Soldier of Darkworld,4,Machine/ Normal,1.49
+Monster,1,Cyberdark Edge,4,Machine/ Effect,0.02
+Monster,1,Cyberdark Horn,4,Machine/ Effect,0.02
+Monster,1,Cyberdark Keel,4,Machine/ Effect,0.02
+Monster,1,Infernal Dragon,4,Dragon/ Effect,0.02
+Monster,3,Cyber Dragon,5,Machine/ Effect,0.02
+Monster,1,Cyber Barrier Dragon,6,Machine/ Effect,0.09
+Monster,1,Kaiser Glider,6,Dragon/ Effect,0.02
+Monster,1,Cyber Laser Dragon,7,Machine/ Effect,0.24
+Monster,3,Metallizing Parasite - Lunatite,7,Aqua/ Effect/Union,0.10
+Monster,1,Perfect Machine King,8,Machine/ Effect,2.85
+Spell,1,Battle Fusion,,,0.10
+Spell,1,Creature Swap,,,0.02
+Spell,1,Cybernetic Fusion Support,,,0.09
+Spell,1,Cybernetic Zone,,,0.07
+Spell,2,De-Fusion,,,0.02
+Spell,1,Different Dimension Capsule,,,0.02
+Spell,1,Dimension Explosion,,,0.05
+Spell,1,Future Fusion,,,0.02
+Spell,1,Graceful Charity,,,2.46
+Spell,1,Instant Fusion,,,0.24
+Spell,1,Limiter Removal,,,0.02
+Spell,2,Machine Duplication,,,0.06
+Spell,1,Megamorph,,,0.05
+Spell,1,Monster Reborn,,,0.02
+Spell,1,Mystical Space Typhoon,,,0.02
+Spell,1,Overload Fusion,,,0.02
+Spell,1,Photon Generator Unit,,,0.05
+Spell,2,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,2,Power Bond,,,0.02
+Spell,1,Ruthless Denial,,,0.27
+Trap,1,Attack Reflector Unit,,,0.05
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Cybernetic Hidden Technology,,,0.04
+Trap,1,Damage Polarizer,,,0.39
+Trap,3,Final Fusion,,,0.04
+Trap,1,Fusion Guard,,,0.04
+Trap,1,Power Wall,,,0.05
+Trap,2,Rare Metalmorph,,,0.03
+Trap,1,Rebirth Judgment,,,0.20
+Trap,1,Return Soul,,,0.06
+Trap,1,Trap Jammer,,,0.02
+Extra Deck,1,Twin-Headed Thunder Dragon,7,Thunder/ Fusion,0.29
+Extra Deck,1,Chimeratech Fortress Dragon,8,Machine/ Effect/ Fusion,0.97
+Extra Deck,1,Cyber Twin Dragon,8,Machine/ Effect/ Fusion,0.09
+Extra Deck,1,Cyberdark Dragon,8,Machine/ Effect/ Fusion,0.02
+Extra Deck,2,Chimeratech Overdragon,9,Machine/ Effect/ Fusion,0.02
+Extra Deck,3,Cyber End Dragon,10,Machine/ Effect/ Fusion,0.10
+Extra Deck,1,Five-Headed Dragon,12,Dragon/ Effect/ Fusion,0.39

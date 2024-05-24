@@ -1,0 +1,62 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Cyber Valley,1,Machine/ Effect,0.02
+Monster,1,Decoyroid,2,Machine/ Effect,0.29
+Monster,1,Ambulanceroid,3,Machine/ Effect,0.02
+Monster,2,Cycroid,3,Machine/ Normal,0.03
+Monster,1,Gyroid,3,Machine/ Effect,0.02
+Monster,1,Cyber Phoenix,4,Machine/ Effect,0.02
+Monster,1,Cyberdark Edge,4,Machine/ Effect,0.02
+Monster,1,Cyberdark Horn,4,Machine/ Effect,0.02
+Monster,1,Cyberdark Keel,4,Machine/ Effect,0.02
+Monster,1,Drillroid,4,Machine/ Effect,0.04
+Monster,1,Expressroid,4,Machine/ Effect,0.02
+Monster,1,Infernal Dragon,4,Dragon/ Effect,0.02
+Monster,1,Jetroid,4,Machine/ Effect,0.02
+Monster,1,Patroid,4,Machine/ Effect,0.02
+Monster,1,Stealthroid,4,Machine/ Effect,0.04
+Monster,1,Steamroid,4,Machine/ Effect,0.04
+Monster,1,Submarineroid,4,Machine/ Effect,0.04
+Monster,1,Thunder Nyan Nyan,4,Thunder/ Effect,0.28
+Monster,1,Truckroid,4,Machine/ Effect,0.02
+Monster,1,Cyber Dragon,5,Machine/ Effect,0.02
+Monster,1,UFOroid,6,Machine/ Effect,0.04
+Monster,1,Dragonroid,8,Machine/ Effect,0.11
+Spell,1,Burial from a Different Dimension,,,0.04
+Spell,1,Cyberdark Impact!,,,0.02
+Spell,1,De-Fusion,,,0.02
+Spell,1,Dimension Fusion,,,17.83
+Spell,1,Emergency Provisions,,,0.09
+Spell,1,Future Fusion,,,0.02
+Spell,1,Limiter Removal,,,0.02
+Spell,1,Mystical Space Typhoon,,,0.02
+Spell,1,Overload Fusion,,,0.02
+Spell,1,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,Power Bond,,,0.02
+Spell,1,Shield Crush,,,0.04
+Spell,1,Spell Economics,,,0.03
+Spell,1,Vehicroid Connection Zone,,,0.05
+Spell,1,Weapon Change,,,0.02
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Cyber Summon Blaster,,,0.02
+Trap,1,Fusion Guard,,,0.04
+Trap,1,Magic Cylinder,,,0.05
+Trap,1,Micro Ray,,,0.02
+Trap,1,No Entry!!,,,0.10
+Trap,1,Power Wall,,,0.05
+Trap,1,Rebirth Judgment,,,0.20
+Trap,1,Supercharge,,,0.04
+Trap,1,Trap Hole,,,0.02
+Trap,1,Wonder Garage,,,0.04
+Extra Deck,1,Pair Cycroid,5,Machine/ Effect/ Fusion,0.09
+Extra Deck,1,Ambulance Rescueroid,6,Machine/ Effect/ Fusion,0.05
+Extra Deck,1,Steam Gyroid,6,Machine/ Fusion,0.10
+Extra Deck,1,Chimeratech Fortress Dragon,8,Machine/ Effect/ Fusion,0.97
+Extra Deck,1,Cyber Twin Dragon,8,Machine/ Effect/ Fusion,0.09
+Extra Deck,2,Cyberdark Dragon,8,Machine/ Effect/ Fusion,0.02
+Extra Deck,1,Super Vehicroid Jumbo Drill,8,Machine/ Effect/ Fusion,0.04
+Extra Deck,1,Chimeratech Overdragon,9,Machine/ Effect/ Fusion,0.02
+Extra Deck,1,Super Vehicroid - Stealth Union,9,Machine/ Effect/ Fusion,0.06
+Extra Deck,1,Cyber End Dragon,10,Machine/ Effect/ Fusion,0.10
+Extra Deck,1,UFOroid Fighter,10,Machine/ Effect/ Fusion,0.10

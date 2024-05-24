@@ -113,7 +113,7 @@ function getSeriesChars(series){
                 'Bandit Keith',
                 'Bakura Ryou',
                 'Labyrinth Brothers',
-                'Pegasus J. Crawford',
+                'Pegasus J Crawford',
                 'Esper Roba',
                 'Pandora',
                 'Marik Ishtar',
@@ -150,11 +150,12 @@ function getSeriesChars(series){
                 //Season 2
                 'Edo Phoenix',
                 'Tyrano Kenzan',
+                'Rei Saotome',
                 'Saio Takuma',
 
                 //Season 3
                 'Johan Andersen',
-                'Austin O\'Brien',
+                'Austin O Brien',
                 'Jim Crocodile Cook',
                 'Amon Garam',
                 'Supreme King',

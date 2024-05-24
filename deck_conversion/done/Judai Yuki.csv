@@ -1,0 +1,171 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Arcana Force 0 - The Fool,1,Fairy/ Effect,0.03
+Monster,1,Winged Kuriboh,1,Fairy/ Effect,0.04
+Monster,1,Chrysalis Chicky,2,Winged Beast/ Effect,0.07
+Monster,1,Chrysalis Dolphin,2,Fish/ Effect,0.05
+Monster,1,Chrysalis Larva,2,Insect/ Effect,0.08
+Monster,1,Chrysalis Mole,2,Rock/ Effect,0.11
+Monster,1,Chrysalis Pantail,2,Beast/ Effect,0.19
+Monster,1,Chrysalis Pinny,2,Plant/ Effect,0.08
+Monster,1,Cross Porter,2,Warrior/ Effect,0.02
+Monster,3,Hero Kid,2,Warrior/ Effect,0.02
+Monster,1,Ojama Black,2,Beast/ Normal,0.02
+Monster,1,Ojama Green,2,Beast/ Normal,0.08
+Monster,1,Ojama Yellow,2,Beast/ Normal,0.02
+Monster,1,Skelengel,2,Fairy/ Effect/Flip,0.02
+Monster,1,Armor Breaker,3,Warrior/ Effect/Union,0.05
+Monster,1,Card Blocker,3,Warrior/ Effect,0.10
+Monster,2,Card Trooper,3,Machine/ Effect,0.02
+Monster,1,Dandylion,3,Plant/ Effect,0.75
+Monster,1,Elemental HERO Avian,3,Warrior/ Normal,0.02
+Monster,1,Elemental HERO Burstinatrix,3,Warrior/ Normal,0.02
+Monster,1,Necro Gardna,3,Warrior/ Effect,0.09
+Monster,1,Neo-Spacian Air Hummingbird,3,Winged Beast/ Effect,0.39
+Monster,1,Neo-Spacian Aqua Dolphin,3,Warrior/ Effect,0.07
+Monster,1,Neo-Spacian Dark Panther,3,Beast/ Effect,0.50
+Monster,1,Neo-Spacian Flare Scarab,3,Insect/ Effect,0.19
+Monster,1,Neo-Spacian Glow Moss,3,Plant/ Effect,0.02
+Monster,1,Neo-Spacian Grand Mole,3,Rock/ Effect,0.02
+Monster,1,Oscillo Hero,3,Warrior/ Normal,0.09
+Monster,1,Rallis the Star Bird,3,Winged Beast/ Effect,0.19
+Monster,1,Spell Striker,3,Warrior/ Effect,0.04
+Monster,1,Wroughtweiler,3,Machine/ Effect,0.02
+Monster,1,Beaver Warrior,4,Beast/Warrior/ Normal,0.02
+Monster,1,Dark Catapulter,4,Machine/ Effect,0.04
+Monster,2,Elemental HERO Bubbleman,4,Warrior/ Effect,0.12
+Monster,1,Elemental HERO Clayman,4,Warrior/ Normal,0.04
+Monster,1,Elemental HERO Prisma,4,Warrior/ Effect,0.70
+Monster,1,Elemental HERO Sparkman,4,Warrior/ Normal,0.05
+Monster,1,Elemental HERO Wildheart,4,Warrior/ Effect,0.05
+Monster,1,Freed the Brave Wanderer,4,Warrior/ Effect,1.43
+Monster,1,Honest,4,Fairy/ Effect,0.02
+Monster,1,Elemental HERO Necroshade,5,Warrior/ Effect,0.05
+Monster,1,Elemental HERO Bladedge,7,Warrior/ Effect,0.02
+Monster,1,Elemental HERO Neos,7,Warrior/ Normal,0.05
+Monster,1,Rainbow Dragon,10,Dragon/ Effect,0.02
+Monster,1,Winged Kuriboh LV10,10,Fairy/ Effect,0.30
+Spell,1,Assault Armor,,,0.25
+Spell,1,Battle Fusion,,,0.10
+Spell,1,Bubble Blaster,,,1.50
+Spell,1,Bubble Illusion,,,0.15
+Spell,1,Bubble Shuffle,,,0.03
+Spell,1,Burial from a Different Dimension,,,0.04
+Spell,1,Burst Return,,,0.48
+Spell,1,Cocoon Party,,,0.05
+Spell,1,Common Soul,,,0.02
+Spell,1,Contact,,,0.07
+Spell,1,Contact Out,,,0.13
+Spell,1,Convert Contact,,,0.11
+Spell,1,Cyclone Boomerang,,,0.05
+Spell,1,Dark Factory of Mass Production,,,0.05
+Spell,1,De-Fusion,,,0.02
+Spell,1,E - Emergency Call,,,0.25
+Spell,1,Emergency Provisions,,,0.09
+Spell,1,EN Shuffle,,,0.50
+Spell,1,Fairy of the Spring,,,0.05
+Spell,1,Fake Hero,,,0.05
+Spell,1,Feather Shot,,,0.13
+Spell,1,Fifth Hope,,,0.10
+Spell,1,Fusion Gate,,,0.05
+Spell,1,Fusion Recovery,,,0.06
+Spell,2,Fusion Sage,,,0.06
+Spell,1,Gift of the Martyr,,,0.04
+Spell,1,Graceful Charity,,,2.46
+Spell,1,H - Heated Heart,,,0.02
+Spell,1,Hero Flash!!,,,0.02
+Spell,1,Hero Heart,,,0.10
+Spell,1,Hero Mask,,,0.05
+Spell,1,Instant Fusion,,,0.24
+Spell,1,Instant Neo Space,,,0.06
+Spell,1,Kishido Spirit,,,0.22
+Spell,1,Light Laser,,,0.22
+Spell,1,Metamorphosis,,,10.29
+Spell,1,Miracle Fusion,,,0.02
+Spell,1,Mirage of Nightmare,,,0.77
+Spell,1,Mirage Tube,,,0.05
+Spell,1,Monster Reborn,,,0.02
+Spell,1,Monster Reincarnation,,,0.02
+Spell,1,Mystik Wok,,,2.29
+Spell,1,Neo Space,,,0.20
+Spell,1,Neos Force,,,0.10
+Spell,1,NEX,,,0.12
+Spell,1,O - Oversoul,,,0.02
+Spell,1,Ojama Delta Hurricane!!,,,0.02
+Spell,2,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,R - Righteous Justice,,,0.02
+Spell,1,Rainbow Veil,,,0.15
+Spell,1,Reverse of Neos,,,0.12
+Spell,1,Revoke Fusion,,,0.14
+Spell,1,"Sabatiel - The Philosopher's Stone",,,0.04
+Spell,1,Silent Doom,,,0.02
+Spell,1,Skyscraper,,,0.02
+Spell,1,Skyscraper 2 - Hero City,,,0.10
+Spell,1,Space Gift,,,0.20
+Spell,1,Spark Blaster,,,0.09
+Spell,1,Special Hurricane,,,0.05
+Spell,1,Spell Calling,,,0.05
+Spell,1,Super Polymerization,,,4.45
+Spell,1,Swing of Memories,,,0.04
+Spell,1,The Flute of Summoning Kuriboh,,,0.10
+Spell,1,The Shallow Grave,,,0.03
+Spell,1,The Warrior Returning Alive,,,0.02
+Spell,1,Transcendent Wings,,,0.22
+Trap,1,A Hero Emerges,,,0.02
+Trap,1,Alchemy Cycle,,,0.10
+Trap,1,Call of the Haunted,,,0.02
+Trap,1,Change of Hero - Reflector Ray,,,0.04
+Trap,1,Clay Charge,,,0.08
+Trap,1,Cocoon Veil,,,0.05
+Trap,1,Draining Shield,,,0.02
+Trap,1,Edge Hammer,,,0.25
+Trap,1,Elemental Burst,,,0.02
+Trap,1,Feather Wind,,,0.02
+Trap,1,Final Fusion,,,0.04
+Trap,1,Hero Barrier,,,0.09
+Trap,1,Hero Counterattack,,,0.02
+Trap,1,Hero Medal,,,0.05
+Trap,1,Hero Ring,,,0.04
+Trap,1,Hero Signal,,,0.02
+Trap,1,Hero Spirit,,,0.05
+Trap,1,"Hero's Rule 2",,,0.02
+Trap,1,Kid Guard,,,0.10
+Trap,1,Miracle Kids,,,0.02
+Trap,2,Mirror Force,,,0.10
+Trap,1,Mirror Gate,,,0.10
+Trap,1,Negate Attack,,,0.02
+Trap,1,Over Limit,,,0.02
+Trap,1,Solemn Judgment,,,0.75
+Trap,1,Staunch Defender,,,0.05
+Trap,1,Super Junior Confrontation,,,0.10
+Trap,1,Trap Hole,,,0.02
+Extra Deck,1,Elemental HERO Neo Bubbleman,4,Warrior/ Effect,0.33
+Extra Deck,1,Neo-Spacian Marine Dolphin,4,Warrior/ Effect/ Fusion,0.52
+Extra Deck,1,Neo-Spacian Twinkle Moss,4,Plant/ Effect/ Fusion,0.15
+Extra Deck,1,Elemental HERO Mariner,5,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Elemental HERO Steam Healer,5,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Ojama Knight,5,Beast/ Effect/ Fusion,0.22
+Extra Deck,1,Elemental HERO Darkbright,6,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Elemental HERO Flame Wingman,6,Warrior/ Effect/ Fusion,0.07
+Extra Deck,1,Elemental HERO Mudballman,6,Warrior/ Effect/ Fusion,2.50
+Extra Deck,1,Elemental HERO Necroid Shaman,6,Warrior/ Effect/ Fusion,0.09
+Extra Deck,1,Elemental HERO Rampart Blaster,6,Warrior/ Effect/ Fusion,0.06
+Extra Deck,2,Elemental HERO Thunder Giant,6,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Elemental HERO Air Neos,7,Warrior/ Effect/ Fusion,17.95
+Extra Deck,1,Elemental HERO Aqua Neos,7,Warrior/ Effect/ Fusion,1.00
+Extra Deck,1,Elemental HERO Dark Neos,7,Warrior/ Effect/ Fusion,0.75
+Extra Deck,1,Elemental HERO Flare Neos,7,Warrior/ Effect/ Fusion,1.00
+Extra Deck,1,Elemental HERO Glow Neos,7,Warrior/ Effect/ Fusion,2.50
+Extra Deck,1,Elemental HERO Grand Neos,7,Warrior/ Effect/ Fusion,2.50
+Extra Deck,1,Elemental HERO Marine Neos,8,Warrior/ Effect/ Fusion,2.00
+Extra Deck,1,Elemental HERO Plasma Vice,8,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Elemental HERO Shining Flare Wingman,8,Warrior/ Effect/ Fusion,0.06
+Extra Deck,1,Elemental HERO Tempest,8,Warrior/ Effect/ Fusion,0.09
+Extra Deck,1,Elemental HERO Wild Wingman,8,Warrior/ Effect/ Fusion,0.10
+Extra Deck,1,Elemental HERO Wildedge,8,Warrior/ Effect/ Fusion,0.49
+Extra Deck,1,Elemental HERO Magma Neos,9,Warrior/ Effect/ Fusion,0.18
+Extra Deck,1,Elemental HERO Electrum,10,Warrior/ Effect/ Fusion,0.12
+Extra Deck,1,Neos Wiseman,10,Spellcaster/ Effect,0.57
+Extra Deck,1,Rainbow Neos,10,Warrior/ Effect/ Fusion,0.39
+Extra Deck,1,Elemental HERO Divine Neos,12,Warrior/ Effect/ Fusion,1.20

@@ -1,0 +1,10 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Cyber Raider,4,Machine/ Effect,0.04
+Monster,1,Reflect Bounder,4,Machine/ Effect,0.07
+Monster,1,Jinzo,6,Machine/ Effect,0.07
+Monster,1,The Fiend Megacyber,6,Warrior/ Effect,0.06
+Spell,1,Amplifier,,,0.02
+Spell,1,Brain Control,,,0.03
+Spell,1,Mesmeric Control,,,0.05
+Spell,1,Mind Control,,,0.10

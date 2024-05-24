@@ -1,0 +1,18 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Arcana Force I - The Magician,4,Fairy/ Effect,0.02
+Monster,1,Arcana Force III - The Empress,4,Fairy/ Effect,0.04
+Monster,1,Arcana Force IV - The Emperor,4,Fairy/ Effect,0.02
+Monster,1,Arcana Force VI - The Lovers,4,Fairy/ Effect,0.05
+Monster,1,Arcana Force VII - The Chariot,4,Fairy/ Effect,0.03
+Monster,1,Arcana Force XIV - Temperance,6,Fairy/ Effect,0.02
+Monster,1,Arcana Force XVIII - The Moon,7,Fairy/ Effect,0.04
+Monster,1,Arcana Force XXI - The World,8,Fairy/ Effect,0.99
+Monster,1,Arcana Force EX - The Dark Ruler,10,Fairy/ Effect,0.53
+Monster,1,Arcana Force EX - The Light Ruler,10,Fairy/ Effect,0.26
+Spell,1,Cup of Ace,,,0.46
+Spell,1,Light Barrier,,,0.03
+Spell,1,Monster Reincarnation,,,0.02
+Trap,1,Arcana Call,,,0.03
+Trap,1,Reversal of Fate,,,0.02
+Trap,1,Tour of Doom,,,0.79

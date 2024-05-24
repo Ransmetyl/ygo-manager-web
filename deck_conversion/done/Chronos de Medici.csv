@@ -1,0 +1,30 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,2,Ancient Gear,2,Machine/ Effect,0.02
+Monster,1,Ancient Gear Cannon,2,Machine/ Effect,0.02
+Monster,3,Ancient Gear Soldier,4,Machine/ Effect,0.05
+Monster,1,The Trojan Horse,4,Beast/ Effect,0.02
+Monster,1,Ancient Gear Engineer,5,Machine/ Effect,0.05
+Monster,1,Ancient Gear Beast,6,Machine/ Effect,0.20
+Monster,1,Emes the Infinity,7,Machine/ Effect,0.50
+Monster,3,Ancient Gear Golem,8,Machine/ Effect,0.02
+Spell,1,Ancient Gear Castle,,,0.10
+Spell,1,Ancient Gear Drill,,,0.19
+Spell,1,Ancient Gear Explosive,,,2.87
+Spell,1,Ancient Gear Factory,,,0.02
+Spell,1,Ancient Gear Fist,,,0.30
+Spell,1,Ancient Gear Tank,,,0.95
+Spell,1,Ancient Gear Workshop,,,0.15
+Spell,1,Confiscation,,,1.50
+Spell,1,Graceful Charity,,,2.46
+Spell,1,Heavy Storm,,,0.02
+Spell,1,Limiter Removal,,,0.02
+Spell,1,Magnet Circle LV2,,,0.14
+Spell,1,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,Premature Burial,,,0.05
+Spell,1,Spell Gear,,,0.04
+Trap,1,Damage Condenser,,,0.02
+Trap,2,Statue of the Wicked,,,0.04
+Trap,1,Zero Gravity,,,0.02
+Extra Deck,1,Ultimate Ancient Gear Golem,10,Machine/ Effect/ Fusion,0.02

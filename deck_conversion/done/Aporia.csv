@@ -1,0 +1,12 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Meklord Emperor Granel,1,Machine/ Effect,0.03
+Monster,1,Meklord Emperor Skiel,1,Machine/ Effect,0.04
+Monster,1,Meklord Emperor Wisel,1,Machine/ Effect,0.02
+Monster,1,Meklord Army of Granel,4,Machine/ Effect,0.02
+Monster,1,Meklord Army of Skiel,4,Machine/ Effect,0.02
+Monster,1,Meklord Army of Wisel,4,Machine/ Effect,0.02
+Monster,1,Meklord Astro Dragon Asterisk,10,Machine/ Effect,0.02
+Monster,1,Meklord Astro Mekanikle,12,Machine/ Effect,0.02
+Spell,2,Afterglow,,,0.03
+Spell,1,Boon of the Meklord Emperor,,,0.02

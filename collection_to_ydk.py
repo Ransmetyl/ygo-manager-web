@@ -1,10 +1,11 @@
 import csv
 import requests
-
+import os
+from tqdm import tqdm
 
 def read_names(deck):
     names = []
-    path = f"./csv/{deck}.csv"
+    path = f"./owned_conversion/{deck}.csv"
     with open(path,"r") as csv_file:
         file = csv.reader(csv_file)
         skip = 1
@@ -12,8 +13,8 @@ def read_names(deck):
             if(skip == 1 or skip==2):
                 skip = skip+1
             else:
-                for value in range(int(line[1])): 
-                    names.append(line[2])
+                for _ in range(int(line[1])): 
+                    names.append(line[3])
     
     return names
 
@@ -37,7 +38,7 @@ def get_card_by_name(name):
 
 def write_ydk(deck, data):
     data_string = ""
-    path = f"./decks/{deck}.ydk"
+    path = f"./owned_conversion/{deck}.ydk"
     for e in data:
         data_string += f"{e}\n"
     with open(path, "w") as ydk_file:
@@ -53,22 +54,44 @@ def convert(deck):
     names = read_names(deck)
 
     for name in tqdm(names, desc="Processing names"):
+        # parse any special characters in the name to be URL-safe
+        if name == 'Armityle the Chaos Phantasm':
+            name = 'Armityle the Chaos Phantom'
+        name = requests.utils.quote(name)
         ids.append(get_card_by_name(name))
         time.sleep(0.1)
 
     write_ydk(deck, ids)
 
+#fix Armytile the Chaos Phantasm
 
+
+def convert_all():
+    path = os.path.join(os.getcwd(),"owned_conversion")
+
+    for file in os.listdir(path):
+        if file.endswith(".csv"):
+            deck = file.split(".")[0]
+            print(f"Converting {deck}...")
+            convert(deck)
+            print(f"{deck} converted!")
+            print("\n\n")
+            # move the file to the converted folder
+            os.rename(f"./owned_conversion/{deck}.csv", f"./owned_conversion/done/{deck}.csv")
     
 
 if __name__ == "__main__":
-    import os
-    from tqdm import tqdm
+    #convert_all()
+    from firebase import add_all_owned
+    
+    path = os.path.join(os.getcwd(),"owned_conversion")
 
-    print(os.curdir)
-    dir = os.path.join(os.curdir,"csv")
-    for filename in tqdm(dir,desc=f"Processing decks" ):
-        if os.path.isfile(os.path.join(dir, filename)):
-            file_root, file_ext = os.path.splitext(filename)
-            convert(file_root)
-            print(f'[Converted] {file_root}.csv to {file_root}.ydk')
+    for file in os.listdir(path):
+        if file.endswith('ydk'):
+            deck = file.split(".")[0]
+            print(f"Adding {deck} to owned...")
+            add_all_owned(f"./owned_conversion/{deck}.ydk")
+            print(f"{deck} added!")
+            print("\n\n")
+            # move the file to the converted folder
+            os.rename(f"./owned_conversion/{deck}.ydk", f"./owned_conversion/backup/{deck}.ydk")

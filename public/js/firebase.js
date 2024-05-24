@@ -32,6 +32,54 @@ async function getCard(id){
     });
 }
 
+async function getAllDecks(){
+    //returns a promise with all the cards in every deck in the database
+    return new Promise((resolve, reject) => {
+        get(child(ref(db), `decks`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                resolve(snapshot.val());
+            } else {
+                console.log("Nessuna carta trovata.");
+                reject("Nessuna carta trovata.");
+            }
+        }).catch((error) => {
+            console.error("Errore durante la ricerca della carta:", error);
+            reject(error);
+        });
+    });
+}
+
+function getAllDeckCards() {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const decks = await getAllDecks();
+            let cards = {};
+            for (const deck in decks) {
+                const deckCards = Object.values(decks[deck]);
+                deckCards.forEach(card => {
+                    if (cards[card.id]) {
+                        cards[card.id].quantity += card.quantity;
+                    } else {
+                        cards[card.id] = { ...card };
+                    }
+                });
+            }
+            
+            const sortedCards = defaulSort(Object.values(cards));
+
+            resolve(sortedCards);
+        } catch (error) {
+            console.error("Errore durante il recupero del deck:", error);
+            //manda un alert con l'errore
+            alert("Errore durante il recupero del deck: ",error);
+          
+            reject([]);
+        }
+    });
+}
+
+
+
 async function getOwnedIds(){
     return new Promise((resolve, reject) => {
         get(child(ref(db), `owned`)).then((snapshot) => {
@@ -147,6 +195,4 @@ async function countOwnedCards(){
     return count;
 }
 
-export {getCard, getOwnedCards, getDeckCards, getCompletionPercentage,countDeckCards, getOwnedQuantity,countOwnedCards};
-
-
+export {getCard, getOwnedCards, getDeckCards, getCompletionPercentage,countDeckCards, getOwnedQuantity,countOwnedCards, getAllDeckCards};

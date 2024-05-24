@@ -1,0 +1,18 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,3,Volcanic Rat,1,Pyro/ Normal,0.08
+Monster,2,Volcanic Shell,1,Pyro/ Effect,0.02
+Monster,3,Volcanic Scattershot,2,Pyro/ Effect,0.16
+Monster,1,Fire Trooper,3,Warrior/ Effect,0.05
+Monster,1,Volcanic Blaster,3,Pyro/ Effect,0.02
+Monster,1,Volcanic Counter,3,Pyro/ Effect,5.32
+Monster,1,Volcanic Slicer,4,Pyro/ Effect,2.08
+Monster,1,Volcanic Hammerer,5,Pyro/ Effect,0.02
+Monster,1,Volcanic Doomfire,8,Pyro/ Effect,0.02
+Monster,1,Infernal Flame Emperor,9,Pyro/ Effect,0.04
+Spell,1,Blaze Accelerator,,,0.02
+Spell,1,Burial from a Different Dimension,,,0.04
+Spell,1,Soul of Fire,,,0.04
+Spell,1,Tri-Blaze Accelerator,,,0.02
+Spell,1,Wild Fire,,,0.14
+Trap,1,Firewall,,,0.05

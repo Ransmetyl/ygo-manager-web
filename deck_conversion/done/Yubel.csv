@@ -1,0 +1,25 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Grave Squirmer,1,Fiend/ Effect,0.02
+Monster,1,Samsara Lotus,1,Plant/ Effect,0.08
+Monster,1,Giant Germ,2,Fiend/ Effect,0.24
+Monster,1,Chaos Core,3,Fiend/ Effect,0.28
+Monster,1,Phantom of Chaos,4,Fiend/ Effect,0.02
+Monster,1,Dark Summoning Beast,5,Fiend/ Effect,0.02
+Monster,1,Infernal Incinerator,6,Fiend/ Effect,0.06
+Monster,1,Maju Garzett,7,Fiend/ Effect,0.10
+Monster,1,Regenerating Rose,7,Plant/ Effect,0.03
+Monster,1,Grinder Golem,8,Fiend/ Effect,0.30
+Monster,1,Lava Golem,8,Fiend/ Effect,0.20
+Monster,1,Infernal Flame Emperor,9,Pyro/ Effect,0.04
+Monster,1,"Raviel, Lord of Phantasms",10,Fiend/ Effect,0.20
+Monster,1,Yubel,10,Fiend/ Effect,6.02
+Monster,1,Gate Guardian,11,Warrior/ Effect,0.04
+Monster,1,Yubel - Terror Incarnate,11,Fiend/ Effect,1.57
+Monster,1,Yubel - The Ultimate Nightmare,12,Fiend/ Effect,1.41
+Spell,1,Mystical Space Typhoon,,,0.02
+Spell,1,Spell Chronicle,,,0.05
+Spell,1,Super Polymerization,,,4.45
+Trap,1,Chain Material,,,0.39
+Trap,1,Hate Buster,,,0.20
+Trap,1,Sinister Seeds,,,0.05

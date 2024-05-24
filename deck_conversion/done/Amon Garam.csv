@@ -1,0 +1,27 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Cloudian - Ghost Fog,1,Fiend/ Effect,0.02
+Monster,2,Cloudian - Sheep Cloud,1,Fairy/ Effect,0.02
+Monster,1,Left Arm of the Forbidden One,1,Spellcaster/ Normal,0.28
+Monster,1,Left Leg of the Forbidden One,1,Spellcaster/ Normal,0.19
+Monster,1,Right Arm of the Forbidden One,1,Spellcaster/ Normal,0.98
+Monster,1,Right Leg of the Forbidden One,1,Spellcaster/ Normal,0.50
+Monster,1,Cloudian - Poison Cloud,3,Fiend/ Effect,0.08
+Monster,1,Deep Diver,3,Aqua/ Effect,0.02
+Monster,1,Exodia the Forbidden One,3,Spellcaster/ Effect,0.57
+Monster,1,Vortex Trooper,3,Aqua/ Effect,0.03
+Monster,1,Cloudian - Nimbusman,5,Fairy/ Effect,0.02
+Monster,1,Fog King,7,Spellcaster/ Effect,0.04
+Monster,1,Cloudian - Eye of the Typhoon,8,Aqua/ Effect,0.02
+Monster,1,Exodius the Ultimate Forbidden Lord,10,Spellcaster/ Effect,0.23
+Spell,1,A Feather of the Phoenix,,,0.02
+Spell,1,Burden of the Mighty,,,0.02
+Spell,1,Diamond-Dust Cyclone,,,0.04
+Spell,1,Lucky Cloud,,,0.02
+Spell,1,Magical Mallet,,,0.35
+Spell,1,Pot of Avarice,,,0.35
+Spell,1,Summon Cloud,,,0.02
+Trap,1,Backup Soldier,,,0.05
+Trap,1,Dimensional Prison,,,2.60
+Trap,1,Natural Disaster,,,0.10
+Trap,1,Rain Storm,,,0.02

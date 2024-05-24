@@ -1,0 +1,18 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Second Goblin,1,Fiend/ Effect/Union,0.09
+Monster,2,Des Koala,3,Beast/ Effect,0.05
+Monster,1,Des Kangaroo,4,Beast/ Effect,0.02
+Monster,3,Big Koala,7,Beast/ Normal,0.04
+Spell,1,Ayers Rock Sunrise,,,0.05
+Spell,1,De-Fusion,,,0.02
+Spell,1,Dian Keto the Cure Master,,,0.04
+Spell,1,Polymerization,,,0.02
+Spell,1,Pot of Greed,,,0.70
+Spell,1,Scapegoat,,,0.04
+Spell,1,Silent Doom,,,0.02
+Spell,1,The Big March of Animals,,,0.09
+Spell,1,"Wild Nature's Release",,,0.05
+Trap,1,Beast Soul Swap,,,0.03
+Trap,1,Destruction Punch,,,0.05
+Extra Deck,1,Master of Oz,9,Beast/ Fusion,0.10

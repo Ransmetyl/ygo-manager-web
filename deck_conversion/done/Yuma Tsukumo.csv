@@ -1,0 +1,173 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Acorno,1,Plant/ Effect,0.03
+Monster,1,Amarylease,1,Plant/ Effect,0.09
+Monster,1,Darklon,1,Fiend/ Effect,0.02
+Monster,1,DZW - Chimera Clad,1,Fiend/ Effect,0.04
+Monster,1,Explossum,1,Beast/ Effect,0.15
+Monster,3,Kurivolt,1,Thunder/ Effect,0.13
+Monster,1,Pinecono,1,Plant/ Effect,0.02
+Monster,1,Rainbow Kuriboh,1,Fiend/ Effect,0.24
+Monster,1,Spell Recycler,1,Spellcaster/ Effect,0.02
+Monster,1,Stinging Swordsman,1,Warrior/ Effect,0.05
+Monster,1,ZS - Vanish Sage,1,Warrior/ Effect,0.04
+Monster,1,Bacon Saver,2,Zombie/ Effect,0.05
+Monster,1,Caligo Claw Crow,2,Winged Beast/ Effect,0.10
+Monster,1,Cardcar D,2,Machine/ Effect,0.02
+Monster,1,Chow Chow Chan,2,Beast/ Effect,0.10
+Monster,1,Flelf,2,Spellcaster/ Effect,0.02
+Monster,1,Gagaga Child,2,Spellcaster/ Effect,0.03
+Monster,1,Gagaga Clerk,2,Warrior/ Effect,0.89
+Monster,1,Interceptomato,2,Plant/ Effect,0.02
+Monster,1,Magical Undertaker,2,Spellcaster/ Effect/Flip,0.02
+Monster,1,Mogmole,2,Beast/ Effect,0.05
+Monster,1,Overlay Eater,2,Reptile/ Effect,0.02
+Monster,1,Xyz Agent,2,Spellcaster/ Effect,0.02
+Monster,1,Achacha Archer,3,Warrior/ Effect,0.02
+Monster,1,Achacha Chanbara,3,Warrior/ Effect,0.12
+Monster,1,Bachibachibachi,3,Insect/ Effect,0.13
+Monster,1,Bite Bug,3,Insect/ Effect,0.11
+Monster,1,Crane Crane,3,Winged Beast/ Effect,0.02
+Monster,1,Damage Mage,3,Spellcaster/ Effect,0.03
+Monster,1,Dotedotengu,3,Fiend/ Effect,0.02
+Monster,1,Gagaga Caesar,3,Warrior/ Effect,0.12
+Monster,1,Gagaga Girl,3,Spellcaster/ Effect,0.32
+Monster,1,Mimimic,3,Machine/ Effect,0.04
+Monster,1,Rai Rider,3,Thunder/ Effect,0.02
+Monster,1,Zubaba Buster,3,Warrior/ Effect,0.02
+Monster,1,Zubaba Knight,3,Warrior/ Effect,0.02
+Monster,1,ZW - Phoenix Bow,3,Winged Beast/ Effect,0.26
+Monster,1,Bull Blader,4,Warrior/ Effect,0.05
+Monster,1,Dododo Bot,4,Machine/ Effect,0.05
+Monster,1,Doggy Diver,4,Warrior/ Effect,0.02
+Monster,1,Gagaga Gardna,4,Warrior/ Effect,0.05
+Monster,2,Gagaga Magician,4,Spellcaster/ Effect,0.02
+Monster,2,Ganbara Knight,4,Warrior/ Effect,0.14
+Monster,1,Goblindbergh,4,Warrior/ Effect,0.10
+Monster,1,Gogogo Ghost,4,Zombie/ Effect,0.15
+Monster,1,Gogogo Giant,4,Rock/ Effect,0.02
+Monster,1,Gogogo Gigas,4,Rock/ Effect,0.02
+Monster,1,Gogogo Golem,4,Rock/ Effect,0.02
+Monster,1,Gogogo Golem - Golden Form,4,Rock/ Effect,0.15
+Monster,1,Grandram,4,Rock/ Effect,0.15
+Monster,1,Kagetokage,4,Reptile/ Effect,0.02
+Monster,1,Overlay Owl,4,Winged Beast/ Effect,0.02
+Monster,1,Tasuke Knight,4,Warrior/ Effect,0.02
+Monster,1,Tatakawa Knight,4,Warrior/ Effect,0.02
+Monster,2,Toy Knight,4,Machine/ Effect,0.02
+Monster,1,V Salamander,4,Spellcaster/ Effect,0.02
+Monster,1,ZW - Asura Strike,4,Fairy/ Effect,0.45
+Monster,1,ZW - Sleipnir Mail,4,Beast/ Effect,0.02
+Monster,1,ZW - Sylphid Wing,4,Beast/ Effect,0.02
+Monster,1,ZW - Ultimate Shield,4,Aqua/ Effect,0.02
+Monster,1,ZW - Unicorn Spear,4,Beast/ Effect,0.02
+Monster,1,Ganbara Lancer,5,Warrior/ Effect,0.19
+Monster,1,ZW - Eagle Claw,5,Winged Beast/ Effect,0.02
+Monster,1,ZW - Lightning Blade,5,Beast/ Effect,1.49
+Monster,1,ZW - Tornado Bringer,5,Dragon/ Effect,0.05
+Monster,1,Chachaka Archer,6,Warrior/ Effect,0.02
+Monster,1,Dododo Buster,6,Warrior/ Effect,0.02
+Monster,1,Dododo Warrior,6,Warrior/ Effect,0.02
+Monster,1,Gillagillancer,6,Warrior/ Effect,0.02
+Monster,1,Dododo Swordsman,8,Warrior/ Effect,0.12
+Monster,1,Swordsman of Revealing Light,8,Warrior/ Effect,0.30
+Spell,1,Attraffic Control,,,0.02
+Spell,2,Blustering Winds,,,0.02
+Spell,1,Bound Wand,,,0.02
+Spell,1,Cross Attack,,,0.02
+Spell,1,Dian Keto the Cure Master,,,0.04
+Spell,1,Double Defender,,,0.38
+Spell,1,Double or Nothing!,,,0.02
+Spell,1,Ego Boost,,,0.02
+Spell,1,Full-Force Strike,,,0.05
+Spell,1,Gagagaback,,,0.14
+Spell,1,Gagagabolt,,,0.02
+Spell,1,Gagagadraw,,,0.18
+Spell,1,Gagagarevenge,,,0.03
+Spell,1,Gagagatag,,,0.05
+Spell,1,Gogogo Talisman,,,0.15
+Spell,1,Level Lifter,,,0.02
+Spell,1,Magnum Shield,,,0.02
+Spell,1,Mini-Guts,,,0.03
+Spell,2,Monster Reborn,,,0.02
+Spell,1,Monster Slots,,,0.02
+Spell,1,One-Shot Wand,,,0.06
+Spell,1,Rank-Down-Magic Numeron Fall,,,0.25
+Spell,1,Rank-Up-Magic Astral Force,,,0.16
+Spell,1,"Rank-Up-Magic Limited Barian's Force",,,0.19
+Spell,1,Rank-Up-Magic Numeron Force,,,0.80
+Spell,1,Reverse Breaker,,,0.06
+Spell,1,"Star Light, Star Bright",,,0.03
+Spell,1,Swords of Burning Light,,,0.02
+Spell,1,Thunder Short,,,0.03
+Spell,1,Tornado,,,0.02
+Spell,2,Wonder Wand,,,0.02
+Spell,1,Xyz Double Back,,,0.15
+Spell,1,Xyz Reception,,,0.04
+Spell,1,Xyz Revenge,,,0.29
+Spell,1,Xyz Shift,,,0.15
+Spell,1,Zerozerock,,,0.05
+Spell,1,Zexal Catapult,,,0.03
+Trap,1,Battle Break,,,0.09
+Trap,1,Burst Rebirth,,,0.02
+Trap,1,Bye Bye Damage,,,0.10
+Trap,1,Commander of Swords,,,0.02
+Trap,1,Copy Knight,,,0.02
+Trap,1,Counterforce,,,0.02
+Trap,1,Damage Diet,,,0.10
+Trap,1,Fiery Fervor,,,0.02
+Trap,1,Gagagaguard,,,0.24
+Trap,1,Gagagarush,,,0.15
+Trap,1,Gagagashield,,,0.30
+Trap,1,Gamushara,,,0.02
+Trap,1,Goblin Out of the Frying Pan,,,0.02
+Trap,1,Guard Go!,,,0.12
+Trap,1,Half Unbreak,,,0.13
+Trap,1,Halfway to Forever,,,0.10
+Trap,1,Heartfelt Appeal,,,0.02
+Trap,1,Hi-Five the Sky,,,0.35
+Trap,1,Impenetrable Attack,,,0.03
+Trap,1,Just Desserts,,,0.02
+Trap,1,Memory Loss,,,0.02
+Trap,1,Mirror Mail,,,0.02
+Trap,1,Nitwit Outwit,,,0.02
+Trap,1,Pinpoint Guard,,,0.02
+Trap,1,Purge Ray,,,0.04
+Trap,1,Puzzle Reborn,,,0.02
+Trap,1,"Release, Reverse, Burst",,,0.06
+Trap,1,Reverse Glasses,,,0.02
+Trap,1,Secret Barrel,,,2.17
+Trap,1,Soul Strike,,,0.02
+Trap,1,Xyz Reborn,,,0.02
+Trap,1,Xyz Reflect,,,0.10
+Trap,1,Xyz Revenge Shuffle,,,0.20
+Extra Deck,1,Number F0: Utopic Future,0,Warrior/ Effect/ Xyz,0.17
+Extra Deck,1,Baby Tiragon,1,Dragon/ Effect/ Xyz,0.05
+Extra Deck,1,Number 100: Numeron Dragon,1,Dragon/ Effect/ Xyz,0.10
+Extra Deck,1,Number 54: Lion Heart,1,Warrior/ Effect/ Xyz,0.41
+Extra Deck,1,Number 64: Ronin Raccoon Sandayu,2,Beast/ Effect/ Xyz,1.84
+Extra Deck,1,Number 96: Dark Mist,2,Fiend/ Effect/ Xyz,0.15
+Extra Deck,1,Melomelody the Brass Djinn,3,Fiend/ Effect/ Xyz,0.09
+Extra Deck,1,Muzurhythm the String Djinn,3,Fiend/ Effect/ Xyz,0.02
+Extra Deck,1,Number 17: Leviathan Dragon,3,Dragon/ Effect/ Xyz,0.02
+Extra Deck,1,Number 34: Terror-Byte,3,Machine/ Effect/ Xyz,0.18
+Extra Deck,1,Temtempo the Percussion Djinn,3,Fiend/ Effect/ Xyz,0.02
+Extra Deck,1,Gagaga Cowboy,4,Warrior/ Effect/ Xyz,0.50
+Extra Deck,1,Gagaga Samurai,4,Warrior/ Effect/ Xyz,0.02
+Extra Deck,1,Heroic Champion - Excalibur,4,Warrior/ Effect/ Xyz,0.29
+Extra Deck,1,Number 16: Shock Master,4,Fairy/ Effect/ Xyz,5.83
+Extra Deck,1,Number 32: Shark Drake,4,Sea Serpent/ Effect/ Xyz,0.29
+Extra Deck,1,Number 39: Utopia,4,Warrior/ Effect/ Xyz,0.10
+Extra Deck,1,Number 69: Heraldry Crest,4,Psychic/ Effect/ Xyz,0.30
+Extra Deck,1,Number C39: Utopia Ray,4,Warrior/ Effect/ Xyz,0.05
+Extra Deck,1,One-Eyed Skill Gainer,4,Warrior/ Effect/ Xyz,0.55
+Extra Deck,1,Number 12: Crimson Shadow Armor Ninja,5,Warrior/ Effect/ Xyz,0.02
+Extra Deck,1,Number 33: Chronomaly Machu Mech,5,Machine/ Effect/ Xyz,17.99
+Extra Deck,1,Number 61: Volcasaurus,5,Dinosaur/ Effect/ Xyz,0.99
+Extra Deck,1,Number C39: Utopia Ray V,5,Warrior/ Effect/ Xyz,0.10
+Extra Deck,1,Number C39: Utopia Ray Victory,5,Warrior/ Effect/ Xyz,14.25
+Extra Deck,1,ZW - Leo Arms,5,Beast/ Effect/ Xyz,0.38
+Extra Deck,1,Gauntlet Launcher,6,Warrior/ Effect/ Xyz,0.29
+Extra Deck,1,Number 6: Chronomaly Atlandis,6,Machine/ Effect/ Xyz,0.10
+Extra Deck,1,Number 11: Big Eye,7,Spellcaster/ Effect/ Xyz,2.00
+Extra Deck,1,Number 92: Heart-eartH Dragon,9,Dragon/ Effect/ Xyz,0.74

@@ -4,7 +4,7 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 from firebase_admin import db, credentials
 from firebase_admin import db
-
+from csv_to_ydk import convert_all
 # Inizializza Firebase con le tue credenziali
 cred = credentials.Certificate("./key.json")
 firebase_admin.initialize_app(cred, {
@@ -79,11 +79,12 @@ def upload_decks():
     for file in tqdm(os.listdir("./decks")):
         if file.endswith(".ydk"):
             deck_name = file.split(".")[0]
-            load_deck(deck_name)
-            print(f"Deck {deck_name} uploaded to database\n")
+            load_deck(deck_name.strip())
+            print(f"\nDeck {deck_name} uploaded to database\n")
+            # move this file in the same parent directory but to folder "backup"
+            os.rename(f"./decks/{file}", f"./decks/backup/{file}")
+
     
-
-
 def get_deck(deck_name):
     deck_data = ref.child("decks").child(deck_name).get()
     card_ids = []
@@ -110,9 +111,9 @@ def add_card(deck_name, card_id ,quantity):
     else:
         print(f"Card {card_id} not found in the database")
 
-def add_all_owned():
+def add_all_owned(path):
     #read collection.ydk and add all cards to owned ignoring non-numeric lines, if a card is already in owned, update the quantity
-    with open("./collection.ydk", "r") as file:
+    with open(path, "r") as file:
         card_ids = [line.strip() for line in file.readlines() if line.strip().isnumeric()]
 
     card_ids = sorted(card_ids, key=lambda x: int(x))
@@ -130,6 +131,8 @@ def main():
     pass
 
 if __name__ == "__main__":
+    #add_all_owned("./collection.ydk")
+    convert_all()
     upload_decks()
 
     
