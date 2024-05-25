@@ -1,0 +1,32 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,"Freya, Spirit of Victory",1,Fairy/ Effect,0.31
+Monster,1,Crystal Rose,2,Rock/ Effect,0.65
+Monster,1,Score the Melodious Diva,2,Fairy/ Effect,0.18
+Monster,2,Sonata the Melodious Diva,3,Fairy/ Effect,0.96
+Monster,2,Aria the Melodious Diva,4,Fairy/ Effect,0.73
+Monster,3,Canon the Melodious Diva,4,Fairy/ Effect,0.91
+Monster,1,Opera the Melodious Diva,4,Fairy/ Effect,0.19
+Monster,1,Serenade the Melodious Diva,4,Fairy/ Effect,0.22
+Monster,1,Solo the Melodious Songstress,4,Fairy/ Effect,0.15
+Monster,1,Soprano the Melodious Songstress,4,Fairy/ Effect,1.29
+Monster,1,Tamtam the Melodious Diva,4,Fairy/ Effect,0.36
+Monster,1,Elegy the Melodious Diva,5,Fairy/ Effect,0.51
+Monster,1,Shopina the Melodious Maestra,7,Fairy/ Effect,2.20
+Monster,1,Mozarta the Melodious Maestra,8,Fairy/ Effect,0.74
+Spell,1,1st Movement Solo,,,25.92
+Spell,1,Cards from the Sky,,,0.29
+Spell,1,Cestus of Dagla,,,0.17
+Spell,1,De-Fusion,,,0.29
+Spell,1,Fortissimo,,,0.20
+Spell,1,Mystical Space Typhoon,,,0.15
+Spell,1,Pianissimo,,,0.09
+Spell,2,Polymerization,,,0.27
+Spell,1,Re-Fusion,,,0.15
+Spell,1,The Fountain in the Sky,,,0.15
+Spell,1,The Sanctuary in the Sky,,,0.24
+Trap,1,Melodious Illusion,,,0.39
+Trap,1,Miraculous Descent,,,0.15
+Extra Deck,1,Bloom Diva the Melodious Choir,6,Fairy/ Effect/ Fusion,1.64
+Extra Deck,1,Schuberta the Melodious Maestra,6,Fairy/ Effect/ Fusion,8.93
+Extra Deck,1,Bloom Prima the Melodious Choir,7,Fairy/ Effect/ Fusion,0.70

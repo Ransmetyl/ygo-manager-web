@@ -1,0 +1,51 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Big Jaws,3,Fish/ Effect,0.12
+Monster,1,Drill Barnacle,3,Aqua/ Effect,0.21
+Monster,1,Friller Rabca,3,Fish/ Effect,0.17
+Monster,1,Needle Sunfish,3,Fish/ Effect,0.06
+Monster,1,Shark Stickers,3,Fish/ Effect,0.38
+Monster,1,Skull Kraken,3,Aqua/ Effect,0.18
+Monster,3,Starfish,3,Aqua/ Effect,0.21
+Monster,1,Tripod Fish,3,Fish/ Effect,0.11
+Monster,1,Deep Sweeper,4,Fish/ Effect,0.12
+Monster,1,Double Fin Shark,4,Fish/ Effect,0.10
+Monster,1,Double Shark,4,Fish/ Effect,0.25
+Monster,1,Hammer Shark,4,Fish/ Effect,0.44
+Monster,1,Saber Shark,4,Fish/ Effect,0.10
+Monster,1,Shocktopus,4,Fish/ Effect,0.19
+Monster,1,Silent Angler,4,Fish/ Effect,0.12
+Monster,1,Spear Shark,4,Fish/ Effect,0.25
+Monster,1,Xyz Remora,4,Fish/ Effect,0.11
+Monster,1,Depth Shark,5,Fish/ Effect,0.24
+Monster,1,Eagle Shark,5,Fish/ Effect,0.26
+Monster,1,Panther Shark,5,Fish/ Effect,0.22
+Monster,1,Jawsman,6,Beast/Warrior/ Effect,0.22
+Monster,1,Sharkraken,6,Fish/ Effect,0.27
+Monster,2,Hyper-Ancient Shark Megalodon,8,Fish/ Effect,0.19
+Monster,1,Big Whale,9,Fish/ Effect,0.17
+Spell,1,Aqua Jet,,,0.24
+Spell,1,Different Dimension Deepsea Trench,,,0.23
+Spell,1,Falling Current,,,0.14
+Spell,1,Monster Reborn,,,0.26
+Spell,1,Mystical Space Typhoon,,,0.15
+Spell,1,Salvage,,,0.16
+Spell,1,"Sea Lord's Amulet",,,0.40
+Spell,1,Surface,,,0.14
+Spell,1,Xyz Gift,,,1.67
+Trap,1,Bubble Bringer,,,0.34
+Trap,1,Fish Rain,,,0.22
+Trap,1,Icy Crevasse,,,0.11
+Trap,1,Poseidon Wave,,,0.21
+Trap,1,Splash Capture,,,0.23
+Trap,1,Torrential Reborn,,,2.02
+Trap,1,Xyz Dimension Splash,,,0.21
+Extra Deck,1,Black Ray Lancer,3,Beast/Warrior/ Effect/ Xyz,0.39
+Extra Deck,1,Number 17: Leviathan Dragon,3,Dragon/ Effect/ Xyz,0.50
+Extra Deck,1,Shark Caesar,3,Fish/ Effect/ Xyz,0.20
+Extra Deck,1,Submersible Carrier Aero Shark,3,Fish/ Effect/ Xyz,0.74
+Extra Deck,1,Number 32: Shark Drake,4,Sea Serpent/ Effect/ Xyz,0.99
+Extra Deck,1,Number C32: Shark Drake Veiss,4,Sea Serpent/ Effect/ Xyz,0.17
+Extra Deck,1,Number 73: Abyss Splash,5,Warrior/ Effect/ Xyz,0.18
+Extra Deck,1,Number 94: Crystalzero,5,Warrior/ Effect/ Xyz,0.35
+Extra Deck,1,Shark Fortress,5,Fish/ Effect/ Xyz,0.18

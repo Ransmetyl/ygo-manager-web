@@ -1,0 +1,34 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Speedroid Gum Prize,1,Machine/ Effect/Tuner,0.17
+Monster,1,Speedroid Maliciousmagnet,1,Machine/ Effect/Tuner,0.18
+Monster,1,Speedroid Red-Eyed Dice,1,Machine/ Effect/Tuner,0.07
+Monster,1,Speedroid Den-Den Daiko Duke,3,Machine/ Effect/Tuner,0.08
+Monster,1,Speedroid Ohajikid,3,Machine/ Effect,0.59
+Monster,1,Speedroid Taketomborg,3,Machine/ Effect,0.21
+Monster,1,Speedroid Terrortop,3,Machine/ Effect,0.53
+Monster,1,Speedroid Tri-Eyed Dice,3,Machine/ Effect/Tuner,0.27
+Monster,1,Speedroid Double Yoyo,4,Machine/ Effect,0.07
+Monster,1,Speedroid Horse Stilts,4,Machine/ Effect,0.09
+Monster,1,Speedroid Menko,4,Machine/ Effect,0.61
+Monster,1,Speedroid Pachingo-Kart,4,Machine/ Effect,0.20
+Monster,1,Speedroid Razorang,4,Machine/ Effect,0.34
+Monster,1,Speedroid Rubberband Plane,5,Machine/ Effect,0.42
+Monster,1,Speedroid Skull Marbles,7,Machine/ Effect,0.18
+Spell,1,Hi-Speed Re-Level,,,0.20
+Spell,1,Mystical Space Typhoon,,,0.15
+Spell,1,Shock Surprise,,,0.50
+Spell,1,Speed Recovery,,,0.04
+Spell,1,Speedroid Scratch,,,0.21
+Spell,1,Synchro Cracker,,,0.25
+Trap,1,Dice Roll Battle,,,0.27
+Trap,1,"Dragon's Bind",,,0.20
+Trap,1,Follow Wing,,,0.11
+Trap,1,Re-dyce-cle,,,0.11
+Trap,1,Urgent Tuning,,,0.10
+Extra Deck,1,Hi-Speedroid Puzzle,4,Machine/ Effect/ Synchro,0.32
+Extra Deck,1,Hi-Speedroid Chanbara,5,Machine/ Effect/ Synchro,0.04
+Extra Deck,1,Hi-Speedroid Hagoita,5,Machine/ Effect/ Synchro,0.59
+Extra Deck,1,Hi-Speedroid Kendama,6,Machine/ Effect/ Synchro,0.36
+Extra Deck,1,Clear Wing Synchro Dragon,7,Dragon/ Effect/ Synchro,0.49
+Extra Deck,1,Crystal Wing Synchro Dragon,8,Dragon/ Effect/ Synchro,5.67

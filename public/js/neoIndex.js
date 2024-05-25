@@ -358,7 +358,19 @@ function createCardElement(card_id, deck_quantity, owned_quantity, card_name, ca
     const cardContainer = document.getElementById('card-container');
     const card = document.createElement('a');
     card.classList.add('cursor-pointer', 'hover:scale-110', 'relative', 'z-50');
-    card.href = `card_view.html?card=${card_id}`;
+    let card_name_fix = card_name
+    if(card_name.includes('-')){
+        card_name_fix = card_name.replace(/\s*-\s*/g, '-');
+    }
+     if(card_name.includes("'")){
+        card_name_fix = card_name.replace("'", "");
+    }
+    
+    card_name_fix = card_name_fix.replace(/\s+/g, '-');
+
+
+    console.log(card_name_fix)
+    card.href = `https://www.cardmarket.com/en/YuGiOh/Cards/${card_name_fix}?language=5&minCondition=2`;
 
     const img = document.createElement('img');
     img.src = `https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`;

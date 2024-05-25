@@ -1,0 +1,54 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Dimension Wanderer,1,Spellcaster/ Effect,0.22
+Monster,1,Kuriphoton,1,Fiend/ Effect,0.40
+Monster,1,Photon Satellite,1,Machine/ Effect,0.33
+Monster,1,Galaxy Mirror Sage,3,Spellcaster/ Effect,0.20
+Monster,1,Lightserpent,3,Reptile/ Effect,0.13
+Monster,2,Photon Lizard,3,Dragon/ Effect,0.19
+Monster,1,Photon Pirate,3,Machine/ Effect,0.29
+Monster,1,Plasma Ball,3,Thunder/ Effect,0.18
+Monster,3,Daybreaker,4,Warrior/ Effect,0.16
+Monster,1,Galaxy Wizard,4,Spellcaster/ Effect,3.03
+Monster,1,Goddess with the Third Eye,4,Fairy/ Effect,0.24
+Monster,1,Overlay Sentinel,4,Warrior/ Effect,0.18
+Monster,1,Paladin of Photon Dragon,4,Warrior/ Effect/ Ritual,0.40
+Monster,1,Photon Chargeman,4,Warrior/ Effect,0.19
+Monster,1,Photon Circle,4,Spellcaster/ Effect,0.26
+Monster,1,Photon Crusher,4,Warrior/ Effect,0.17
+Monster,1,Photon Thrasher,4,Warrior/ Effect,0.20
+Monster,1,Reverse Buster,4,Fiend/ Effect,0.14
+Monster,1,Shining Angel,4,Fairy/ Effect,0.23
+Monster,1,Overlay Booster,5,Warrior/ Effect,0.24
+Monster,1,Photon Slasher,5,Warrior/ Effect,0.33
+Monster,1,Photon Leo,6,Beast/ Effect,0.32
+Monster,2,Galaxy Knight,8,Warrior/ Effect,0.20
+Monster,1,Galaxy Tyranno,8,Dinosaur/ Effect,0.34
+Monster,1,Galaxy-Eyes Photon Dragon,8,Dragon/ Effect,0.92
+Monster,1,Photon Caesar,8,Warrior/ Effect,0.24
+Spell,1,Accellight,,,0.21
+Spell,1,Book of Moon,,,0.36
+Spell,1,Galaxy Expedition,,,0.56
+Spell,1,Galaxy Storm,,,0.14
+Spell,1,Galaxy Zero,,,0.23
+Spell,1,Luminous Dragon Ritual,,,0.20
+Spell,1,Message in a Bottle,,,0.32
+Spell,1,Monster Reborn,,,0.26
+Spell,1,Overlay Regen,,,0.13
+Spell,1,Photon Lead,,,0.52
+Spell,1,Photon Veil,,,0.20
+Spell,1,Polymerization,,,0.27
+Spell,1,Xyz Double Back,,,0.10
+Trap,1,Double Dragon Descent,,,0.13
+Trap,1,Lumenize,,,0.28
+Extra Deck,1,Number 2: Ninja Shadow Mosquito,2,Insect/ Effect/ Xyz,0.30
+Extra Deck,1,Number 20: Giga-Brilliant,3,Insect/ Effect/ Xyz,0.21
+Extra Deck,1,Number 30: Acid Golem of Destruction,3,Rock/ Effect/ Xyz,0.48
+Extra Deck,1,Number 10: Illumiknight,4,Warrior/ Effect/ Xyz,0.21
+Extra Deck,1,Starliege Lord Galaxion,4,Warrior/ Effect/ Xyz,2.19
+Extra Deck,1,Starliege Paladynamo,4,Warrior/ Effect/ Xyz,0.61
+Extra Deck,1,Twin Photon Lizard,6,Dragon/ Effect/ Fusion,0.19
+Extra Deck,1,Neo Galaxy-Eyes Photon Dragon,8,Dragon/ Effect/ Xyz,0.16
+Extra Deck,1,Number 46: Dragluon,8,Dragon/ Effect/ Xyz,6.78
+Extra Deck,1,Number 62: Galaxy-Eyes Prime Photon Dragon,8,Dragon/ Effect/ Xyz,0.43
+Extra Deck,1,Number 9: Dyson Sphere,9,Machine/ Effect/ Xyz,0.15

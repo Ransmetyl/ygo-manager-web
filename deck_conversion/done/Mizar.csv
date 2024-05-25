@@ -1,0 +1,15 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Heliosphere Dragon,4,Dragon/ Effect,0.17
+Monster,1,"Radius, the Half-Moon Dragon",4,Dragon/ Effect,0.21
+Monster,1,"Parsec, the Interstellar Dragon",8,Dragon/ Effect,0.31
+Monster,2,Schwarzschild Limit Dragon,8,Dragon/ Effect,0.57
+Spell,1,Galactic Charity,,,0.19
+Spell,1,Monster Reborn,,,0.26
+Spell,1,Rank-Up-Magic - The Seventh One,,,0.10
+Spell,1,"Rank-Up-Magic Barian's Force",,,0.34
+Spell,1,Sargasso Lighthouse,,,0.22
+Trap,1,Tachyon Chaos Hole,,,1.25
+Extra Deck,1,Galaxy Stealth Dragon,4,Dragon/ Effect/ Xyz,0.34
+Extra Deck,1,Number 107: Galaxy-Eyes Tachyon Dragon,8,Dragon/ Effect/ Xyz,0.22
+Extra Deck,1,Number C107: Neo Galaxy-Eyes Tachyon Dragon,9,Dragon/ Effect/ Xyz,0.53

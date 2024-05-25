@@ -1,0 +1,46 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,D/D Lamia,1,Fiend/ Effect/Tuner,0.14
+Monster,1,D/D Necro Slime,1,Fiend/ Effect,0.12
+Monster,1,D/D Savant Kepler,1,Fiend/ Effect/Pendulum,0.23
+Monster,1,D/D Ghost,2,Fiend/ Effect/Tuner,0.19
+Monster,1,D/D Swirl Slime,2,Fiend/ Effect,0.16
+Monster,1,D/D Nighthowl,3,Fiend/ Effect/Tuner,0.35
+Monster,2,D/D Berfomet,4,Fiend/ Effect,0.17
+Monster,1,D/D Cerberus,4,Fiend/ Effect/Pendulum,1.23
+Monster,1,D/D Lilith,4,Fiend/ Effect,0.33
+Monster,1,D/D Savant Copernicus,4,Fiend/ Effect/Pendulum,0.17
+Monster,1,D/D Pandora,5,Fiend/ Effect,0.14
+Monster,1,D/D Proud Chevalier,5,Fiend/ Effect/Pendulum,0.16
+Monster,2,D/D Savant Nikola,6,Fiend/ Effect/Pendulum,0.19
+Monster,1,D/D Savant Newton,7,Fiend/ Effect/Pendulum,0.44
+Monster,1,D/D Vice Typhon,7,Fiend/ Effect,0.38
+Monster,1,D/D/D Chaos King Apocalypse,7,Fiend/ Effect/Pendulum,0.24
+Monster,1,D/D Savant Thomas,8,Fiend/ Effect/Pendulum,0.17
+Monster,3,D/D/D Doom King Armageddon,8,Fiend/ Effect/Pendulum,0.52
+Monster,1,D/D/D Oblivion King Abyss Ragnarok,8,Fiend/ Effect/Pendulum,0.48
+Monster,1,D/D Savant Galilei,10,Fiend/ Effect/Pendulum,0.18
+Spell,2,Dark Contract with the Gate,,,0.88
+Spell,1,Dark Contract with the Swamp King,,,0.16
+Spell,1,Forbidden Dark Contract with the Swamp King,,,0.13
+Trap,1,Contract Laundering,,,0.14
+Trap,1,D/D/D Human Resources,,,0.15
+Trap,1,Dark Contract with Errors,,,0.15
+Trap,1,Dark Contract with the Eternal Darkness,,,0.41
+Trap,1,Dark Contract with the Witch,,,0.16
+Extra Deck,1,D/D/D Stone King Darius,3,Fiend/ Effect/ Xyz,0.58
+Extra Deck,1,D/D/D Wave King Caesar,4,Fiend/ Effect/ Xyz,0.66
+Extra Deck,1,D/D/D Marksman King Tell,5,Fiend/ Effect/ Xyz,1.09
+Extra Deck,1,D/D/D Flame King Genghis,6,Fiend/ Effect/ Fusion,0.25
+Extra Deck,1,D/D/D Wave High King Caesar,6,Fiend/ Effect/ Xyz,0.92
+Extra Deck,1,D/D/D Gust King Alexander,7,Fiend/ Effect/ Synchro,0.34
+Extra Deck,1,"D/D/D Oracle King d'Arc",7,Fiend/ Effect/ Fusion,0.20
+Extra Deck,1,D/D/D Cursed King Siegfried,8,Fiend/ Effect/ Synchro,0.45
+Extra Deck,1,D/D/D Dragonbane King Beowulf,8,Fiend/ Effect/ Fusion,0.24
+Extra Deck,1,D/D/D Duo-Dawn King Kali Yuga,8,Fiend/ Effect/ Xyz,0.16
+Extra Deck,1,D/D/D Flame High King Genghis,8,Fiend/ Effect/ Fusion,0.26
+Extra Deck,1,D/D/D Super Doom King Dark Armageddon,8,Fiend/ Effect/Pendulum/ Xyz,0.34
+Extra Deck,1,D/D/D Gust High King Alexander,10,Fiend/ Effect/ Synchro,0.48
+Extra Deck,1,D/D/D Super Doom King Bright Armageddon,10,Fiend/ Effect/Pendulum/ Synchro,0.36
+Extra Deck,1,D/D/D Super Doom King Purple Armageddon,10,Fiend/ Effect/ Fusion/Pendulum,0.17
+Extra Deck,1,D/D/D Wave Oblivion King Caesar Ragnarok,10,Fiend/ Effect/ Fusion,0.57

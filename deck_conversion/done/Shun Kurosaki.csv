@@ -1,0 +1,38 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Raidraptor - Last Strix,1,Winged Beast/ Effect,0.42
+Monster,1,Raidraptor - Pain Lanius,1,Winged Beast/ Effect,0.81
+Monster,1,Little Fairy,3,Fairy/ Effect,0.25
+Monster,1,Marauding Captain,3,Warrior/ Effect,0.21
+Monster,1,Alien Shocktrooper,4,Reptile/ Normal,0.37
+Monster,2,Raidraptor - Avenge Vulture,4,Winged Beast/ Effect,0.16
+Monster,1,Raidraptor - Booster Strix,4,Winged Beast/ Effect,0.25
+Monster,2,Raidraptor - Fuzzy Lanius,4,Winged Beast/ Effect,0.41
+Monster,1,Raidraptor - Necro Vulture,4,Winged Beast/ Effect,0.56
+Monster,3,Raidraptor - Rudder Strix,4,Winged Beast/ Effect,0.20
+Monster,3,Raidraptor - Singing Lanius,4,Winged Beast/ Effect,0.16
+Monster,3,Raidraptor - Vanishing Lanius,4,Winged Beast/ Effect,0.48
+Monster,1,Breaker the Dark Magical Warrior,6,Spellcaster/ Effect,0.06
+Monster,3,Raidraptor - Wild Vulture,6,Winged Beast/ Effect,0.18
+Spell,1,Raidraptor - Call,,,0.26
+Spell,1,Raidraptor - Nest,,,0.21
+Spell,1,Rank-Up-Magic Doom Double Force,,,0.89
+Spell,2,Rank-Up-Magic Raid Force,,,0.81
+Spell,1,"Rank-Up-Magic Raptor's Force",,,0.20
+Spell,1,Rank-Up-Magic Revolution Force,,,0.46
+Spell,1,Rank-Up-Magic Skip Force,,,2.45
+Spell,1,Rank-Up-Magic Soul Shave Force,,,3.86
+Spell,1,"Raptor's Ultimate Mace",,,0.11
+Spell,1,Unicorn Beacon,,,0.18
+Trap,1,Raidraptor - Readiness,,,0.19
+Trap,1,Raidraptor - Return,,,0.20
+Trap,1,"Raptor's Gust",,,0.27
+Extra Deck,2,Raidraptor - Fiend Eagle,3,Winged Beast/ Effect/ Xyz,0.23
+Extra Deck,3,Raidraptor - Force Strix,4,Winged Beast/ Effect/ Xyz,0.32
+Extra Deck,1,Raidraptor - Rise Falcon,4,Winged Beast/ Effect/ Xyz,0.23
+Extra Deck,1,Raidraptor - Blaze Falcon,5,Winged Beast/ Effect/ Xyz,0.47
+Extra Deck,1,Raidraptor - Stranger Falcon,5,Winged Beast/ Effect/ Xyz,0.38
+Extra Deck,1,Raidraptor - Revolution Falcon,6,Winged Beast/ Effect/ Xyz,0.25
+Extra Deck,1,Raidraptor - Satellite Cannon Falcon,8,Winged Beast/ Effect/ Xyz,0.21
+Extra Deck,1,Raidraptor - Ultimate Falcon,10,Winged Beast/ Effect/ Xyz,0.24
+Extra Deck,1,Raidraptor - Final Fortress Falcon,12,Winged Beast/ Effect/ Xyz,0.13

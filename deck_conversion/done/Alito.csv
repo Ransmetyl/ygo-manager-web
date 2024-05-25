@@ -1,0 +1,25 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,2,"Battlin' Boxer Big Bandage",2,Warrior/ Effect,0.08
+Monster,1,"Battlin' Boxer Counterpunch",3,Warrior/ Effect,0.28
+Monster,1,"Battlin' Boxer Rabbit Puncher",3,Warrior/ Effect,0.05
+Monster,1,"Battlin' Boxer Rib Gardna",3,Warrior/ Effect,0.16
+Monster,1,"Battlin' Boxer Glassjaw",4,Warrior/ Effect,0.06
+Monster,1,"Battlin' Boxer Headgeared",4,Warrior/ Effect,0.07
+Monster,1,"Battlin' Boxer Sparrer",4,Warrior/ Effect,2.51
+Monster,1,"Battlin' Boxer Switchitter",4,Warrior/ Effect,0.07
+Monster,1,"Battlin' Boxer Veil",4,Warrior/ Effect,0.35
+Spell,1,"Battlin' Boxing Spirits",,,0.07
+Spell,1,Rank-Up-Magic - The Seventh One,,,0.10
+Spell,1,"Rank-Up-Magic Barian's Force",,,0.34
+Spell,1,Reload,,,0.33
+Trap,1,Last Counter,,,0.06
+Trap,1,Numbers Overlay Boost,,,0.20
+Trap,1,Xyz Block,,,0.24
+Extra Deck,1,Number 64: Ronin Raccoon Sandayu,2,Beast/ Effect/ Xyz,1.69
+Extra Deck,1,"Battlin' Boxer Cheat Commissioner",3,Warrior/ Effect/ Xyz,0.04
+Extra Deck,1,"Battlin' Boxer Lead Yoke",4,Warrior/ Effect/ Xyz,0.06
+Extra Deck,1,"Number 105: Battlin' Boxer Star Cestus",4,Warrior/ Effect/ Xyz,0.08
+Extra Deck,1,Number 80: Rhapsody in Berserk,4,Fiend/ Effect/ Xyz,0.78
+Extra Deck,1,"Number C105: Battlin' Boxer Comet Cestus",5,Warrior/ Effect/ Xyz,0.08
+Extra Deck,1,Number C80: Requiem in Berserk,5,Fiend/ Effect/ Xyz,0.21

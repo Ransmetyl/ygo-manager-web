@@ -1,0 +1,18 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Predaplant Cordyceps,1,Plant/ Effect,0.22
+Monster,1,Predaplant Sarraceniant,1,Plant/ Effect,0.72
+Monster,1,Predaplant Flytrap,2,Plant/ Effect,0.22
+Monster,2,Predaplant Squid Drosera,2,Plant/ Effect,0.17
+Monster,1,Predaplant Darlingtonia Cobra,3,Plant/ Effect,0.45
+Monster,1,Predaplant Ophrys Scorpio,3,Plant/ Effect,0.54
+Monster,1,Predaplant Moray Nepenthes,4,Plant/ Effect,0.17
+Monster,1,Predaplant Drosophyllum Hydra,5,Plant/ Effect,0.13
+Monster,1,Predaplant Banksiogre,6,Plant/ Effect/Tuner,0.31
+Spell,1,Polymerization,,,0.27
+Spell,1,Predaponics,,,0.12
+Spell,1,Predapruning,,,0.58
+Spell,1,Super Polymerization,,,6.93
+Spell,1,Ultra Polymerization,,,0.62
+Extra Deck,1,Starving Venom Fusion Dragon,8,Dragon/ Effect/ Fusion,0.30
+Extra Deck,1,Greedy Venom Fusion Dragon,10,Dragon/ Effect/ Fusion,1.40

@@ -1,0 +1,21 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,2,Heraldic Beast Aberconway,4,Dragon/ Effect,0.20
+Monster,1,Heraldic Beast Basilisk,4,Beast/ Effect,0.18
+Monster,1,Heraldic Beast Berners Falcon,4,Winged Beast/ Effect,0.19
+Monster,1,Heraldic Beast Eale,4,Beast/ Effect,0.15
+Monster,1,Heraldic Beast Leo,4,Beast/ Effect,0.26
+Monster,1,Heraldic Beast Twin-Headed Eagle,4,Winged Beast/ Effect,0.21
+Monster,2,Heraldic Beast Unicorn,4,Beast/ Effect,0.14
+Spell,1,Advanced Heraldry Art,,,0.20
+Spell,1,Burial from a Different Dimension,,,0.20
+Spell,1,Heraldry Reborn,,,0.16
+Spell,1,Mystical Cards of Light,,,0.14
+Trap,1,Heraldry Change,,,0.17
+Trap,1,Heraldry Record,,,0.15
+Trap,1,Wall of Revealing Light,,,0.58
+Extra Deck,1,Number 56: Gold Rat,1,Beast/ Effect/ Xyz,0.32
+Extra Deck,1,Number 30: Acid Golem of Destruction,3,Rock/ Effect/ Xyz,0.48
+Extra Deck,1,Number 10: Illumiknight,4,Warrior/ Effect/ Xyz,0.21
+Extra Deck,1,Number 69: Heraldry Crest,4,Psychic/ Effect/ Xyz,0.43
+Extra Deck,1,Number 8: Heraldic King Genom-Heritage,4,Psychic/ Effect/ Xyz,2.23

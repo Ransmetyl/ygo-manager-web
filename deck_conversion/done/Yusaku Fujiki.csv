@@ -1,0 +1,135 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Cyberse Synchron,1,Cyberse/ Effect/Tuner,1.13
+Monster,1,Dotscaper,1,Cyberse/ Effect,0.16
+Monster,1,Formud Skipper,1,Cyberse/ Effect,0.27
+Monster,1,Latency,1,Cyberse/ Effect,0.15
+Monster,1,Micro Coder,1,Cyberse/ Effect,0.17
+Monster,1,Protron,1,Cyberse/ Normal,0.13
+Monster,2,Bitron,2,Cyberse/ Normal,0.11
+Monster,1,Catche Eve L2,2,Cyberse/ Effect,0.18
+Monster,1,Cross Debug,2,Cyberse/ Effect,0.07
+Monster,1,Digitron,2,Cyberse/ Normal,0.16
+Monster,1,Hoshiningen,2,Fairy/ Effect,0.12
+Monster,1,Link Infra-Flier,2,Cyberse/ Effect,0.22
+Monster,1,Stack Reviver,2,Cyberse/ Effect,0.08
+Monster,1,Swap Cleric,2,Cyberse/ Effect,0.13
+Monster,1,Backlinker,3,Cyberse/ Effect,0.10
+Monster,1,Backup Secretary,3,Cyberse/ Effect,0.08
+Monster,1,Code Generator,3,Cyberse/ Effect,0.10
+Monster,1,Defcon Bird,3,Cyberse/ Effect,0.11
+Monster,1,Defect Compiler,3,Cyberse/ Effect,0.10
+Monster,1,Draconnet,3,Cyberse/ Effect,0.62
+Monster,1,Flame Bufferlo,3,Cyberse/ Effect,0.47
+Monster,1,"Gaia Saber, the Lightning Shadow",3,Machine/ Link,0.14
+Monster,1,Lockout Gardna,3,Cyberse/ Effect,0.14
+Monster,1,Marauding Captain,3,Warrior/ Effect,0.21
+Monster,1,Rescue Interlacer,3,Cyberse/ Effect,0.13
+Monster,1,Sea Archiver,3,Cyberse/ Effect,0.33
+Monster,1,Widget Kid,3,Cyberse/ Effect,0.29
+Monster,1,Balancer Lord,4,Cyberse/ Effect,0.37
+Monster,1,Bitrooper,4,Cyberse/ Effect,0.12
+Monster,1,Cyberse Gadget,4,Cyberse/ Effect,0.12
+Monster,1,Cyberse Wizard,4,Cyberse/ Effect,0.10
+Monster,1,Exarion Universe,4,Beast/Warrior/ Effect,0.13
+Monster,1,Firewall Guardian,4,Cyberse/ Effect,0.65
+Monster,1,Flick Clown,4,Cyberse/ Effect,0.10
+Monster,1,Grid Sweeper,4,Cyberse/ Effect,0.07
+Monster,1,Launcher Commander,4,Cyberse/ Effect,0.06
+Monster,1,Neo the Magic Swordsman,4,Spellcaster/ Normal,0.29
+Monster,1,Photon Thrasher,4,Warrior/ Effect,0.20
+Monster,1,RAM Clouder,4,Cyberse/ Effect,0.10
+Monster,1,ROM Cloudia,4,Cyberse/ Effect,0.17
+Monster,1,Storm Cipher,4,Cyberse/ Effect,0.17
+Monster,1,Striping Partner,4,Cyberse/ Effect,0.10
+Monster,1,Boot Staggered,5,Cyberse/ Effect,0.21
+Monster,1,Capacitor Stalker,5,Cyberse/ Effect,0.05
+Monster,1,Linkslayer,5,Cyberse/ Effect,0.19
+Monster,1,SIMM Tablir,5,Cyberse/ Effect,0.13
+Monster,1,Cyberse White Hat,6,Cyberse/ Effect,0.21
+Monster,1,Interrupt Resistor,6,Cyberse/ Effect,0.09
+Monster,1,Salvagent Driver,6,Cyberse/ Effect,0.08
+Monster,1,Cluster Congester,7,Cyberse/ Effect,0.07
+Monster,1,Cyberse Magician,7,Cyberse/ Effect/ Ritual,0.18
+Monster,1,Degrade Buster,7,Cyberse/ Effect,0.17
+Monster,1,Threshold Borg,7,Cyberse/ Effect,0.07
+Monster,1,Dual Assembwurm,8,Cyberse/ Effect,0.14
+Monster,2,Parallel eXceed,8,Cyberse/ Effect,1.04
+Spell,1,Black Pendant,,,0.21
+Spell,1,Cybersal Cyclone,,,0.05
+Spell,1,Cynet Backdoor,,,0.19
+Spell,1,Cynet Codec,,,0.24
+Spell,1,Cynet Fusion,,,0.27
+Spell,1,Cynet Mining,,,0.29
+Spell,1,Cynet Optimization,,,0.52
+Spell,1,Cynet Ritual,,,0.32
+Spell,1,Cynet Storm,,,0.26
+Spell,1,Cynet Universe,,,0.11
+Spell,1,Decode Destruction,,,0.21
+Spell,1,Forbidden Lance,,,0.33
+Spell,1,"Goblin's Secret Remedy",,,0.10
+Spell,1,Grid Rod,,,0.14
+Spell,1,Limiter Removal,,,0.15
+Spell,1,Link Back,,,0.03
+Spell,1,Link Bound,,,0.16
+Spell,1,Link Hole,,,0.08
+Spell,1,One-Time Passcode,,,0.10
+Spell,1,Security Block,,,0.15
+Spell,1,Spool Code,,,0.21
+Spell,1,Zero Extra Link,,,0.03
+Trap,1,Cyberse Beacon,,,0.10
+Trap,1,Cynet Refresh,,,0.20
+Trap,1,Draw Discharge,,,0.06
+Trap,2,Limit Code,,,0.13
+Trap,1,Link Restart,,,0.08
+Trap,1,Packet Link,,,0.19
+Trap,1,Parallel Port Armor,,,0.08
+Trap,1,Recoded Alive,,,0.15
+Trap,1,Reinforcements,,,0.24
+Trap,1,Shield Handler,,,0.07
+Trap,1,Three Strikes Barrier,,,0.04
+Trap,1,Trap Hole,,,0.08
+Extra Deck,1,Link Devotee,1,Cyberse/ Effect/ Link,0.17
+Extra Deck,1,Link Disciple,1,Cyberse/ Effect/ Link,0.21
+Extra Deck,1,Link Spider,1,Cyberse/ Effect/ Link,2.72
+Extra Deck,1,Linkross,1,Cyberse/ Effect/ Link,1.42
+Extra Deck,1,Linkuriboh,1,Cyberse/ Effect/ Link,3.00
+Extra Deck,1,Secure Gardna,1,Cyberse/ Effect/ Link,0.47
+Extra Deck,1,Talkback Lancer,1,Cyberse/ Effect/ Link,0.20
+Extra Deck,1,Binary Blader,2,Cyberse/ Effect/ Link,0.05
+Extra Deck,1,Binary Sorceress,2,Cyberse/ Effect/ Link,0.21
+Extra Deck,1,Clock Lizard,2,Cyberse/ Effect/ Link,0.24
+Extra Deck,1,Clock Spartoi,2,Cyberse/ Effect/ Link,0.08
+Extra Deck,1,Code Talker,2,Cyberse/ Effect/ Link,0.15
+Extra Deck,1,Cyberse Wicckid,2,Cyberse/ Effect/ Link,0.53
+Extra Deck,1,Cyberse Witch,2,Cyberse/ Effect/ Link,0.19
+Extra Deck,1,Elphase,2,Cyberse/ Effect/ Link,0.14
+Extra Deck,1,Flame Administrator,2,Cyberse/ Effect/ Link,0.11
+Extra Deck,1,Honeybot,2,Cyberse/ Effect/ Link,0.15
+Extra Deck,1,Link Bumper,2,Cyberse/ Effect/ Link,0.11
+Extra Deck,1,Pentestag,2,Cyberse/ Effect/ Link,1.08
+Extra Deck,1,Protocol Gardna,2,Cyberse/ Effect/ Link,0.11
+Extra Deck,1,Proxy F Magician,2,Cyberse/ Effect/ Link,0.13
+Extra Deck,1,Recovery Sorcerer,2,Cyberse/ Effect/ Link,0.14
+Extra Deck,1,Restoration Point Guard,2,Cyberse/ Effect/ Link,0.09
+Extra Deck,1,Security Dragon,2,Cyberse/ Effect/ Link,0.13
+Extra Deck,1,Space Insulator,2,Cyberse/ Effect/ Link,0.12
+Extra Deck,1,Splash Mage,2,Cyberse/ Effect/ Link,0.41
+Extra Deck,1,Underclock Taker,2,Cyberse/ Effect/ Link,0.17
+Extra Deck,1,Update Jammer,2,Cyberse/ Effect/ Link,0.20
+Extra Deck,1,Decode Talker,3,Cyberse/ Effect/ Link,0.15
+Extra Deck,1,Decode Talker Extended,3,Cyberse/ Effect/ Link,0.16
+Extra Deck,1,Detonate Deleter,3,Cyberse/ Effect/ Link,0.14
+Extra Deck,1,Encode Talker,3,Cyberse/ Effect/ Link,0.22
+Extra Deck,1,Excode Talker,3,Cyberse/ Effect/ Link,0.13
+Extra Deck,1,Powercode Talker,3,Cyberse/ Effect/ Link,0.24
+Extra Deck,1,Shootingcode Talker,3,Cyberse/ Effect/ Link,0.10
+Extra Deck,1,Transcode Talker,3,Cyberse/ Effect/ Link,0.47
+Extra Deck,1,Vector Scare Archfiend,3,Cyberse/ Effect/ Link,0.22
+Extra Deck,1,Accesscode Talker,4,Cyberse/ Effect/ Link,9.18
+Extra Deck,1,Firewall Dragon,4,Cyberse/ Effect/ Link,0.19
+Extra Deck,1,Firewall eXceed Dragon,4,Cyberse/ Effect/ Xyz,0.15
+Extra Deck,1,Firewall Dragon Darkfluid,5,Cyberse/ Effect/ Link,0.32
+Extra Deck,1,Cyberse Clock Dragon,7,Cyberse/ Effect/ Fusion,0.21
+Extra Deck,1,Cyberse Quantum Dragon,7,Cyberse/ Effect/ Synchro,1.50
+Extra Deck,1,Borreload Furious Dragon,8,Dragon/ Effect/ Fusion,1.19

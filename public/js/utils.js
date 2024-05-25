@@ -199,7 +199,7 @@ function getSeriesChars(series){
         case 'zexal':
             names = [
                 'Yuma Tsukumo', 
-                'Shark', 
+                'Ryoga Kamishiro', 
                 'Kaito Tenjo', 
                 'Astral', 
                 'Kotori Mizuki',

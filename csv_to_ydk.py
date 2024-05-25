@@ -60,7 +60,7 @@ def convert(deck):
 
 
         ids.append(get_card_by_name(name))
-        time.sleep(0.1)
+        time.sleep(0.15)
 
     write_ydk(deck, ids)
 
