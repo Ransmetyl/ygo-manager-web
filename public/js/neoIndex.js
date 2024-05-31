@@ -214,18 +214,21 @@ function controller(){
                 dropdown();
                 loadChars(series);
             }
+
+            document.title = 'Anime Decks';
             break;
         case 'allDeckCards':
             nav.innerHTML = basicNav('All Deck Cards', "...");
             let total = showAllDeckCards();
             total.then(count => setTotalCards(count));
+            document.title = 'All Deck Cards';
             break;
         case 'collection':
             countOwnedCards().then(count => {
                 nav.innerHTML = basicNav('Collection', count);
                 showCollection();
             });
-
+            document.title = 'Collection';
             break;
         case 'archetypes':
             nav.innerHTML = basicNav('Archetypes');
@@ -242,7 +245,7 @@ function controller(){
                 showDeck(duelist);
 
             });
-
+            document.title = duelist + "'s Deck";
             break;
         default:
             console.log('default');
@@ -377,7 +380,11 @@ function prepareForCards(){
         <div class="w-1/4 h-screen ms-2" id="card-highlight">
             <img class="w-3/4 h-auto object-cover p-2 mx-auto " id="card_image" src="../card_back.jpg" alt="highlight_card_image">
             <p class="text-center text-white bg-gray-900 p-1 mx-2 rounded-md font-bold" id="card_name"></p>
-            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto text-sm p-3 text-justify" id="card_desc"></p>
+            <p class="h-1/3 text-white bg-gray-900 p-1 m-2 rounded-md overflow-auto text-sm p-3 text-justify">
+                <span id="card_data"></span>
+                <br>
+                <span id="card_desc"></span>
+            </p>
         </div>
     
     `;
@@ -444,8 +451,8 @@ function showHighlightCard(card_id, card_name, card_desc) {
     getOtherData(card_id).then(data => {
         const [type, attribute] = data;
         const card_data = `${type}/${attribute}`;
-        document.getElementById('card_desc').textContent = card_data;
-        document.getElementById('card_desc').textContent += card_desc;
+        document.getElementById('card_data').textContent = card_data;
+        document.getElementById('card_desc').textContent = card_desc;
     });
 
     document.getElementById('card_image').src = highlightImageUrl;
