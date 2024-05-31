@@ -104,30 +104,38 @@ function animeDecksNav(title){
     //TODO: cambiare nomeIndex
 
     const series = getSeries();
-
     return `<h1 class="text-sm md:text-2xl flex-1 mx-5 ms-10 mb-1" id="title">${title}</h1>
     <div class="relative inline-block text-left me-5">
         <div>
-            <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                <span class="hidden md:inline">Series: </span>
-                <span class="text-gray-600" id="seriesText">${series}</span>
-                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                </svg>
-            </button>
+            
+        <div class="flex flex-row">
+            <div class="inline-flex rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mx-2" id="seriesCompletion">100.00%</div>
+                <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <span class="hidden md:inline">Series: </span>
+                    <span class="text-gray-600" id="seriesText">${series}</span>
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+        </div>
             <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <a href="neoIndex2.html?view=animeDecks&series=duel-monsters" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Duel Monsters</a>
-                <a href="neoIndex2.html?view=animeDecks&series=GX" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">GX</a>
-                <a href="neoIndex2.html?view=animeDecks&series=5Ds" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">5Ds</a>
-                <a href="neoIndex2.html?view=animeDecks&series=Zexal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Zexal</a>
-                <a href="neoIndex2.html?view=animeDecks&series=Arc-V" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Arc-V</a>
-                <a href="neoIndex2.html?view=animeDecks&series=Vrains" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Vrains</a>
+                <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <a href="neoIndex2.html?view=animeDecks&series=duel-monsters" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Duel Monsters</a>
+                    <a href="neoIndex2.html?view=animeDecks&series=GX" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">GX</a>
+                    <a href="neoIndex2.html?view=animeDecks&series=5Ds" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">5Ds</a>
+                    <a href="neoIndex2.html?view=animeDecks&series=Zexal" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Zexal</a>
+                    <a href="neoIndex2.html?view=animeDecks&series=Arc-V" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Arc-V</a>
+                    <a href="neoIndex2.html?view=animeDecks&series=Vrains" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Vrains</a>
+                </div>
             </div>
         </div>
-        </div>
     </div>
+    
     `
+}
+
+function setSeriesCompletion(value){
+    document.getElementById('seriesCompletion').innerHTML = value + '%';
 }
 
 function deckViewNav(title, percentage, cardsCount) {
@@ -594,9 +602,8 @@ async function showAllDeckCards() {
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
     activateSearchbar();
 
-
-
     return total; //returns the total number of cards 
 }
+
 
 
