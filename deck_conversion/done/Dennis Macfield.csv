@@ -1,0 +1,15 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Ancient Gear Hunting Hound,3,Machine/ Effect,0.49
+Monster,1,Performage Damage Juggler,4,Spellcaster/ Effect,0.15
+Monster,2,Performage Flame Eater,4,Spellcaster/ Effect,0.19
+Monster,1,Performage Hat Tricker,4,Spellcaster/ Effect,0.14
+Monster,1,Performage Mirror Conductor,4,Spellcaster/ Effect/Pendulum,0.20
+Monster,1,Performage Plushfire,4,Spellcaster/ Effect/Pendulum,0.19
+Monster,1,Performage Trick Clown,4,Spellcaster/ Effect,0.09
+Monster,1,Performage Stilts Launcher,6,Spellcaster/ Effect,0.14
+Spell,1,Bubble Barrier,,,0.17
+Spell,1,Polymerization,,,0.26
+Trap,1,Trick Box,,,0.12
+Extra Deck,1,Performage Trapeze Magician,4,Spellcaster/ Effect/ Xyz,0.43
+Extra Deck,1,Chaos Ancient Gear Giant,10,Machine/ Effect/ Fusion,4.42

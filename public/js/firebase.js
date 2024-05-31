@@ -208,7 +208,7 @@ async function searchInOwned(card_name){
     return defaulSort(cards);
 }
 
-async function searchInAllDecks(card_name){
+async function searchInAllDecks(card_name,sort="default"){
     //returns a promise with all the cards in the owned list that have the name card_name
     const decks = await getAllDecks();
     let cards = [];
@@ -220,7 +220,31 @@ async function searchInAllDecks(card_name){
             }
         });
     }
-    return defaulSort(cards);
+    let sorted = ["No Cards."];
+
+    switch(sort){
+        default:
+            sorted = defaulSort(cards);
+            break;
+            
+        case "name":
+            sorted = sortByName(cards);
+            break;
+
+        case "type":
+            sorted = sortByRace(cards);
+            break;
+        
+        case "quantityAsc":
+            break;
+
+        case "quantityDesc":
+            break;
+    }
+
+    return sorted;
+
+    
 }
 
 async function getOtherData(card_id){

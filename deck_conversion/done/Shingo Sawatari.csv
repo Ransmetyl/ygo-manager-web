@@ -1,0 +1,37 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Abyss Actor - Extras,1,Fiend/ Effect/Pendulum,0.23
+Monster,1,Abyss Actor - Funky Comedian,1,Fiend/ Effect/Pendulum,0.23
+Monster,2,Block Spider,1,Insect/ Effect,0.24
+Monster,1,Yosenju Kodam,1,Beast/Warrior/ Effect,0.18
+Monster,1,The Six Samurai - Yariza,3,Warrior/ Effect,0.17
+Monster,1,Timegazer Magician,3,Spellcaster/ Effect/Pendulum,0.13
+Monster,1,Abyss Actor - Curtain Raiser,4,Fiend/ Effect/Pendulum,0.26
+Monster,1,Abyss Actor - Leading Lady,4,Fiend/ Effect/Pendulum,0.18
+Monster,1,Abyss Actor - Sassy Rookie,4,Fiend/ Effect/Pendulum,0.71
+Monster,1,Abyss Actor - Wild Hope,4,Fiend/ Effect/Pendulum,0.21
+Monster,1,Escher the Frost Vassal,4,Aqua/ Effect,0.18
+Monster,1,Yosenju Kama 1,4,Beast/Warrior/ Effect,0.38
+Monster,1,Yosenju Kama 2,4,Beast/Warrior/ Effect,0.37
+Monster,2,Yosenju Kama 3,4,Beast/Warrior/ Effect,0.38
+Monster,1,Yosenju Shinchu L,4,Rock/ Effect/Pendulum,0.17
+Monster,1,Yosenju Shinchu R,4,Rock/ Effect/Pendulum,0.20
+Monster,1,Morinphen,5,Fiend/ Normal,0.06
+Monster,1,Stargazer Magician,5,Spellcaster/ Effect/Pendulum,0.20
+Monster,1,Hungry Burger,6,Warrior/ Ritual,0.07
+Monster,1,Mobius the Frost Monarch,6,Aqua/ Effect,0.22
+Monster,3,Yosenju Oyam,6,Beast/ Effect,0.20
+Monster,1,Abyss Actor - Superstar,7,Fiend/ Effect/Pendulum,0.23
+Monster,1,Abyss Actor - Evil Heel,8,Fiend/ Effect/Pendulum,0.87
+Monster,1,Mobius the Mega Monarch,8,Aqua/ Effect,0.91
+Monster,1,Mayosenju Daibak,10,Beast/ Effect/Pendulum,1.78
+Spell,1,Abyss Prop - Wild Wagon,,,0.17
+Spell,1,Abyss Script - Abysstainment,,,0.36
+Spell,1,Abyss Script - Fantasy Magic,,,0.23
+Spell,1,"Abyss Script - Fire Dragon's Lair",,,0.25
+Spell,1,Abyss Script - Opening Ceremony,,,0.17
+Spell,1,Abyss Script - Rise of the Abyss King,,,0.23
+Spell,1,The Humble Sentry,,,0.18
+Trap,1,Breakthrough Skill,,,0.76
+Trap,1,Dark Mirror Force,,,0.42
+Trap,1,Localized Tornado,,,0.50

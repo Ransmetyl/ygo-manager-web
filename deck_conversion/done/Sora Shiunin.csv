@@ -1,0 +1,36 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,3,Fluffal Mouse,1,Fairy/ Effect,0.49
+Monster,1,Fluffal Octopus,1,Fairy/ Effect,2.94
+Monster,2,Fluffal Wings,1,Fairy/ Effect,0.44
+Monster,1,Fluffal Owl,2,Fairy/ Effect,0.29
+Monster,2,Fluffal Sheep,2,Fairy/ Effect,0.36
+Monster,1,Edge Imp Sabres,3,Fiend/ Effect,0.41
+Monster,1,Edge Imp Saw,3,Fiend/ Effect,0.18
+Monster,1,Fluffal Bear,3,Fairy/ Effect,0.64
+Monster,1,Edge Imp Chain,4,Fiend/ Effect,0.26
+Monster,2,Edge Imp Frightfuloid,4,Fiend/ Effect,0.23
+Monster,1,Edge Imp Tomahawk,4,Fiend/ Effect,0.47
+Monster,1,Fluffal Leo,4,Fairy/ Effect,0.16
+Spell,1,De-Fusion,,,0.29
+Spell,1,Frightfur Factory,,,0.17
+Spell,1,Frightfur Fusion,,,0.33
+Spell,1,Frightfur Sanctuary,,,0.18
+Spell,1,Fusion Conscription,,,0.20
+Spell,1,Fusion Recovery,,,0.13
+Spell,1,Instant Fusion,,,0.60
+Spell,2,Polymerization,,,0.26
+Spell,1,Toy Parade,,,0.17
+Spell,1,Toy Vendor,,,0.35
+Trap,1,Designer Frightfur,,,0.22
+Trap,1,Fluffal Crane,,,0.17
+Trap,1,Frightfur March,,,0.20
+Trap,1,Fusion Fright Waltz,,,0.15
+Trap,1,Punch-in-the-Box,,,0.14
+Extra Deck,1,Frightfur Sheep,5,Fiend/ Effect/ Fusion,0.23
+Extra Deck,1,Frightfur Bear,6,Fiend/ Effect/ Fusion,0.28
+Extra Deck,1,Frightfur Tiger,6,Fiend/ Effect/ Fusion,0.47
+Extra Deck,1,Frightfur Leo,7,Fiend/ Effect/ Fusion,0.45
+Extra Deck,1,Frightfur Chimera,8,Fiend/ Effect/ Fusion,0.26
+Extra Deck,1,Frightfur Kraken,8,Fiend/ Effect/ Fusion,5.08
+Extra Deck,1,Frightfur Sabre-Tooth,8,Fiend/ Effect/ Fusion,0.28

@@ -1,0 +1,17 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Cipher Etranger,1,Spellcaster/ Effect,0.13
+Monster,1,Little Fairy,3,Fairy/ Effect,0.25
+Monster,1,Cipher Mirror Knight,4,Warrior/ Effect,0.12
+Monster,1,Cipher Twin Raptor,4,Machine/ Effect,0.10
+Monster,3,Cipher Wing,4,Machine/ Effect,0.13
+Monster,1,Cipher Biplane,6,Machine/ Effect,0.24
+Spell,1,Cipher Interference,,,0.09
+Spell,1,Double Exposure,,,0.17
+Spell,1,"Harpie's Feather Duster",,,2.25
+Spell,1,Rank-Up-Magic Cipher Ascension,,,0.15
+Trap,1,Cipher Bit,,,0.16
+Trap,1,Cipher Spectrum,,,0.08
+Trap,1,Double Cipher,,,0.14
+Extra Deck,2,Galaxy-Eyes Cipher Dragon,8,Dragon/ Effect/ Xyz,3.67
+Extra Deck,1,Neo Galaxy-Eyes Cipher Dragon,9,Dragon/ Effect/ Xyz,0.70

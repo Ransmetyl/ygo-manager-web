@@ -30,13 +30,16 @@ if(window.location.href.split('?view=').length > 2){
 disposeNav();
 controller();
 
-function basicNav(title, cardsCount){
+function basicNav(title, cardsCount, isCollection){
+    const page = isCollection == true ? "neoIndex2.html?view=collection" : "neoIndex2.html?view=allDeckCards";
+    
     return `<h1 class="text-sm md:text-2xl flex-1 mx-5 ms-10 mb-1" id="title">${title}</h1>
     <div class="flex items center">
         <button id="add" type="button" class="mx-3 inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 sm:ml-3 sm:w-auto">Add</button>
         <button id="remove" type="button" class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:mt-0 sm:w-auto">Remove</button>
     </div>
     <input type="text" class="w-1/5 p-1.5 mx-3 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-gray-400" placeholder="Search" id="searchbar">
+    
     <div class="relative inline-block text-left me-1">
         <div>
             <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -46,6 +49,15 @@ function basicNav(title, cardsCount){
                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                 </svg>
             </button>
+            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <a href="${page}&sort=default" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Default</a>
+                <a href="${page}&sort=type" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Type</a>
+                <a href="${page}&sort=name" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Name</a>
+                <a href="${page}&sort=quantityAsc" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Quantity Asc.</a>
+                <a href="${page}&sort=quantityDesc" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Quantity Desc.</a>
+            </div>
+            </div>
         </div>
     </div>
     <div class="flex items-center rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 mx-2 p-1.5">
@@ -84,6 +96,9 @@ function getSeries(){
     return window.location.href.split('series=')[1] || 'duel-monsters';
 }
 
+function getSortBy(){
+    return window.location.href.split('sort=')[1] || 'default';
+}
 
 function animeDecksNav(title){
     //TODO: cambiare nomeIndex
@@ -218,14 +233,19 @@ function controller(){
             document.title = 'Anime Decks';
             break;
         case 'allDeckCards':
-            nav.innerHTML = basicNav('All Deck Cards', "...");
+            nav.innerHTML = basicNav('All Deck Cards', "...",false);
+            dropdown();
+            console.log(getSortBy());
             let total = showAllDeckCards();
             total.then(count => setTotalCards(count));
+          
             document.title = 'All Deck Cards';
             break;
         case 'collection':
             countOwnedCards().then(count => {
-                nav.innerHTML = basicNav('Collection', count);
+                nav.innerHTML = basicNav('Collection', count,true);
+                dropdown();
+                console.log(getSortBy());
                 showCollection();
             });
             document.title = 'Collection';
@@ -526,7 +546,7 @@ async function activateSearchbar() {
                     console.log('searching in all deck cards');
                     const card_name = searchbar.value.toLowerCase();
                     if (card_name === '') return;
-                    const result = await searchInAllDecks(card_name);
+                    const result = await searchInAllDecks(card_name,getSortBy());
                     document.getElementById('content').innerHTML = ''; // Clear the content before displaying the search results
                     prepareForCards();
                     const cards = result.flat();

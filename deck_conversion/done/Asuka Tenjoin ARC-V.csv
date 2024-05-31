@@ -1,0 +1,10 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (MARKET)
+Monster,1,Etoile Cyber,4,Warrior/ Effect,0.09
+Monster,2,Cyber Angel Natasha,5,Fairy/ Effect/ Ritual,0.94
+Monster,1,Cyber Tutubon,5,Warrior/ Effect,0.13
+Monster,1,Cyber Prima,6,Warrior/ Effect,0.09
+Monster,1,Cyber Angel Vrash,10,Fairy/ Effect/ Ritual,0.22
+Spell,1,Machine Angel Absolute Ritual,,,0.25
+Spell,1,Machine Angel Ritual,,,0.13
+Spell,1,Polymerization,,,0.26
