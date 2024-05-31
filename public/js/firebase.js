@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
 import { getDatabase, ref, get, child, query, orderByChild, equalTo } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js";
-import { defaulSort } from "./utils.js";
+import { defaulSort, sortByName, sortByQuantity, sortByRace } from "./utils.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBk6juZfAGVeR_VVkgOtxYaNxKlkSkBrng",
@@ -49,7 +49,7 @@ async function getAllDecks(){
     });
 }
 
-function getAllDeckCards() {
+function getAllDeckCards(sort) {
     return new Promise(async (resolve, reject) => {
         try {
             const decks = await getAllDecks();
@@ -64,9 +64,7 @@ function getAllDeckCards() {
                     }
                 });
             }
-            
-            const sortedCards = defaulSort(Object.values(cards));
-
+            const sortedCards = sortBy(sort,Object.values(cards));
             resolve(sortedCards);
         } catch (error) {
             console.error("Errore durante il recupero del deck:", error);
@@ -96,7 +94,7 @@ async function getOwnedIds(){
     });
 }
 
-async function getOwnedCards(){
+async function getOwnedCards(sort){
     const owned_assoc = await getOwnedIds();
     console.log(owned_assoc);
     const ids = Object.keys(owned_assoc);
@@ -110,7 +108,7 @@ async function getOwnedCards(){
     });
     cards = await Promise.all(cardPromises);
     console.log(cards);
-    return defaulSort(cards);
+    return sortBy(sort,cards)
 }
 
 async function getDeckCards(deck_name){
@@ -193,7 +191,7 @@ async function countOwnedCards(){
     return count;
 }
 
-async function searchInOwned(card_name){
+async function searchInOwned(card_name,sort){
     //returns a promise with all the cards in the owned list that have the name card_name
     const owned_assoc = await getOwnedIds();
     const ids = Object.keys(owned_assoc);
@@ -205,7 +203,7 @@ async function searchInOwned(card_name){
     });
     cards = await Promise.all(cardPromises);
     cards = cards.filter(card => card.name.toLowerCase().includes(card_name.toLowerCase()));
-    return defaulSort(cards);
+    return sortBy(sort,cards);
 }
 
 async function searchInAllDecks(card_name,sort="default"){
@@ -220,8 +218,11 @@ async function searchInAllDecks(card_name,sort="default"){
             }
         });
     }
-    let sorted = ["No Cards."];
+    return sortBy(sort,cards);
+}
 
+function sortBy(sort,cards){
+    let sorted = ["No cards."]
     switch(sort){
         default:
             sorted = defaulSort(cards);
@@ -236,15 +237,15 @@ async function searchInAllDecks(card_name,sort="default"){
             break;
         
         case "quantityAsc":
+            sorted = sortByQuantity(cards,true);
             break;
 
         case "quantityDesc":
+            sorted = sortByQuantity(cards,false);
             break;
     }
 
     return sorted;
-
-    
 }
 
 async function getOtherData(card_id){

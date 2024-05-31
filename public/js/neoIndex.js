@@ -232,6 +232,7 @@ function controller(){
 
             document.title = 'Anime Decks';
             break;
+
         case 'allDeckCards':
             nav.innerHTML = basicNav('All Deck Cards', "...",false);
             dropdown();
@@ -242,12 +243,16 @@ function controller(){
             document.title = 'All Deck Cards';
             break;
         case 'collection':
-            countOwnedCards().then(count => {
-                nav.innerHTML = basicNav('Collection', count,true);
-                dropdown();
-                console.log(getSortBy());
-                showCollection();
-            });
+            nav.innerHTML = basicNav('Collection', "...",true);
+            dropdown();
+            showCollection();
+            // countOwnedCards().then(count => {
+            //     //nav.innerHTML = basicNav('Collection', count,true);
+            //     //TODO: set count invece di far sta roba
+
+            //     console.log(getSortBy());
+            //     showCollection();
+            // });
             document.title = 'Collection';
             break;
         case 'archetypes':
@@ -395,7 +400,7 @@ function prepareForCards(){
     content.classList.add('h-screen','w-full', 'flex')
     content.innerHTML = `
         <div class="w-3/4 h-screen overflow-auto pr-3 pb-24 mt-1 ms-2">
-            <div class="grid grid-cols-10 gap-1 h-auto" id="card-container"></div>
+            <div class="grid grid-cols-10 gap-1 h-auto" id="card-container" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false }'></div>
         </div>
         <div class="w-1/4 h-screen ms-2" id="card-highlight">
             <img class="w-3/4 h-auto object-cover p-2 mx-auto " id="card_image" src="../card_back.jpg" alt="highlight_card_image">
@@ -494,7 +499,7 @@ async function showDeck(duelist) {
 
 async function showCollection(){
     prepareForCards();
-    const deck = await getOwnedCards();
+    const deck = await getOwnedCards(getSortBy());
     const cards = deck.flat();
     const promises = cards.map(async card => {
         const owned_quantity = await getOwnedQuantity(card.id);
@@ -508,6 +513,7 @@ async function showCollection(){
 }
 
 async function activateSearchbar() {
+    //TODO: fare in modo che invece di cercare, fa un redirect e oltre a tutto c'è una roba chiamata q = nome_carta
     const searchbar = document.getElementById('searchbar');
     const location = window.location.href.split('?view=')[1];
 
@@ -578,7 +584,7 @@ function setTotalCards(count){
 async function showAllDeckCards() {
     prepareForCards();
     let total = 0;
-    const cards = await getAllDeckCards();
+    const cards = await getAllDeckCards(getSortBy());
     const promises = cards.flat().map(async card => {
         const owned_quantity = await getOwnedQuantity(card.id);
         total += owned_quantity;
@@ -587,8 +593,8 @@ async function showAllDeckCards() {
     Promise.all(promises);
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
     activateSearchbar();
-    //wait for all the cards to be loaded, then     
-    
+
+
 
     return total; //returns the total number of cards 
 }

@@ -29,6 +29,12 @@ function sortByLinkRating(cards){
 }
 
 
+function sortByQuantity(cards, asc) {
+    return new Promise((resolve) => {
+        resolve(cards.sort((a, b) => (asc ? a.quantity - b.quantity : b.quantity - a.quantity)));
+    });
+}
+
 async function defaulSort(snapshot){
 
     const cards = Object.values(snapshot);
@@ -302,4 +308,13 @@ function getColorFromPercentage(percentage) {
 
 
 
-export {defaulSort, sortByFrameType, sortByRace, sortByLevel, getSeriesChars, getColorFromPercentage};
+export {
+    defaulSort, 
+    sortByName,
+    sortByFrameType, 
+    sortByRace, 
+    sortByLevel, 
+    sortByQuantity,
+    getSeriesChars, 
+    getColorFromPercentage
+};
