@@ -1,0 +1,15 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Necro Fleur,1,Plant/ Effect,0.03
+Monster,1,Fleur Synchron,2,Machine/ Effect/Tuner,0.02
+Monster,1,"Noble Knight's Spearholder",2,Warrior/ Effect,0.08
+Monster,1,Horse of the Floral Knights,3,Beast/ Effect,0.02
+Monster,1,Noble Knight Joan,4,Warrior/ Effect,0.07
+Monster,1,"Noble Knight's Shield-Bearer",4,Warrior/ Effect,0.19
+Monster,1,Sorciere de Fleur,8,Spellcaster/ Effect,0.02
+Spell,1,Ecole de Zone,,,0.25
+Spell,1,Soul Binding Gate,,,0.02
+Spell,1,Z-ONE,,,0.02
+Trap,1,Liberty at Last!,,,0.02
+Extra Deck,1,Centaur Mina,6,Beast/Warrior/ Effect/ Fusion,0.13
+Extra Deck,1,Chevalier de Fleur,8,Warrior/ Effect/ Synchro,0.19

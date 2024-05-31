@@ -1,0 +1,44 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Dinowrestler Martial Ampelo,1,Dinosaur/ Effect,0.03
+Monster,1,Gouki Guts,1,Warrior/ Effect,0.02
+Monster,3,Gouki Octostretch,1,Warrior/ Effect,0.02
+Monster,1,Gouki Ringtrainer,1,Warrior/ Effect,0.04
+Monster,1,Dinowrestler Coelasilat,2,Dinosaur/ Effect/Tuner,0.02
+Monster,1,Dinowrestler Martial Ankylo,2,Dinosaur/ Effect,0.02
+Monster,1,Gouki Headbatt,2,Warrior/ Effect,0.05
+Monster,1,Gouki Iron Claw,2,Warrior/ Effect,0.02
+Monster,1,Dinowrestler Capaptera,3,Dinosaur/ Effect,0.02
+Monster,1,Dinowrestler Valeonyx,3,Dinosaur/ Effect,0.02
+Monster,2,Gouki Twistcobra,3,Warrior/ Effect,0.15
+Monster,2,Dinowrestler Capoeiraptor,4,Dinosaur/ Effect,0.02
+Monster,1,Dinowrestler Systegosaur,4,Dinosaur/ Effect,0.02
+Monster,3,Gouki Suprex,4,Warrior/ Effect,0.20
+Monster,1,Dinowrestler Martial Anga,5,Dinosaur/ Effect,0.02
+Monster,1,Dinowrestler Rambrachio,5,Dinosaur/ Effect,0.02
+Monster,3,Gouki Riscorpio,5,Warrior/ Effect,0.09
+Monster,1,Gouki Tagpartner,5,Warrior/ Effect,0.02
+Monster,1,Dinowrestler Eskrimamenchi,6,Dinosaur/ Effect,0.02
+Monster,1,Gouki Moonsault,6,Warrior/ Effect,0.02
+Monster,1,Dinowrestler Pankratops,7,Dinosaur/ Effect,0.12
+Spell,1,Gouki Face Turn,,,0.05
+Spell,3,Gouki Re-Match,,,0.05
+Spell,1,Reinforcement of the Army,,,0.02
+Spell,1,Spacetime Transcendence,,,0.15
+Spell,1,The Warrior Returning Alive,,,0.02
+Spell,1,Tyrant Dino Fusion,,,0.02
+Spell,1,World Dino Wrestling,,,0.03
+Trap,1,Desperate Tag,,,0.02
+Trap,1,Rising Energy,,,0.02
+Extra Deck,1,Dinowrestler Terra Parkourio,2,Dinosaur/ Effect/ Link,0.02
+Extra Deck,1,G Golem Crystal Heart,2,Cyberse/ Effect/ Link,0.42
+Extra Deck,1,Gouki Heel Ogre,2,Warrior/ Effect/ Link,0.02
+Extra Deck,1,Gouki Jet Ogre,2,Warrior/ Effect/ Link,0.09
+Extra Deck,1,Dinowrestler King T Wrextle,3,Dinosaur/ Effect/ Link,0.02
+Extra Deck,1,Gouki The Great Ogre,3,Warrior/ Effect/ Link,0.02
+Extra Deck,1,Gouki Thunder Ogre,3,Warrior/ Effect/ Link,0.06
+Extra Deck,1,Gouki The Giant Ogre,4,Warrior/ Effect/ Link,0.05
+Extra Deck,1,Gouki The Master Ogre,4,Warrior/ Effect/ Link,0.08
+Extra Deck,1,Gouki The Powerload Ogre,4,Warrior/ Effect/ Link,0.02
+Extra Deck,1,Dinowrestler Chimera T Wrextle,8,Dinosaur/ Effect/ Fusion,0.02
+Extra Deck,1,Dinowrestler Giga Spinosavate,8,Dinosaur/ Effect/ Synchro,0.08

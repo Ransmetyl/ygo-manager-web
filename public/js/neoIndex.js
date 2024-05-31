@@ -1,4 +1,16 @@
-import {getCompletionPercentage, getDeckCards, getOwnedQuantity, countDeckCards, countOwnedCards, getOwnedCards, getAllDeckCards} from './firebase.js';
+import {
+    getCompletionPercentage, 
+    getDeckCards,
+    getOwnedQuantity, 
+    countDeckCards, 
+    countOwnedCards, 
+    getOwnedCards, 
+    getAllDeckCards,
+    searchInOwned,
+    searchInAllDecks,
+    getOtherData,
+} from './firebase.js';
+
 import {getColorFromPercentage, getSeriesChars} from './utils.js';
 
 
@@ -190,9 +202,18 @@ function controller(){
 
     switch(view){
         case 'animeDecks':
-            nav.innerHTML = animeDecksNav('Anime Decks');
-            dropdown();
-            loadChars(getSeries());
+            const series = getSeries();
+            const lastChoice = localStorage.getItem('lastChoice');
+            if (lastChoice && lastChoice === series) {
+                nav.innerHTML = animeDecksNav('Anime Decks');
+                dropdown();
+                loadChars(series);
+            } else {
+                localStorage.setItem('lastChoice', series);
+                nav.innerHTML = animeDecksNav('Anime Decks');
+                dropdown();
+                loadChars(series);
+            }
             break;
         case 'allDeckCards':
             nav.innerHTML = basicNav('All Deck Cards', "...");
@@ -246,6 +267,7 @@ function loader(){
 function resetContent(){
     content.classList.add('grid','h-1/5','place-items-center')
     content.classList.remove('h-screen','overflow-auto')
+    content.innerHTML = loader();
 }
 
 function prepareForDuelists(){
@@ -258,9 +280,9 @@ function createCharacterCard(name, percentage) {
 
     const color = getColorFromPercentage(percentage);
     let card = document.createElement('a');
-    name = name.replace(/[^\w\s]/gi, '');
+    name = name.replace(/[^\w\s-]/gi, '');
 
-    card.classList.add('w-1/3','transition', 'ease-in', 'duration-100', 'delay-0', 'max-w-md', 'rounded', 'overflow-hidden', 'shadow-lg', 'mb-4', 'mr-4', 'rounded-xl', 'cursor-pointer','bg-white');
+    card.classList.add('w-1/3','transition', 'ease-in', 'duration-100', 'delay-0', 'max-w-md', 'rounded', 'overflow-hidden', 'shadow-lg', 'm-2', 'mr-4', 'rounded-xl', 'cursor-pointer','bg-white');
     card.id = name;
     card.href = "javascript:void(0)";
 
@@ -271,9 +293,9 @@ function createCharacterCard(name, percentage) {
     imgContainer.classList.add('w-1/3', 'border-r', 'border-gray-300', 'rounded-l-lg', 'overflow-hidden', 'bg-white','py-0');
 
     let img = document.createElement('img');
-    img.classList.add('scale-150', 'mt-10', 'px-2', 'w-full', 'h-auto', 'object-cover', 'object-center', 'rounded-l-lg');
+    img.classList.add('scale-150','my-5', 'px-2', 'w-full', 'h-auto', 'object-cover', 'object-center', 'rounded-l-lg');
     img.src = "https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/char%2F" + name.replace(' ', '%20') + ".png?alt=media&token=e50852da-0be5-434c-b3b3-fd3803fe13c7";
-    img.alt = name + "_Image";
+    img.alt = name + "_image";
     img.loading = "lazy";
 
     imgContainer.classList.add('pr-2','opacity-50')
@@ -285,7 +307,16 @@ function createCharacterCard(name, percentage) {
     let nameDiv = document.createElement('div');
     nameDiv.classList.add('font-bold', 'text-2xl', 'mb-2');
 
-    let nameText = document.createTextNode(name);
+    let displayName = name.replace('Arc-V', '');
+    if(displayName == 'Austin O Brien'){
+        displayName = 'Austin O\' Brien';
+    }
+
+    if(displayName == 'Jose'){
+        displayName = 'José';
+    }
+
+    let nameText = document.createTextNode(displayName);
     nameDiv.appendChild(nameText);
 
     let completionDiv = document.createElement('p');
@@ -295,13 +326,14 @@ function createCharacterCard(name, percentage) {
         percentage = "No Deck Found.";
         let completionText = document.createTextNode(percentage);
         completionDiv.appendChild(completionText);
+        
     }else{
         let completionText = document.createTextNode(percentage + "%");
         completionDiv.classList.add('border', 'rounded-md', 'border-black');
         completionDiv.style.background = "linear-gradient(to right, " + color + " " + percentage + "%, #ffffff " + percentage + "%)";
         completionDiv.appendChild(completionText);
         imgContainer.classList.remove('opacity-50')
-        card.href = "deck_view.html?duelist=" + name;
+        card.href = window.location.href.split('?')[0] + "?view=deck&duelist=" + name;
         card.classList.add('hover:scale-110');
     }
 
@@ -312,7 +344,7 @@ function createCharacterCard(name, percentage) {
     flex.appendChild(textContainer);
 
     card.appendChild(flex);
-    card.href = window.location.href.split('?')[0] + "?view=deck&duelist=" + name;
+    
 
     return card;
 }
@@ -362,15 +394,16 @@ function createCardElement(card_id, deck_quantity, owned_quantity, card_name, ca
     if(card_name.includes('-')){
         card_name_fix = card_name.replace(/\s*-\s*/g, '-');
     }
-     if(card_name.includes("'")){
+    if (card_name.includes("'")) {
         card_name_fix = card_name.replace("'", "");
     }
-    
+    if (card_name.includes(",")) {
+        card_name_fix = card_name.replace(",", "");
+    }
+
     card_name_fix = card_name_fix.replace(/\s+/g, '-');
-
-
-    console.log(card_name_fix)
     card.href = `https://www.cardmarket.com/en/YuGiOh/Cards/${card_name_fix}?language=5&minCondition=2`;
+    card.target="_blank"
 
     const img = document.createElement('img');
     img.src = `https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/small_cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`;
@@ -402,14 +435,22 @@ function preloadImages(urls) {
     });
 }
 
+
 function showHighlightCard(card_id, card_name, card_desc) {
     const highlightImageUrl = `https://firebasestorage.googleapis.com/v0/b/yu-gi-oh--card-manager.appspot.com/o/cards%2F${card_id}.jpg?alt=media&token=5312ec3d-15e8-4a78-9f5b-c4572d60e556`;
 
     preloadImages([highlightImageUrl]);
 
+    getOtherData(card_id).then(data => {
+        const [type, attribute] = data;
+        const card_data = `${type}/${attribute}`;
+        document.getElementById('card_desc').textContent = card_data;
+        document.getElementById('card_desc').textContent += card_desc;
+    });
+
     document.getElementById('card_image').src = highlightImageUrl;
     document.getElementById('card_name').textContent = card_name;
-    document.getElementById('card_desc').textContent = card_desc;
+   
 }
 
 async function showDeck(duelist) {
@@ -428,12 +469,78 @@ async function showCollection(){
     prepareForCards();
     const deck = await getOwnedCards();
     const cards = deck.flat();
-    cards.forEach(async card => {
+    const promises = cards.map(async card => {
         const owned_quantity = await getOwnedQuantity(card.id);
-        console.log(card.name);
-        createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, false);
+        return createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, false);
     });
+    const cardElements = Promise.all(promises);
+    setTotalCards(await countOwnedCards());
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
+    activateSearchbar();
+    return cardElements;
+}
+
+async function activateSearchbar() {
+    const searchbar = document.getElementById('searchbar');
+    const location = window.location.href.split('?view=')[1];
+
+    switch (location) {
+        case 'collection':
+            searchbar.addEventListener('keydown', async (event) => {
+                if (event.key === 'Enter') {
+                    resetContent();
+                    const card_name = searchbar.value.toLowerCase();
+                    if (card_name === '') return;
+
+                    const result = await searchInOwned(card_name);
+                    document.getElementById('content').innerHTML = '';
+                    prepareForCards();
+                    const cards = result.flat();
+                    setTotalCards(cards.length);
+                    cards.forEach(async card => {
+                        const owned_quantity = await getOwnedQuantity(card.id);
+                        createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, false);
+                    });
+                }
+            });
+
+            searchbar.addEventListener('keyup', () => {
+                if (searchbar.value === '') {
+                    prepareForCards();
+                    showCollection();
+                }
+            });
+            break;
+
+        case 'allDeckCards':
+            searchbar.addEventListener('keydown', async (event) => {
+                if (event.key === 'Enter') {
+                    resetContent();
+                    console.log('searching in all deck cards');
+                    const card_name = searchbar.value.toLowerCase();
+                    if (card_name === '') return;
+                    const result = await searchInAllDecks(card_name);
+                    document.getElementById('content').innerHTML = ''; // Clear the content before displaying the search results
+                    prepareForCards();
+                    const cards = result.flat();
+                    const uniqueCards = Array.from(new Set(cards.map(card => card.id))).map(id => cards.find(card => card.id === id));
+                    setTotalCards(uniqueCards.length);
+                    uniqueCards.forEach(async card => {
+                        const owned_quantity = await getOwnedQuantity(card.id);
+                        createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc, true);
+                    });
+                }
+            });
+
+            searchbar.addEventListener('keyup', async() => {
+                if (searchbar.value === '') {
+                    resetContent(); // Clear the content before displaying all deck cards
+                    prepareForCards();
+                    setTotalCards(await showAllDeckCards());   
+                }
+            });
+            break;
+    }
 }
 
 
@@ -450,7 +557,13 @@ async function showAllDeckCards() {
         total += owned_quantity;
         return createCardElement(card.id, card.quantity, owned_quantity, card.name, card.desc);
     });
-    await Promise.all(promises);
+    Promise.all(promises);
     showHighlightCard(cards[0].id, cards[0].name, cards[0].desc);
+    activateSearchbar();
+    //wait for all the cards to be loaded, then     
+    
+
     return total; //returns the total number of cards 
 }
+
+

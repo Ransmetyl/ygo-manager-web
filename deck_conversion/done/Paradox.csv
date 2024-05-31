@@ -1,0 +1,20 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Malefic Parallel Gear,2,Machine/ Effect/Tuner,0.69
+Monster,1,Malefic Red-Eyes Black Dragon ,7,Dragon/ Effect,0.20
+Monster,1,Red-Eyes Black Dragon,7,Dragon/ Normal,0.02
+Monster,1,Blue-Eyes White Dragon,8,Dragon/ Normal,0.08
+Monster,1,Malefic Blue-Eyes White Dragon,8,Dragon/ Effect,0.20
+Monster,1,Malefic Stardust Dragon,8,Dragon/ Effect,0.77
+Monster,1,Malefic Cyber End Dragon,10,Machine/ Effect,0.12
+Monster,1,Malefic Rainbow Dragon,10,Dragon/ Effect,0.70
+Monster,1,Rainbow Dragon,10,Dragon/ Effect,0.02
+Monster,1,Malefic Truth Dragon,12,Dragon/ Effect,0.20
+Spell,1,Malefic Divide,,,0.02
+Spell,1,Malefic Selector,,,0.02
+Spell,1,Malefic World,,,0.99
+Trap,1,Malefic Claw Stream,,,0.21
+Trap,1,Malefic Tune,,,0.02
+Extra Deck,1,Stardust Dragon,8,Dragon/ Effect/ Synchro,0.50
+Extra Deck,1,Cyber End Dragon,10,Machine/ Effect/ Fusion,0.02
+Extra Deck,1,Malefic Paradox Dragon,10,Dragon/ Effect/ Synchro,0.50

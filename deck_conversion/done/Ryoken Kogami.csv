@@ -1,0 +1,57 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,3,Anesthrokket Dragon,1,Dragon/ Effect,0.02
+Monster,1,Chobham Armor Dragon,1,Dragon/ Effect,0.10
+Monster,1,Overflow Dragon,1,Dragon/ Effect,0.02
+Monster,1,Rokket Synchron,1,Dragon/ Effect/Tuner,0.02
+Monster,3,Sniffer Dragon,2,Dragon/ Effect,0.02
+Monster,1,Triggering Wurm,2,Dragon/ Effect,0.02
+Monster,2,Autorokket Dragon,3,Dragon/ Effect,0.09
+Monster,1,Defrag Dragon,3,Dragon/ Effect,0.02
+Monster,1,Hibernation Dragon,3,Dragon/ Effect,0.14
+Monster,1,DMZ Dragon,4,Dragon/ Effect,0.09
+Monster,1,Gateway Dragon,4,Dragon/ Effect,0.02
+Monster,3,Magnarokket Dragon,4,Dragon/ Effect,0.03
+Monster,2,Metalrokket Dragon,4,Dragon/ Effect,0.02
+Monster,1,Rokket Recharger,4,Dragon/ Effect,1.70
+Monster,1,Background Dragon,5,Dragon/ Effect,0.02
+Monster,1,Checksum Dragon,6,Dragon/ Effect,0.02
+Monster,1,Linkbelt Wall Dragon,6,Dragon/ Effect,0.02
+Monster,1,Speedburst Dragon,6,Dragon/ Effect,0.02
+Monster,1,Absorouter Dragon,7,Dragon/ Effect,0.99
+Monster,1,Noctovision Dragon,7,Dragon/ Effect,0.02
+Monster,3,Cracking Dragon,8,Machine/ Effect,0.04
+Spell,1,Boot Sector Launch,,,0.40
+Spell,1,Borrel Regenerator,,,0.02
+Spell,1,Dragonoid Generator,,,0.02
+Spell,1,Fire Prison,,,0.02
+Spell,1,Link Burst,,,0.02
+Spell,1,Quick Launch,,,0.25
+Spell,1,Squib Draw,,,0.09
+Trap,1,Borrel Cooling,,,0.03
+Trap,1,Imperial Order,,,0.10
+Trap,1,Link Turret,,,0.13
+Trap,1,Magic Cylinder,,,0.02
+Trap,1,Mind Crush,,,0.08
+Trap,1,Mirror Force,,,0.02
+Trap,1,Mirror Force Launcher,,,0.02
+Trap,1,Red Reboot,,,0.10
+Trap,1,Remote Rebirth,,,0.04
+Extra Deck,1,Booster Dragon,2,Dragon/ Effect/ Link,0.02
+Extra Deck,1,Dillingerous Dragon,2,Dragon/ Effect/ Link,0.16
+Extra Deck,1,Miniborrel Dragon,2,Dragon/ Effect/ Link,0.03
+Extra Deck,2,Quadborrel Dragon,2,Dragon/ Effect/ Link,0.13
+Extra Deck,1,Twin Triangle Dragon,2,Dragon/ Effect/ Link,0.02
+Extra Deck,1,Flash Charge Dragon,3,Dragon/ Effect/ Link,0.10
+Extra Deck,1,Topologic Trisbaena,3,Cyberse/ Effect/ Link,0.25
+Extra Deck,1,Triple Burst Dragon,3,Dragon/ Effect/ Link,0.19
+Extra Deck,1,Vorticular Drumgon,3,Dragon/ Effect/ Link,0.02
+Extra Deck,1,Borrelguard Dragon,4,Dragon/ Effect/ Link,0.15
+Extra Deck,1,Borreload Dragon,4,Dragon/ Effect/ Link,0.75
+Extra Deck,1,Borreload eXcharge Dragon,4,Dragon/ Effect/ Xyz,0.17
+Extra Deck,1,Borrelsword Dragon,4,Dragon/ Effect/ Link,0.33
+Extra Deck,1,Topologic Bomber Dragon,4,Cyberse/ Effect/ Link,0.32
+Extra Deck,1,Topologic Gumblar Dragon,4,Cyberse/ Effect/ Link,4.56
+Extra Deck,1,Topologic Zeroboros,4,Cyberse/ Effect/ Link,0.25
+Extra Deck,1,Borreload Furious Dragon,8,Dragon/ Effect/ Fusion,1.24
+Extra Deck,1,Borreload Savage Dragon,8,Dragon/ Effect/ Synchro,0.11

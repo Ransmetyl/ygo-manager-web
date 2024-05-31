@@ -140,8 +140,6 @@ async function countDeckCards(deck_name){
         });
     });
     return count;
-
-
 }
 
 async function getCompletionPercentage(deck_name) {
@@ -195,4 +193,75 @@ async function countOwnedCards(){
     return count;
 }
 
-export {getCard, getOwnedCards, getDeckCards, getCompletionPercentage,countDeckCards, getOwnedQuantity,countOwnedCards, getAllDeckCards};
+async function searchInOwned(card_name){
+    //returns a promise with all the cards in the owned list that have the name card_name
+    const owned_assoc = await getOwnedIds();
+    const ids = Object.keys(owned_assoc);
+    let cards = [];
+    const cardPromises = ids.map(async (id) => {
+        const card = await getCard(id);
+        card["quantity"] = owned_assoc[id];
+        return card;
+    });
+    cards = await Promise.all(cardPromises);
+    cards = cards.filter(card => card.name.toLowerCase().includes(card_name.toLowerCase()));
+    return defaulSort(cards);
+}
+
+async function searchInAllDecks(card_name){
+    //returns a promise with all the cards in the owned list that have the name card_name
+    const decks = await getAllDecks();
+    let cards = [];
+    for (const deck in decks) {
+        const deckCards = Object.values(decks[deck]);
+        deckCards.forEach(card => {
+            if (card.name.toLowerCase().includes(card_name.toLowerCase())) {
+                cards.push(card);
+            }
+        });
+    }
+    return defaulSort(cards);
+}
+
+async function getOtherData(card_id){
+    let data = [];
+    return new Promise((resolve, reject) => {
+        get(child(ref(db), `cards/${card_id}`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                const card = snapshot.val();
+                //remove the word "Card" from the type
+                let type = card.type.split(" ");
+                
+                if (type[1] == "Card") {
+                    type[1] = "";
+                } else {
+                    type[1] = type[1] + "/";
+                }
+
+                
+                data.push("["+type[1]+type[0]);
+                data.push(card.race+"]");    
+            }               
+            resolve(data);
+        
+        }).catch((error) => {
+            console.error("Errore durante la ricerca della carta:", error);
+            reject(error);
+        });
+    });
+}
+
+
+export {
+    getCard, 
+    getOwnedCards, 
+    getDeckCards, 
+    getCompletionPercentage,
+    countDeckCards, 
+    getOwnedQuantity,
+    countOwnedCards, 
+    getAllDeckCards, 
+    searchInOwned,
+    searchInAllDecks,
+    getOtherData,
+};

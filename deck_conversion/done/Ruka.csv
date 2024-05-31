@@ -1,0 +1,21 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Kuribon,1,Fairy/ Effect,0.06
+Monster,1,Spore,1,Plant/ Effect/Tuner,0.49
+Monster,1,Sunny Pixie,1,Spellcaster/ Effect/Tuner,0.02
+Monster,1,Dreamsprite,2,Plant/ Effect,0.05
+Monster,1,Nettles,2,Plant/ Effect/Tuner,0.25
+Monster,1,Fairy Archer,3,Fairy/ Effect,0.11
+Monster,1,Spirit of the Breeze,3,Fairy/ Effect,0.25
+Monster,1,Armored White Bear,4,Beast/ Effect,0.20
+Monster,1,Bird of Roses,4,Plant/ Effect,0.06
+Monster,1,Regulus,4,Beast/ Effect,0.02
+Monster,1,Sunlight Unicorn,4,Beast/ Effect,0.05
+Monster,1,Fairy King Truesdale,6,Plant/ Effect,0.20
+Spell,1,Ancient Forest,,,3.92
+Spell,1,Emergency Assistance,,,0.25
+Spell,1,Horn of the Unicorn,,,0.02
+Spell,1,Swords of Revealing Light,,,0.02
+Trap,1,Fairy Wind,,,0.09
+Trap,1,Pixie Ring,,,0.02
+Extra Deck,1,Ancient Fairy Dragon,7,Dragon/ Effect/ Synchro,0.13

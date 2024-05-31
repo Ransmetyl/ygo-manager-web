@@ -1,0 +1,23 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Fortune Fairy Hikari,1,Spellcaster/ Effect,0.54
+Monster,1,Fortune Lady Light,1,Spellcaster/ Effect,0.10
+Monster,1,Fortune Fairy En,2,Spellcaster/ Effect,0.17
+Monster,1,Fortune Lady Fire,2,Spellcaster/ Effect,0.04
+Monster,1,Fortune Fairy Hu,3,Spellcaster/ Effect,0.04
+Monster,1,Fortune Lady Wind,3,Spellcaster/ Effect,0.89
+Monster,1,Fortune Fairy Swee,4,Spellcaster/ Effect,0.06
+Monster,1,Fortune Lady Water,4,Spellcaster/ Effect,0.02
+Monster,1,Fortune Fairy Ann,5,Spellcaster/ Effect,0.06
+Monster,1,Fortune Lady Dark,5,Spellcaster/ Effect,1.50
+Monster,1,Fortune Fairy Chee,6,Spellcaster/ Effect,0.25
+Monster,1,Fortune Lady Earth,6,Spellcaster/ Effect,1.30
+Monster,1,Earthbound Immortal Aslla piscu,10,Winged Beast/ Effect,0.03
+Spell,1,Future Visions,,,0.19
+Spell,1,Miracle Stone,,,0.02
+Spell,1,Pot of Avarice,,,0.37
+Spell,1,Unacceptable Result,,,0.20
+Trap,1,Bending Destiny,,,0.02
+Trap,1,Enlightenment,,,0.11
+Trap,1,Inherited Fortune,,,0.11
+Trap,1,Slip of Fortune,,,0.04

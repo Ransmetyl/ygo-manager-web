@@ -1,0 +1,13 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,2,Dark Spider,1,Insect/ Effect,0.02
+Monster,1,Ground Spider,4,Insect/ Effect,0.02
+Monster,1,Earthbound Immortal Uru,10,Insect/ Effect,0.09
+Spell,1,Earthbound Whirlwind,,,0.06
+Spell,1,Reload,,,0.03
+Spell,1,Spider Web,,,0.11
+Trap,1,Earthbound Wave,,,0.02
+Trap,1,Roar of the Earthbound Immortal,,,0.02
+Trap,1,Spider Egg,,,0.02
+Trap,1,"Wolf in Sheep's Clothing",,,0.02
+Extra Deck,1,Underground Arachnid,6,Insect/ Effect/ Synchro,0.21

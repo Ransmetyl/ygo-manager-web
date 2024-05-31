@@ -1,0 +1,28 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Infernity Avenger,1,Fiend/ Effect/Tuner,1.00
+Monster,1,Infernity Mirage,1,Fiend/ Effect,0.23
+Monster,1,Infernity Randomizer,1,Warrior/ Effect,0.10
+Monster,3,Infernity Beetle,2,Insect/ Effect/Tuner,0.85
+Monster,1,Infernity Dwarf,2,Warrior/ Effect,0.10
+Monster,1,Infernity Beast,3,Beast/ Effect,0.04
+Monster,2,Infernity Necromancer,3,Fiend/ Effect,0.11
+Monster,1,Archfiend General,4,Fiend/ Effect,0.02
+Monster,1,Archfiend Soldier,4,Fiend/ Normal,0.09
+Monster,1,Gene-Warped Warwolf,4,Beast/Warrior/ Normal,0.02
+Monster,2,Infernity Archfiend,4,Fiend/ Effect,0.25
+Monster,1,Infernity Guardian,4,Fiend/ Effect,0.11
+Monster,1,Infernity Destroyer,6,Fiend/ Effect,0.40
+Monster,1,Earthbound Immortal Ccapac Apu,10,Fiend/ Effect,0.04
+Spell,1,ZERO-MAX,,,0.49
+Trap,1,Damage Gate,,,0.03
+Trap,1,Damage Translation,,,0.49
+Trap,1,Depth Amulet,,,0.02
+Trap,1,Full Salvo,,,0.05
+Trap,1,Hate Buster,,,0.20
+Trap,1,Infernity Break,,,0.10
+Trap,1,Infernity Force,,,0.10
+Trap,1,Infernity Reflector,,,0.09
+Trap,1,Limit Impulse,,,0.02
+Extra Deck,1,Hundred Eyes Dragon,8,Dragon/ Effect/ Synchro,0.04
+Extra Deck,1,Infernity Doom Dragon,8,Dragon/ Effect/ Synchro,4.88

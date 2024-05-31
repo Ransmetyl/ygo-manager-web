@@ -1,0 +1,39 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Copy Plant,1,Plant/ Effect/Tuner,0.10
+Monster,3,Evil Thorn,1,Plant/ Effect,0.10
+Monster,1,Glow-Up Bulb,1,Plant/ Effect/Tuner,0.36
+Monster,1,Dark Verger,2,Plant/ Effect,0.05
+Monster,1,Phoenixian Seed,2,Plant/ Effect,0.02
+Monster,1,Wall of Ivy,2,Plant/ Effect,0.02
+Monster,2,Hedge Guard,3,Plant/ Effect,0.02
+Monster,1,Rose Fairy,3,Plant/ Effect,0.02
+Monster,1,Twilight Rose Knight,3,Warrior/ Effect/Tuner,0.08
+Monster,1,Blue Rose Dragon,4,Dragon/ Effect,0.10
+Monster,1,Lord Poison,4,Plant/ Effect,0.05
+Monster,1,Revival Rose,4,Plant/ Effect,0.04
+Monster,1,Rose Witch,4,Plant/ Effect,0.09
+Monster,1,Violet Witch,4,Spellcaster/ Effect,0.49
+Monster,1,Witch of the Black Rose,4,Spellcaster/ Effect/Tuner,0.18
+Monster,1,Gigaplant,6,Plant/ Effect/Gemini,0.10
+Monster,1,Rose Tentacles,6,Plant/ Effect,0.04
+Monster,1,Phoenixian Cluster Amaryllis,8,Plant/ Effect,22.50
+Spell,1,Black Garden,,,0.33
+Spell,1,Fragrance Storm,,,0.39
+Spell,1,Magic Planter,,,0.10
+Spell,1,Mark of the Rose,,,0.03
+Spell,1,Seed of Deception,,,0.02
+Spell,1,Thorn of Malice,,,0.02
+Spell,1,Vengeful Servant,,,0.02
+Spell,1,Wonder Clover,,,0.02
+Trap,1,Blossom Bombardment,,,0.06
+Trap,1,Doppelganger,,,0.03
+Trap,1,Half Counter,,,0.02
+Trap,1,Ivy Shackles,,,0.10
+Trap,1,"Nature's Reflection",,,0.02
+Trap,1,Overdoom Line,,,0.03
+Trap,1,Star Siphon,,,0.02
+Trap,1,Urgent Tuning,,,0.04
+Extra Deck,1,Splendid Rose,6,Plant/ Effect/ Synchro,0.09
+Extra Deck,1,Black Rose Dragon,7,Dragon/ Effect/ Synchro,0.20
+Extra Deck,1,Stardust Dragon,8,Dragon/ Effect/ Synchro,0.50

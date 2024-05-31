@@ -1,0 +1,26 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Stygian Security,1,Fiend/ Effect/Tuner,0.24
+Monster,1,Jutte Fighter,2,Warrior/ Effect/Tuner,0.02
+Monster,1,Torapart,2,Warrior/ Effect/Tuner,0.81
+Monster,1,Gonogo,3,Rock/ Effect,0.04
+Monster,1,Guard Dog,3,Beast/ Effect,0.49
+Monster,1,Pursuit Chaser,3,Machine/ Effect,0.02
+Monster,1,Tactical Espionage Expert,3,Warrior/ Effect,0.02
+Monster,1,Warm Worm,3,Insect/ Effect,3.00
+Monster,3,Assault Dog,4,Beast/ Effect,0.02
+Monster,3,Gate Blocker,4,Rock/ Effect,0.02
+Monster,1,Samurai Sword Baron,4,Warrior/ Effect,0.05
+Monster,1,Search Striker,4,Warrior/ Effect,0.02
+Monster,1,Shield Worm,4,Insect/ Effect,0.21
+Monster,2,Stygian Street Patrol,4,Fiend/ Effect,0.02
+Monster,1,Handcuffs Dragon,5,Dragon/ Effect,0.29
+Monster,1,Montage Dragon,8,Dragon/ Effect,0.49
+Spell,1,Final Countdown,,,0.49
+Spell,1,Worm Bait,,,0.04
+Trap,1,Broken Blocker,,,0.11
+Trap,1,Regretful Rebirth,,,0.12
+Trap,1,Wiretap,,,0.07
+Extra Deck,1,Dark Diviner,4,Fiend/ Effect/ Synchro,0.40
+Extra Deck,1,Stygian Sergeants,5,Fiend/ Effect/ Synchro,0.19
+Extra Deck,1,Goyo Guardian,6,Warrior/ Effect/ Synchro,0.17

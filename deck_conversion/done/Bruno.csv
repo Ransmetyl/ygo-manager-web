@@ -1,0 +1,24 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Buster Blaster,1,Machine/ Effect/Union,0.04
+Monster,1,T.G. Cyber Magician,1,Spellcaster/ Effect/Tuner,0.29
+Monster,1,T.G. Drill Fish,1,Fish/ Effect,0.03
+Monster,1,T.G. Gear Zombie,1,Zombie/ Effect/Tuner,0.04
+Monster,1,T.G. Catapult Dragon,2,Dragon/ Effect,0.15
+Monster,1,T.G. Metal Skeleton,2,Zombie/ Effect,0.03
+Monster,1,T.G. Striker,2,Warrior/ Effect/Tuner,0.29
+Monster,1,T.G. Jet Falcon,3,Winged Beast/ Effect/Tuner,0.05
+Monster,1,T.G. Warwolf,3,Beast/Warrior/ Effect,0.05
+Monster,2,T.G. Rush Rhino,4,Beast/ Effect,0.09
+Trap,1,Compulsory Evacuation Device,,,0.02
+Trap,1,Gravity Collapse,,,0.08
+Trap,1,Sonic Stun,,,0.03
+Trap,1,Synchro Material,,,0.08
+Trap,1,Tuner Capture,,,0.02
+Trap,1,Urgent Tuning,,,0.04
+Extra Deck,1,T.G. Recipro Dragonfly,2,Insect/ Effect/ Synchro,0.02
+Extra Deck,1,T.G. Hyper Librarian,5,Spellcaster/ Effect/ Synchro,0.05
+Extra Deck,1,T.G. Power Gladiator,5,Warrior/ Effect/ Synchro,0.75
+Extra Deck,1,T.G. Wonder Magician,5,Spellcaster/ Effect/ Synchro/Tuner,0.02
+Extra Deck,1,T.G. Blade Blaster,10,Machine/ Effect/ Synchro,2.75
+Extra Deck,1,T.G. Halberd Cannon,12,Machine/ Effect/ Synchro,1.00

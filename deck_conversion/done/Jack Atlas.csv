@@ -1,0 +1,74 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Attack Gainer,1,Warrior/ Effect/Tuner,0.02
+Monster,1,Barrier Resonator,1,Fiend/ Effect/Tuner,0.02
+Monster,1,Battle Fader,1,Fiend/ Effect,0.25
+Monster,1,Chain Resonator,1,Fiend/ Effect/Tuner,1.85
+Monster,1,Dark Bug,1,Insect/ Effect,0.14
+Monster,1,Majestic Dragon,1,Dragon/ Effect/Tuner,0.02
+Monster,1,Mirror Resonator,1,Fiend/ Effect/Tuner,0.03
+Monster,1,Red Nova,1,Fairy/ Effect/Tuner,0.09
+Monster,1,Sinister Sprocket,1,Fiend/ Effect/Tuner,0.07
+Monster,1,Synchro Soldier,1,Machine/ Effect,0.02
+Monster,1,Dark Tinker,2,Fiend/ Effect/Tuner,0.02
+Monster,1,Dread Dragon,2,Dragon/ Effect/Tuner,0.02
+Monster,1,Extra Veiler,2,Spellcaster/ Effect,0.02
+Monster,1,Power Supplier,2,Spellcaster/ Effect,0.02
+Monster,1,Clock Resonator,3,Fiend/ Effect/Tuner,0.02
+Monster,1,Creation Resonator,3,Fiend/ Effect/Tuner,0.25
+Monster,1,Dark Resonator,3,Fiend/ Effect/Tuner,0.02
+Monster,1,Magic Hole Golem,3,Rock/ Effect,0.02
+Monster,1,Small Piece Golem,3,Rock/ Effect,0.05
+Monster,1,Sword Master,3,Warrior/ Effect/Tuner,0.02
+Monster,1,Trust Guardian,3,Fairy/ Effect/Tuner,0.49
+Monster,1,Archfiend Interceptor,4,Fiend/ Effect,0.26
+Monster,1,Lancer Archfiend,4,Fiend/ Effect,0.07
+Monster,1,Mad Archfiend,4,Fiend/ Effect,0.10
+Monster,1,Medium Piece Golem,4,Rock/ Effect,0.05
+Monster,1,Ogre of the Scarlet Sorrow,4,Fiend/ Effect,0.19
+Monster,1,Power Breaker,4,Warrior/ Effect,0.05
+Monster,1,Top Runner,4,Machine/ Effect/Tuner,0.02
+Monster,1,Trap Eater,4,Fiend/ Effect/Tuner,0.12
+Monster,1,Twin-Shield Defender,4,Warrior/ Effect,0.02
+Monster,1,Twin-Sword Marauder,4,Warrior/ Effect,0.02
+Monster,1,Vice Berserker,4,Fiend/ Effect,0.02
+Monster,1,Big Piece Golem,5,Rock/ Effect,0.18
+Monster,1,Power Invader,5,Fiend/ Effect,0.02
+Monster,1,Vice Dragon,5,Dragon/ Effect,0.02
+Monster,1,Power Giant,6,Rock/ Effect,0.02
+Monster,1,Strong Wind Dragon,6,Dragon/ Effect,2.00
+Spell,1,Cost Down,,,0.03
+Spell,1,De-Synchro,,,0.02
+Spell,1,Double Summon,,,0.02
+Spell,1,Megamorph,,,0.02
+Spell,1,Mind Trust,,,0.02
+Spell,1,Overpowering Eye,,,0.02
+Spell,1,Polymerization,,,0.02
+Spell,1,Red Dragon Vase,,,0.09
+Spell,1,Resonator Call,,,0.02
+Spell,1,Scarlet Security,,,0.17
+Trap,1,Assault Spirits,,,0.02
+Trap,1,Breakthrough!,,,0.04
+Trap,1,Changing Destiny,,,0.02
+Trap,1,Crimson Fire,,,0.19
+Trap,1,Descending Lost Star,,,0.02
+Trap,1,Fiendish Chain,,,0.02
+Trap,1,Lineage of Destruction,,,0.02
+Trap,1,Nightmare Archfiends,,,0.02
+Trap,1,Powerful Rebirth,,,0.05
+Trap,1,Prideful Roar,,,0.02
+Trap,1,Ray of Hope,,,0.02
+Trap,1,Red Screen,,,0.19
+Trap,1,Revival Gift,,,0.02
+Trap,1,Shadow Spell,,,0.02
+Trap,1,Spacegate,,,0.02
+Trap,1,Synchro Deflector,,,0.02
+Trap,1,Tuner Capture,,,0.02
+Trap,1,Urgent Tuning,,,0.04
+Extra Deck,1,Chaos King Archfiend,7,Fiend/ Effect/ Synchro,3.99
+Extra Deck,1,Exploder Dragonwing,7,Dragon/ Effect/ Synchro,1.50
+Extra Deck,1,Multiple Piece Golem,7,Rock/ Effect/ Fusion,3.45
+Extra Deck,1,Crimson Blader,8,Warrior/ Effect/ Synchro,3.00
+Extra Deck,1,Red Dragon Archfiend,8,Dragon/ Effect/ Synchro,0.22
+Extra Deck,1,Majestic Red Dragon,10,Dragon/ Effect/ Synchro,3.48
+Extra Deck,1,Red Nova Dragon,12,Dragon/ Effect/ Synchro,0.09

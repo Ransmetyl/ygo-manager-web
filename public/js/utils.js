@@ -42,7 +42,8 @@ async function defaulSort(snapshot){
 
     await Promise.all(cards.map(async (card) => {
         if (card.type.toLowerCase().includes("normal") || 
-            card.type.toLowerCase().includes("effect") || 
+            card.type.toLowerCase().includes("effect") ||
+            (card.type.toLowerCase().includes("tuner") && !card.type.toLowerCase().includes("synchro")) || 
             card.type.toLowerCase().includes("ritual") ||
             card.type.toLowerCase().includes("pendulum")){
             if (card.type.toLowerCase().includes("pendulum")){
@@ -63,6 +64,7 @@ async function defaulSort(snapshot){
             traps.push(card);
         } else if (card.type.toLowerCase().includes("fusion") || 
             card.type.toLowerCase().includes("synchro") || 
+            card.type.toLowerCase().includes("synchro") ||
             card.type.toLowerCase().includes("xyz")){
             extra.push(card);
         }else if(card.type.toLowerCase().includes("link")){
@@ -145,6 +147,16 @@ function getSeriesChars(series){
                 'Daichi Misawa',
                 'Hayato Maeda',
                 'Chronos de Medici',
+
+                //Seven Star Assains
+                "Fubuki Tenjoin",
+                "Camula",
+                "Tania",	
+                "Don Zaloog",	
+                "Abidos the Third",
+                "Titan"	,
+                "Amnael",
+
                 'Kagemaru',
 
                 //Season 2
@@ -174,7 +186,7 @@ function getSeriesChars(series){
                 'Crow Hogan',
                 'Aki Izayoi',
                 'Rua',
-                'Luca',
+                'Ruka',
                 
                 'Tetsu Ushio',
 
@@ -190,6 +202,9 @@ function getSeriesChars(series){
                 //WRGP
                 'Bruno',
                 'Sherry LeBlanc',
+                'Placido',
+                'Lucciano',
+                'Jose',
                 'Paradox',
                 'Aporia',
                 'Z-One'
@@ -204,9 +219,6 @@ function getSeriesChars(series){
                 'Astral', 
                 'Kotori Mizuki',
                 'Tetsuo Takeda',
-                'Tokunosuke Omoteura',
-                'Cathy Katherine',
-                'Takashi Todoroki',
                 'Anna Kozuki',
                 'Trey', 
                 'Quattro',
@@ -214,13 +226,13 @@ function getSeriesChars(series){
                 'Tron',
                 'Droite',
                 'Gauche',
-                'Kaze',
-                'Dumon',
+                'Yamikawa',
                 'Rio Kamishiro',
                 'Vector',
                 'Alito',
+                'Mizael',
                 'Girag',
-                'Mizar',
+                'Dumon',
                 'Don Thousand'
             ];
             break;
@@ -240,8 +252,8 @@ function getSeriesChars(series){
                 'Serena',
                 'Rin',
                 'Ruri',
-                'Gongenzaka Noboru',
-                'Sawatari Shingo',
+                'Noboru Gongenzaka',
+                'Shingo Sawatari',
                 'Shun Kurosaki',
                 'Sora Shiunin',
                 'Dennis Macfield',
@@ -265,7 +277,9 @@ function getSeriesChars(series){
 
                 'Aoi Zaizen',       //Blue Angel and Blue Maiden
                 'Go Onizuka',       //The Gore
-                'Spectre'         
+                'Emma Bessho',      //Ghost Girl
+                'Akira Zaizen',     
+                'Spectre'           
                 //...  
             ];
 

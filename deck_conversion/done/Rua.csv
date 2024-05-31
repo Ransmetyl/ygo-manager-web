@@ -1,0 +1,44 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Gadget Driver,1,Machine/ Effect,0.04
+Monster,1,Morphtronic Celfon,1,Machine/ Effect,0.04
+Monster,1,Morphtronic Lantron,1,Machine/ Effect/Tuner,0.04
+Monster,1,Morphtronic Magnen Bar,1,Thunder/ Effect,0.11
+Monster,1,Morphtronic Vacuumen,1,Machine/ Effect,0.06
+Monster,1,Morphtronic Cameran,2,Machine/ Effect,0.39
+Monster,1,Morphtronic Clocken,2,Machine/ Effect,0.04
+Monster,2,Morphtronic Datatron,3,Pyro/ Effect,0.06
+Monster,3,Morphtronic Magnen,3,Thunder/ Effect,0.04
+Monster,1,Morphtronic Remoten,3,Machine/ Effect/Tuner,0.02
+Monster,1,Morphtronic Scopen,3,Machine/ Effect/Tuner,0.04
+Monster,1,Morphtronic Boomboxen,4,Machine/ Effect,0.10
+Monster,1,Morphtronic Radion,4,Thunder/ Effect,0.35
+Monster,1,Morphtronic Staplen,4,Machine/ Effect,0.04
+Monster,1,Morphtronic Videon,4,Machine/ Effect,0.10
+Monster,1,Gadget Hauler,6,Machine/ Effect,0.76
+Spell,1,Break! Draw!,,,0.02
+Spell,1,Double Tool C&D,,,0.35
+Spell,1,Factory of 100 Machines,,,0.02
+Spell,1,Gadget Box,,,0.08
+Spell,1,Junk Box,,,0.02
+Spell,1,Limiter Removal,,,0.02
+Spell,1,Magical Mallet,,,0.35
+Spell,1,Megamorph,,,0.02
+Spell,1,Morphtronic Accelerator,,,1.65
+Spell,1,Morphtronic Cord,,,0.04
+Spell,1,Morphtronic Engine,,,0.11
+Spell,1,Pot of Avarice,,,0.37
+Spell,1,Power Pickaxe,,,0.26
+Spell,1,Rocket Pilder,,,0.02
+Spell,1,Scapegoat,,,0.02
+Spell,1,Twister,,,0.03
+Trap,1,Morphtransition,,,0.02
+Trap,1,Morphtronic Bind,,,0.29
+Trap,1,Morphtronic Impact Return,,,0.02
+Trap,1,Morphtronic Monitron,,,0.11
+Trap,1,"Morphtronics, Scramble!",,,0.11
+Trap,1,Power Break,,,0.02
+Trap,1,Power-Up Adapter,,,0.02
+Trap,1,Urgent Tuning,,,0.04
+Extra Deck,1,Power Tool Dragon,7,Machine/ Effect/ Synchro,0.70
+Extra Deck,1,Life Stream Dragon,8,Dragon/ Effect/ Synchro/Tuner,5.50

@@ -1,0 +1,41 @@
+"sep=,"
+Card Type,Quantity,Card Name,Level,Type,Min Price (AVG)
+Monster,1,Marincess Mandarin,1,Cyberse/ Effect,0.15
+Monster,1,Trickstar Nightshade,1,Fairy/ Effect,0.02
+Monster,1,Marincess Sea Star,2,Cyberse/ Effect,0.02
+Monster,1,Trickstar Lilybell,2,Fairy/ Effect,0.15
+Monster,1,Trickstar Mandrake,2,Fairy/ Effect,0.02
+Monster,3,Marincess Sea Horse,3,Cyberse/ Effect,0.07
+Monster,3,Trickstar Lycoris,3,Fairy/ Effect,0.20
+Monster,1,Marincess Basilalima,4,Cyberse/ Effect,0.09
+Monster,1,Marincess Blue Tang,4,Cyberse/ Effect,0.13
+Monster,2,Trickstar Candina,4,Fairy/ Effect,0.70
+Monster,1,Trickstar Narkissus,4,Fairy/ Effect,0.07
+Monster,1,Dark Angel,5,Fairy/ Effect,0.02
+Monster,1,Marincess Crown Tail,5,Cyberse/ Effect,0.02
+Monster,1,Trickstar Corobane,5,Fairy/ Effect,1.99
+Spell,1,Marincess Battle Ocean,,,0.02
+Spell,1,Trickstar Bouquet,,,0.02
+Spell,1,Trickstar Fusion,,,0.04
+Spell,1,Trickstar Light Arena,,,0.06
+Spell,1,Trickstar Light Stage,,,0.68
+Spell,1,Trickstar Live Stage,,,5.00
+Trap,1,Marincess Cascade,,,0.02
+Trap,1,Marincess Current,,,0.05
+Trap,1,Marincess Snow,,,0.07
+Trap,1,Marincess Wave,,,0.15
+Trap,3,Trickstar Reincarnation,,,0.99
+Extra Deck,2,Marincess Blue Slug,1,Cyberse/ Effect/ Link,2.47
+Extra Deck,1,Trickstar Bloom,1,Fairy/ Effect/ Link,0.19
+Extra Deck,2,Marincess Coral Anemone,2,Cyberse/ Effect/ Link,0.20
+Extra Deck,1,Marincess Crystal Heart,2,Cyberse/ Effect/ Link,0.13
+Extra Deck,1,Trickstar Black Catbat,2,Fairy/ Effect/ Link,0.05
+Extra Deck,1,Trickstar Crimson Heart,2,Fairy/ Effect/ Link,0.59
+Extra Deck,1,Trickstar Divaridis,2,Fairy/ Effect/ Link,6.00
+Extra Deck,1,Trickstar Holly Angel,2,Fairy/ Effect/ Link,0.25
+Extra Deck,2,Marincess Marbled Rock,3,Cyberse/ Effect/ Link,0.10
+Extra Deck,1,Trickstar Delfiendium,3,Fairy/ Effect/ Link,0.02
+Extra Deck,1,Marincess Great Bubble Reef,4,Cyberse/ Effect/ Link,0.08
+Extra Deck,1,Marincess Wonder Heart,4,Cyberse/ Effect/ Link,0.02
+Extra Deck,1,Trickstar Bella Madonna,4,Fairy/ Effect/ Link,0.39
+Extra Deck,1,Trickstar Band Sweet Guitar,7,Fairy/ Effect/ Fusion,0.35
